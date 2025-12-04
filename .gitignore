@@ -1,0 +1,55 @@
+# Escludi ambienti virtuali
+.venv/
+venv/
+
+# Escludi cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Escludi output temporanei e log
+output/
+logs/
+dist/
+*.log
+*.tmp
+*.bak
+
+# Escludi file e cartelle di sistema
+.DS_Store
+Thumbs.db
+
+# Escludi file di configurazione locali
+.env
+*.env
+
+# Escludi archivi e backup
+*.zip
+*.tar.gz
+*.rar
+archivio.zip
+progetto_auto.zip
+
+# Escludi cartelle di test e build
+build/
+
+# Escludi cartelle e file generati
+workspace_memory/
+.vscode/
+
+# Escludi altri output comuni
+*.egg-info/
+
+# Escludi dati e modelli
+*.pt
+*.h5
+*.ckpt
+
+# Escludi frontend build
+frontend/node_modules/
+frontend/dist/
+
+# Escludi file di stato
+stato_files.txt
+progress_metadata.json
