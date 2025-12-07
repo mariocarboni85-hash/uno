@@ -1,0 +1,31 @@
+name: Super Agent CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          pip install -r super_agent/requirements.txt
+      - name: Lint
+        run: |
+          flake8 super_agent/
+      - name: Test
+        run: |
+          pytest super_agent/
+      - name: Build frontend
+        run: |
+          cd super_agent/dashboard/frontend && npm install && npm run build
+      - name: Deploy
+        run: echo "Deploy step (custom script)"

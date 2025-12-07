@@ -1,0 +1,131 @@
+{
+  "alice": {
+    "username": "alice",
+    "password_hash": "c4SvmbIF/R4lH6HK4Z/7Zd/rQWACMeBm4TonIhoOED4=",
+    "salt": "e5c23563fd5360fc318ab86977881487e91cedf7255a6de7c7962ee51c405dcb",
+    "roles": [
+      "developer"
+    ],
+    "permissions": [
+      "read",
+      "write"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:00.450423",
+    "last_login": null,
+    "failed_attempts": 0,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "bob": {
+    "username": "bob",
+    "password_hash": "LX2KLD4CgFNRTqToKxosLd89iYyV3zsZWgbXLwCK0vI=",
+    "salt": "4173d460605388fcdd1bcedcf71e6062cb23a2ed20a87496f61f9d56a8b78cde",
+    "roles": [
+      "analyst"
+    ],
+    "permissions": [
+      "read"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:00.512744",
+    "last_login": null,
+    "failed_attempts": 0,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "testuser": {
+    "username": "testuser",
+    "password_hash": "4gNA8SsU7bhFjnc/DoW8fgKsVkYSbcQbzf8eKMt5XG8=",
+    "salt": "19cd55fc3696d3a55805840709300cd132e85306b35090d478747ad9b76a4f8c",
+    "roles": [
+      "user"
+    ],
+    "permissions": [
+      "read"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:25.500102",
+    "last_login": "2025-11-26T14:59:25.563448",
+    "failed_attempts": 5,
+    "locked": true,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "admin_user": {
+    "username": "admin_user",
+    "password_hash": "2tTm5t67gd6GS6puLSl26UuPeDRF8yBP1VAnKOqP8Y0=",
+    "salt": "82dd7e5b13d4a460ebe7499e5ccc61457e446308064ca916d9ef5afe1ec806cb",
+    "roles": [
+      "admin"
+    ],
+    "permissions": [
+      "admin"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:25.944009",
+    "last_login": null,
+    "failed_attempts": 0,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "dev_user": {
+    "username": "dev_user",
+    "password_hash": "z1BA0ONWKvQAuSJ3nh+Df/H7g5LUnEeDRn0umqlXi4I=",
+    "salt": "5f1a6f9525be27517f06ede255fdcfa7cf00470dd67f2715074b4af9caf0231e",
+    "roles": [
+      "developer"
+    ],
+    "permissions": [
+      "read",
+      "write",
+      "execute"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:26.009656",
+    "last_login": null,
+    "failed_attempts": 0,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "read_user": {
+    "username": "read_user",
+    "password_hash": "FIhRVA2SWgq+l1sgVql1B27Cn0ylIrH68Aw6OywKQDw=",
+    "salt": "8159f666878cfdb76c4f62501fc8457b5f703de144bf99fd0d095ffc774f59ff",
+    "roles": [
+      "viewer"
+    ],
+    "permissions": [
+      "read"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:26.071305",
+    "last_login": null,
+    "failed_attempts": 0,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  },
+  "test1": {
+    "username": "test1",
+    "password_hash": "NDj52Rxla+5z/sgWhRiJOZBt64A7ceB6ky04p0b1/jU=",
+    "salt": "01e27d1ac6bdd618b02a4e9f587c8005e1d7a8a614b67409008f130a82c0b02e",
+    "roles": [
+      "user"
+    ],
+    "permissions": [
+      "read"
+    ],
+    "security_clearance": "authenticated",
+    "created_at": "2025-11-26T14:59:26.139437",
+    "last_login": "2025-11-26T14:59:26.198429",
+    "failed_attempts": 1,
+    "locked": false,
+    "mfa_enabled": false,
+    "mfa_secret": null
+  }
+}

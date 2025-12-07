@@ -1,0 +1,8 @@
+torch==2.9.1
+torch_pruning==0.2.8
+nncf==2.5.0
+numpy==1.23.5
+scipy==1.10.1
+networkx==2.8.2
+matplotlib==3.10.6
+pandas==2.0.3

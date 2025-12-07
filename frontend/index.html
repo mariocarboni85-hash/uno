@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <title>Super Agent Console</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="app">
+        <header class="top-bar">
+            <div class="logo">SUPER AGENT</div>
+            <div class="status-indicator" id="status-indicator">OFFLINE</div>
+        </header>
+
+        <main class="layout">
+            <section class="left-panel">
+                <div class="panel-title">Comandi</div>
+                <div class="panel-body">
+                    <div class="field-group">
+                        <label for="file-path">Percorso file Python</label>
+                        <input id="file-path" type="text" placeholder="es. fastapi_example.py" />
+                    </div>
+
+                    <div class="field-group">
+                        <label for="mode-select">Analisi</label>
+                        <select id="mode-select">
+                            <option value="analizza">Analisi Qualità</option>
+                            <option value="security">Security Scan</option>
+                        </select>
+                        <button id="run-analyze" class="btn primary">Esegui Analisi</button>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="llm-instruction">Istruzione per LLM</label>
+                        <textarea id="llm-instruction" rows="3">Suggerisci miglioramenti e possibili problemi in questo codice.</textarea>
+                        <button id="run-llm" class="btn accent">Chiedi a Super Agent LLM</button>
+                    </div>
+
+                    <div class="field-group">
+                        <button id="run-report" class="btn">Mostra Report</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="center-panel">
+                <div class="panel-title">Console</div>
+                <div class="panel-body console" id="console-output"></div>
+            </section>
+
+            <section class="right-panel">
+                <div class="panel-title">Chat LLM</div>
+                <div class="panel-body chat-panel">
+                    <div id="chat-messages" class="chat-messages"></div>
+                    <div class="chat-input-row">
+                        <input id="chat-input" type="text" placeholder="Chiedi qualcosa a Super Agent..." />
+                        <button id="chat-send" class="btn small">Invia</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="core-visual">
+            <div class="core-ring outer"></div>
+            <div class="core-ring middle"></div>
+            <div class="core-ring inner"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

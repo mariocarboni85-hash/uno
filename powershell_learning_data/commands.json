@@ -1,0 +1,436 @@
+{
+  "Get-User": {
+    "first_seen": "2025-11-26T11:48:53.786186",
+    "usage_count": 4,
+    "success_count": 4,
+    "failure_count": 0,
+    "contexts": [
+      "script:Get user data from Active Directory",
+      "script:Get user information from Active Directory"
+    ],
+    "parameters": {
+      "-User": 4
+    },
+    "examples": [
+      {
+        "command": "function Get-User {",
+        "timestamp": "2025-11-26T11:48:53.786186",
+        "success": true
+      },
+      {
+        "command": "Name: Get-User",
+        "timestamp": "2025-11-26T11:48:53.786969",
+        "success": true
+      },
+      {
+        "command": "function Get-User {",
+        "timestamp": "2025-11-26T11:49:46.531828",
+        "success": true
+      },
+      {
+        "command": "Name: Get-User",
+        "timestamp": "2025-11-26T11:49:46.532667",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.532667"
+  },
+  "Write-Verbose": {
+    "first_seen": "2025-11-26T11:48:53.787904",
+    "usage_count": 10,
+    "success_count": 10,
+    "failure_count": 0,
+    "contexts": [
+      "script:Get user data from Active Directory",
+      "script:Get user information from Active Directory",
+      "script:Process log files in directory",
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-User": 4,
+      "-MM": 4,
+      "-dd": 4,
+      "-Date": 4,
+      "-Verbose": 10,
+      "-CustomTask": 2
+    },
+    "examples": [
+      {
+        "command": "Write-Verbose \"[$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))] Starting Get-User\"",
+        "timestamp": "2025-11-26T11:48:53.787904",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"Processing $InputObject\"",
+        "timestamp": "2025-11-26T11:48:53.788878",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"[$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))] Completed Get-User\"",
+        "timestamp": "2025-11-26T11:48:53.791747",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"[$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))] Starting Get-User\"",
+        "timestamp": "2025-11-26T11:49:46.533473",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"Processing $InputObject\"",
+        "timestamp": "2025-11-26T11:49:46.534286",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"[$((Get-Date).ToString('yyyy-MM-dd HH:mm:ss'))] Completed Get-User\"",
+        "timestamp": "2025-11-26T11:49:46.536835",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"Starting Invoke-CustomTask\"",
+        "timestamp": "2025-11-26T11:49:46.542659",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"Processing path: $Path\"",
+        "timestamp": "2025-11-26T11:49:46.543539",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose \"Completed Invoke-CustomTask\"",
+        "timestamp": "2025-11-26T11:49:46.545272",
+        "success": true
+      },
+      {
+        "command": "Write-Verbose $LogMessage",
+        "timestamp": "2025-11-26T11:49:46.554023",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.554023"
+  },
+  "Get-Date": {
+    "first_seen": "2025-11-26T11:48:53.789926",
+    "usage_count": 4,
+    "success_count": 4,
+    "failure_count": 0,
+    "contexts": [
+      "script:Get user data from Active Directory",
+      "script:Get user information from Active Directory",
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-Date": 4,
+      "-Format": 2,
+      "-MM": 1,
+      "-dd": 1
+    },
+    "examples": [
+      {
+        "command": "ProcessedAt = Get-Date",
+        "timestamp": "2025-11-26T11:48:53.789926",
+        "success": true
+      },
+      {
+        "command": "ProcessedAt = Get-Date",
+        "timestamp": "2025-11-26T11:49:46.535122",
+        "success": true
+      },
+      {
+        "command": "$LogFile = \"script_$(Get-Date -Format 'yyyyMMdd').log\"",
+        "timestamp": "2025-11-26T11:49:46.551044",
+        "success": true
+      },
+      {
+        "command": "$Timestamp = Get-Date -Format \"yyyy-MM-dd HH:mm:ss\"",
+        "timestamp": "2025-11-26T11:49:46.552884",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.552884"
+  },
+  "Write-Error": {
+    "first_seen": "2025-11-26T11:48:53.790825",
+    "usage_count": 2,
+    "success_count": 2,
+    "failure_count": 0,
+    "contexts": [
+      "script:Get user data from Active Directory",
+      "script:Get user information from Active Directory"
+    ],
+    "parameters": {
+      "-User": 2,
+      "-Error": 2
+    },
+    "examples": [
+      {
+        "command": "Write-Error \"Error in Get-User: $_\"",
+        "timestamp": "2025-11-26T11:48:53.790825",
+        "success": true
+      },
+      {
+        "command": "Write-Error \"Error in Get-User: $_\"",
+        "timestamp": "2025-11-26T11:49:46.535948",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.535948"
+  },
+  "Write-Output": {
+    "first_seen": "2025-11-26T11:49:46.544406",
+    "usage_count": 2,
+    "success_count": 2,
+    "failure_count": 0,
+    "contexts": [
+      "script:Process log files in directory",
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-Output": 2
+    },
+    "examples": [
+      {
+        "command": "Write-Output \"Found $($items.Count) items\"",
+        "timestamp": "2025-11-26T11:49:46.544406",
+        "success": true
+      },
+      {
+        "command": "Write-Output \"Success: Processed $($content.Count) lines\"",
+        "timestamp": "2025-11-26T11:49:46.564841",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.564841"
+  },
+  "Write-Log": {
+    "first_seen": "2025-11-26T11:49:46.551971",
+    "usage_count": 8,
+    "success_count": 8,
+    "failure_count": 0,
+    "contexts": [
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-Log": 8,
+      "-Level": 2
+    },
+    "examples": [
+      {
+        "command": "function Write-Log {",
+        "timestamp": "2025-11-26T11:49:46.551971",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Starting Backupfilestoremotelocation\"",
+        "timestamp": "2025-11-26T11:49:46.556511",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Processing input: $InputPath\"",
+        "timestamp": "2025-11-26T11:49:46.557691",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Read $($content.Count) lines\"",
+        "timestamp": "2025-11-26T11:49:46.561167",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Output saved to: $OutputPath\"",
+        "timestamp": "2025-11-26T11:49:46.563541",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Input path not found: $InputPath\" -Level \"ERROR\"",
+        "timestamp": "2025-11-26T11:49:46.566013",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Error: $_\" -Level \"ERROR\"",
+        "timestamp": "2025-11-26T11:49:46.567087",
+        "success": true
+      },
+      {
+        "command": "Write-Log \"Completed Backupfilestoremotelocation\"",
+        "timestamp": "2025-11-26T11:49:46.568201",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.568201"
+  },
+  "Add-Content": {
+    "first_seen": "2025-11-26T11:49:46.555203",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-Content": 1,
+      "-Path": 1,
+      "-Value": 1
+    },
+    "examples": [
+      {
+        "command": "Add-Content -Path $LogFile -Value $LogMessage",
+        "timestamp": "2025-11-26T11:49:46.555203",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.555203"
+  },
+  "Test-Path": {
+    "first_seen": "2025-11-26T11:49:46.558852",
+    "usage_count": 2,
+    "success_count": 2,
+    "failure_count": 0,
+    "contexts": [
+      "script:Backup files to remote location",
+      "demo"
+    ],
+    "parameters": {
+      "-Path": 2
+    },
+    "examples": [
+      {
+        "command": "if (Test-Path $InputPath) {",
+        "timestamp": "2025-11-26T11:49:46.558852",
+        "success": true
+      },
+      {
+        "command": "Test-Path C:\\Windows",
+        "timestamp": "2025-11-26T11:49:46.574615",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.574615"
+  },
+  "Get-Content": {
+    "first_seen": "2025-11-26T11:49:46.559960",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-Content": 1
+    },
+    "examples": [
+      {
+        "command": "$content = Get-Content $InputPath",
+        "timestamp": "2025-11-26T11:49:46.559960",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.559960"
+  },
+  "Out-File": {
+    "first_seen": "2025-11-26T11:49:46.562301",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "script:Backup files to remote location"
+    ],
+    "parameters": {
+      "-File": 1
+    },
+    "examples": [
+      {
+        "command": "$processed | Out-File $OutputPath",
+        "timestamp": "2025-11-26T11:49:46.562301",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.562301"
+  },
+  "Get-Process": {
+    "first_seen": "2025-11-26T11:49:46.569366",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "demo"
+    ],
+    "parameters": {
+      "-Process": 1,
+      "-Object": 1,
+      "-gt": 1
+    },
+    "examples": [
+      {
+        "command": "Get-Process | Where-Object {$_.CPU -gt 100}",
+        "timestamp": "2025-11-26T11:49:46.569366",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.569366"
+  },
+  "Get-Service": {
+    "first_seen": "2025-11-26T11:49:46.570685",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "demo"
+    ],
+    "parameters": {
+      "-Service": 1,
+      "-Name": 1
+    },
+    "examples": [
+      {
+        "command": "Get-Service -Name 'wuauserv' | Start-Service",
+        "timestamp": "2025-11-26T11:49:46.570685",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.570685"
+  },
+  "null": {
+    "first_seen": "2025-11-26T11:49:46.572071",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "demo"
+    ],
+    "parameters": {
+      "-Path": 1,
+      "-Recurse": 1,
+      "-ChildItem": 1,
+      "-Filter": 1
+    },
+    "examples": [
+      {
+        "command": "Get-ChildItem -Path C:\\Logs -Recurse -Filter *.log",
+        "timestamp": "2025-11-26T11:49:46.572071",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.572071"
+  },
+  "New-Item": {
+    "first_seen": "2025-11-26T11:49:46.573366",
+    "usage_count": 1,
+    "success_count": 1,
+    "failure_count": 0,
+    "contexts": [
+      "demo"
+    ],
+    "parameters": {
+      "-ItemType": 1,
+      "-Item": 1,
+      "-Path": 1
+    },
+    "examples": [
+      {
+        "command": "New-Item -Path C:\\Temp -ItemType Directory",
+        "timestamp": "2025-11-26T11:49:46.573366",
+        "success": true
+      }
+    ],
+    "last_used": "2025-11-26T11:49:46.573366"
+  }
+}

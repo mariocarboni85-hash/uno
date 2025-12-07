@@ -1,0 +1,10 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'super_agent_backend'
+    static_configs:
+      - targets: ['localhost:5000']
+  - job_name: 'super_agent_distributed_jobs'
+    static_configs:
+      - targets: ['localhost:5100']

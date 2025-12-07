@@ -1,0 +1,147 @@
+{
+  "Get user data from Active Directory": {
+    "name": "Get user data from Active Directory",
+    "timestamp": "2025-11-26T11:48:53.783803",
+    "metrics": {
+      "total_lines": 64,
+      "code_lines": 50,
+      "comment_lines": 3,
+      "commands": 50,
+      "unique_cmdlets": 4,
+      "unique_parameters": 6,
+      "unique_variables": 7
+    },
+    "cmdlets": {
+      "Write-Verbose": 3,
+      "Get-User": 2,
+      "Get-Date": 1,
+      "Write-Error": 1
+    },
+    "parameters": {
+      "-User": 5,
+      "-Date": 3,
+      "-Verbose": 3,
+      "-MM": 2,
+      "-dd": 2,
+      "-Error": 1
+    },
+    "patterns": {
+      "variable": 14,
+      "cmdlet": 7,
+      "parameter": 7,
+      "comment": 1
+    },
+    "complexity_avg": 0.45
+  },
+  "Get user information from Active Directory": {
+    "name": "Get user information from Active Directory",
+    "timestamp": "2025-11-26T11:49:46.529296",
+    "metrics": {
+      "total_lines": 64,
+      "code_lines": 50,
+      "comment_lines": 3,
+      "commands": 50,
+      "unique_cmdlets": 4,
+      "unique_parameters": 6,
+      "unique_variables": 7
+    },
+    "cmdlets": {
+      "Write-Verbose": 3,
+      "Get-User": 2,
+      "Get-Date": 1,
+      "Write-Error": 1
+    },
+    "parameters": {
+      "-User": 5,
+      "-Date": 3,
+      "-Verbose": 3,
+      "-MM": 2,
+      "-dd": 2,
+      "-Error": 1
+    },
+    "patterns": {
+      "variable": 14,
+      "cmdlet": 7,
+      "parameter": 7,
+      "comment": 1
+    },
+    "complexity_avg": 0.45
+  },
+  "Process log files in directory": {
+    "name": "Process log files in directory",
+    "timestamp": "2025-11-26T11:49:46.541167",
+    "metrics": {
+      "total_lines": 45,
+      "code_lines": 32,
+      "comment_lines": 1,
+      "commands": 32,
+      "unique_cmdlets": 2,
+      "unique_parameters": 7,
+      "unique_variables": 4
+    },
+    "cmdlets": {
+      "Write-Verbose": 3,
+      "Write-Output": 1
+    },
+    "parameters": {
+      "-CustomTask": 4,
+      "-Verbose": 3,
+      "-Path": 2,
+      "-ChildItem": 2,
+      "-Parameter": 1,
+      "-Recurse": 1,
+      "-Output": 1
+    },
+    "patterns": {
+      "parameter": 8,
+      "variable": 8,
+      "cmdlet": 4,
+      "comment": 1
+    },
+    "complexity_avg": 0.546875
+  },
+  "Backup files to remote location": {
+    "name": "Backup files to remote location",
+    "timestamp": "2025-11-26T11:49:46.549077",
+    "metrics": {
+      "total_lines": 82,
+      "code_lines": 59,
+      "comment_lines": 6,
+      "commands": 59,
+      "unique_cmdlets": 8,
+      "unique_parameters": 15,
+      "unique_variables": 13
+    },
+    "cmdlets": {
+      "Write-Log": 8,
+      "Get-Date": 2,
+      "Write-Verbose": 1,
+      "Add-Content": 1,
+      "Test-Path": 1,
+      "Get-Content": 1,
+      "Out-File": 1,
+      "Write-Output": 1
+    },
+    "parameters": {
+      "-Log": 8,
+      "-Format": 2,
+      "-Date": 2,
+      "-Content": 2,
+      "-Path": 2,
+      "-Level": 2,
+      "-Parameter": 1,
+      "-agent": 1,
+      "-MM": 1,
+      "-dd": 1
+    },
+    "patterns": {
+      "variable": 22,
+      "parameter": 19,
+      "cmdlet": 16,
+      "pipeline": 2,
+      "comment": 1,
+      "foreach": 1
+    },
+    "complexity_avg": 0.7796610169491526
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "desktop": true,
+  "email": true,
+  "webhook": false,
+  "email_address": "utente@example.com",
+  "webhook_url": "https://api.telegram.org/botTOKEN/sendMessage?chat_id=CHAT_ID",
+  "events": {
+    "task_success": true,
+    "task_error": true
+  }
+}

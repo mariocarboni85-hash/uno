@@ -1,0 +1,44 @@
+{
+  "short_term": [
+    {
+      "role": "user",
+      "content": "My name is Mario",
+      "timestamp": "2025-12-01T22:48:29.166276"
+    },
+    {
+      "role": "assistant",
+      "content": "Nice to meet you, Mario!",
+      "timestamp": "2025-12-01T22:48:29.166279"
+    },
+    {
+      "role": "user",
+      "content": "Recent interactions:\n[user]: My name is Mario\n[assistant]: Nice to meet you, Mario!\n\nKnown facts:\n- agent_name: SuperAgent\n- version: 2.0\n- action_file_write: {'successes': 2, 'failures': 1, 'last_outcome': 'error', 'last_attempt': '2025-12-01T22:48:29.166056'}\n\nCurrent query: What is my name?",
+      "timestamp": "2025-12-01T22:48:29.166299"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand your request. Please provide more specific instructions.",
+      "timestamp": "2025-12-01T22:48:29.166301"
+    }
+  ],
+  "long_term": {
+    "agent_name": {
+      "value": "SuperAgent",
+      "stored_at": "2025-12-01T22:48:06.962911"
+    },
+    "version": {
+      "value": "2.0",
+      "stored_at": "2025-12-01T22:48:06.962913"
+    },
+    "action_file_write": {
+      "value": {
+        "successes": 2,
+        "failures": 1,
+        "last_outcome": "error",
+        "last_attempt": "2025-12-01T22:48:29.166056"
+      },
+      "stored_at": "2025-12-01T22:48:29.166057"
+    }
+  },
+  "context": {}
+}

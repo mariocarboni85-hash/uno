@@ -1,0 +1,5 @@
+wikipedia
+feedparser
+requests
+flask
+schedule

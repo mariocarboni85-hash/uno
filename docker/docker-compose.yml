@@ -1,0 +1,46 @@
+services:
+  backend:
+    build:
+      context: ../dashboard/backend
+      dockerfile: ../docker/Dockerfile.backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_TYPE=postgresql
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=superagent
+      - DB_USER=superuser
+      - DB_PASSWORD=superpassword
+    depends_on:
+      - db
+  frontend:
+    build:
+      context: ../dashboard/frontend
+      dockerfile: ../docker/Dockerfile.frontend
+    ports:
+      - "3000:3000"
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: superagent
+      POSTGRES_USER: superuser
+      POSTGRES_PASSWORD: superpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  dashboard:
+    build:
+      context: ../super-agent-starter/dashboard
+      dockerfile: ../docker/Dockerfile.dashboard
+    ports:
+      - "5020:5020"
+    volumes:
+      - ../super-agent-starter/utils:/app/utils
+      - ../super-agent-starter/secrets:/app/secrets
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+volumes:
+  pgdata:

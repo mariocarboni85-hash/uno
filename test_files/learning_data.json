@@ -1,0 +1,192 @@
+{
+  "metrics": {
+    "success_rate": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "speed": [
+      0.5,
+      1.2,
+      0.3,
+      0.4,
+      1.5,
+      0.6,
+      2.0,
+      0.45
+    ],
+    "tool_usage": {
+      "files": 4,
+      "browser": 2,
+      "shell": 2
+    }
+  },
+  "patterns": {
+    "file_operation:files": {
+      "outcomes": [
+        "success",
+        "success",
+        "success",
+        "success"
+      ],
+      "count": 4
+    },
+    "web_operation:browser": {
+      "outcomes": [
+        "success",
+        "failure"
+      ],
+      "count": 2
+    },
+    "general:shell": {
+      "outcomes": [
+        "success",
+        "failure"
+      ],
+      "count": 2
+    }
+  },
+  "experiences": [
+    {
+      "timestamp": "2025-12-01T23:41:15.960299",
+      "task": "read config file",
+      "tool": "files",
+      "action": {
+        "path": "config.json"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 0.5,
+      "context": {
+        "task_type": "file_operation"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960344",
+      "task": "search python docs",
+      "tool": "browser",
+      "action": {
+        "query": "python"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 1.2,
+      "context": {
+        "task_type": "web_operation"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960371",
+      "task": "list directory",
+      "tool": "shell",
+      "action": {
+        "cmd": "ls"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 0.3,
+      "context": {
+        "task_type": "general"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960393",
+      "task": "read config file",
+      "tool": "files",
+      "action": {
+        "path": "config.json"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 0.4,
+      "context": {
+        "task_type": "file_operation"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960415",
+      "task": "search javascript docs",
+      "tool": "browser",
+      "action": {
+        "query": "js"
+      },
+      "outcome": "failed",
+      "success": false,
+      "duration": 1.5,
+      "context": {
+        "task_type": "web_operation"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960436",
+      "task": "read data file",
+      "tool": "files",
+      "action": {
+        "path": "data.txt"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 0.6,
+      "context": {
+        "task_type": "file_operation"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960456",
+      "task": "execute python script",
+      "tool": "shell",
+      "action": {
+        "cmd": "python test.py"
+      },
+      "outcome": "failed",
+      "success": false,
+      "duration": 2.0,
+      "context": {
+        "task_type": "general"
+      }
+    },
+    {
+      "timestamp": "2025-12-01T23:41:15.960476",
+      "task": "read config file",
+      "tool": "files",
+      "action": {
+        "path": "config.json"
+      },
+      "outcome": "completed",
+      "success": true,
+      "duration": 0.45,
+      "context": {
+        "task_type": "file_operation"
+      }
+    }
+  ],
+  "strategies": {
+    "fast_execution": {
+      "config": {
+        "timeout": 5,
+        "retries": 1
+      },
+      "uses": 2,
+      "successes": 2,
+      "avg_duration": 0.9
+    },
+    "reliable_execution": {
+      "config": {
+        "timeout": 30,
+        "retries": 3
+      },
+      "uses": 2,
+      "successes": 1,
+      "avg_duration": 3.5
+    }
+  },
+  "config": {
+    "learning_rate": 0.1,
+    "exploration_rate": 0.11809800000000004
+  }
+}

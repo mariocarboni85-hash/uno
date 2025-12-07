@@ -1,0 +1,28 @@
+Problema dell'utente:
+Prossimo passo che preparo per te (alto impatto e semplice da usare)
+
+=== Team Demo ===
+Input utente: Prossimo passo che preparo per te (alto impatto e semplice da usare)
+
+[Analista Requisiti]
+Grazie per avermi informato del problema da risolvere! Tuttavia, devo chiederti alcune domande per capire meglio il contesto.
+
+- Cosa è "prossimo passo" che stai preparando per me? È un'integrazione di tecnologia, una configurazione di sistema o qualcos'altro?
+- Quali sono gli "alto impatto" che intendi con questo termine? Sono conseguenze significative per il tuo utente o semplicemente caratteristiche importanti della soluzione?
+
+Una volta chiarito il contesto, posso iniziare a fornirti suggerimenti e proposte per risolvere il problema.
+
+[Architetto/Designer]
+Ollama connection error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+
+[Product Owner]
+Grazie per avermi informato del problema!
+
+Per chiarire il problema, vorrei fare alcune domande:
+
+1. Qual è l'ambiente in cui si sta cercando di stabilire la connessione con Ollama? È un ambiente locale, remoto o in cloud?
+2. Il sistema che sta cercando di stabilire la connessione (dove il problema si verifica) è stato recentemente installato, aggiornato o modificato?
+3. Ha funzionato correttamente in passato senza problemi?
+4. Qual è lo scopo della connessione con Ollama? È per un'applicazione specifica o per un'attività generale?
+
+Sono queste le informazioni che ti posso richiedere per better capire il problema e proporre una soluzione efficace!

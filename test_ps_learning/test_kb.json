@@ -1,0 +1,1197 @@
+{
+  "exported": "2025-11-26T11:39:22.823986",
+  "commands": {
+    "Get-Process": {
+      "first_seen": "2025-11-26T11:35:22.687798",
+      "usage_count": 73,
+      "success_count": 73,
+      "failure_count": 0,
+      "contexts": [
+        "monitoring"
+      ],
+      "parameters": {
+        "-Process": 73
+      },
+      "examples": [
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.687798",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.695470",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.726861",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.738602",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.739716",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.740726",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.741848",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.742919",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.744029",
+          "success": true
+        },
+        {
+          "command": "Get-Process",
+          "timestamp": "2025-11-26T11:35:22.745143",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.816745"
+    },
+    "Get-Service": {
+      "first_seen": "2025-11-26T11:35:22.689763",
+      "usage_count": 25,
+      "success_count": 25,
+      "failure_count": 0,
+      "contexts": [
+        "service management"
+      ],
+      "parameters": {
+        "-Service": 25
+      },
+      "examples": [
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:35:22.689763",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:35:22.727908",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:35:22.764623",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:36:46.685470",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:36:46.732154",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:36:46.774845",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:37:09.174539",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:37:09.216207",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:37:09.257497",
+          "success": true
+        },
+        {
+          "command": "Get-Service",
+          "timestamp": "2025-11-26T11:37:23.740205",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.818732"
+    },
+    "Set-Location": {
+      "first_seen": "2025-11-26T11:35:22.691485",
+      "usage_count": 44,
+      "success_count": 44,
+      "failure_count": 0,
+      "contexts": [
+        "navigation"
+      ],
+      "parameters": {
+        "-Location": 44
+      },
+      "examples": [
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.691485",
+          "success": true
+        },
+        {
+          "command": "Set-Location",
+          "timestamp": "2025-11-26T11:35:22.730871",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.749743",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.751201",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.752435",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.753577",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:35:22.754668",
+          "success": true
+        },
+        {
+          "command": "Set-Location",
+          "timestamp": "2025-11-26T11:35:22.765815",
+          "success": true
+        },
+        {
+          "command": "Set-Location C:\\Users",
+          "timestamp": "2025-11-26T11:36:46.687029",
+          "success": true
+        },
+        {
+          "command": "Set-Location",
+          "timestamp": "2025-11-26T11:36:46.737367",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.820485"
+    },
+    "New-Item": {
+      "first_seen": "2025-11-26T11:35:22.692459",
+      "usage_count": 43,
+      "success_count": 43,
+      "failure_count": 0,
+      "contexts": [
+        "file operations",
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Item": 43,
+        "-ItemType": 15,
+        "-Path": 7
+      },
+      "examples": [
+        {
+          "command": "New-Item -ItemType Directory",
+          "timestamp": "2025-11-26T11:35:22.692459",
+          "success": true
+        },
+        {
+          "command": "New-Item",
+          "timestamp": "2025-11-26T11:35:22.733823",
+          "success": true
+        },
+        {
+          "command": "New-Item test0",
+          "timestamp": "2025-11-26T11:35:22.755785",
+          "success": true
+        },
+        {
+          "command": "New-Item test1",
+          "timestamp": "2025-11-26T11:35:22.756927",
+          "success": true
+        },
+        {
+          "command": "New-Item test2",
+          "timestamp": "2025-11-26T11:35:22.758206",
+          "success": true
+        },
+        {
+          "command": "New-Item",
+          "timestamp": "2025-11-26T11:35:22.767241",
+          "success": true
+        },
+        {
+          "command": "New-Item -ItemType Directory",
+          "timestamp": "2025-11-26T11:36:46.688294",
+          "success": true
+        },
+        {
+          "command": "New-Item -Path $backupDir -ItemType Directory",
+          "timestamp": "2025-11-26T11:36:46.705877",
+          "success": true
+        },
+        {
+          "command": "New-Item",
+          "timestamp": "2025-11-26T11:36:46.740220",
+          "success": true
+        },
+        {
+          "command": "New-Item test0",
+          "timestamp": "2025-11-26T11:36:46.764530",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.822311"
+    },
+    "Remove-Item": {
+      "first_seen": "2025-11-26T11:35:22.693579",
+      "usage_count": 20,
+      "success_count": 8,
+      "failure_count": 12,
+      "contexts": [
+        "cleanup"
+      ],
+      "parameters": {
+        "-Item": 20
+      },
+      "examples": [
+        {
+          "command": "Remove-Item test.txt",
+          "timestamp": "2025-11-26T11:35:22.693579",
+          "success": false
+        },
+        {
+          "command": "Remove-Item",
+          "timestamp": "2025-11-26T11:35:22.735204",
+          "success": true
+        },
+        {
+          "command": "Remove-Item protected.txt",
+          "timestamp": "2025-11-26T11:35:22.759325",
+          "success": false
+        },
+        {
+          "command": "Remove-Item test.txt",
+          "timestamp": "2025-11-26T11:36:46.689376",
+          "success": false
+        },
+        {
+          "command": "Remove-Item",
+          "timestamp": "2025-11-26T11:36:46.741729",
+          "success": true
+        },
+        {
+          "command": "Remove-Item protected.txt",
+          "timestamp": "2025-11-26T11:36:46.768211",
+          "success": false
+        },
+        {
+          "command": "Remove-Item test.txt",
+          "timestamp": "2025-11-26T11:37:09.178877",
+          "success": false
+        },
+        {
+          "command": "Remove-Item",
+          "timestamp": "2025-11-26T11:37:09.224255",
+          "success": true
+        },
+        {
+          "command": "Remove-Item protected.txt",
+          "timestamp": "2025-11-26T11:37:09.252108",
+          "success": false
+        },
+        {
+          "command": "Remove-Item test.txt",
+          "timestamp": "2025-11-26T11:37:41.100034",
+          "success": false
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.792463"
+    },
+    "null": {
+      "first_seen": "2025-11-26T11:39:22.783488",
+      "usage_count": 2,
+      "success_count": 2,
+      "failure_count": 0,
+      "contexts": [],
+      "parameters": {
+        "-ChildItem": 1,
+        "-ExecutionPolicy": 1
+      },
+      "examples": [
+        {
+          "command": "Get-ChildItem",
+          "timestamp": "2025-11-26T11:39:22.783488",
+          "success": true
+        },
+        {
+          "command": "Set-ExecutionPolicy",
+          "timestamp": "2025-11-26T11:39:22.788982",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.788982"
+    },
+    "Get-Date": {
+      "first_seen": "2025-11-26T11:35:22.701583",
+      "usage_count": 8,
+      "success_count": 8,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Format": 8,
+        "-Date": 8
+      },
+      "examples": [
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:35:22.701583",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:36:46.703616",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:37:09.187082",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:37:41.107868",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:38:03.893988",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:38:25.399610",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:39:02.512825",
+          "success": true
+        },
+        {
+          "command": "$date = Get-Date -Format \"yyyyMMdd\"",
+          "timestamp": "2025-11-26T11:39:22.749128",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.749128"
+    },
+    "Test-Path": {
+      "first_seen": "2025-11-26T11:35:22.702837",
+      "usage_count": 8,
+      "success_count": 8,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-not": 8,
+        "-Path": 8
+      },
+      "examples": [
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:35:22.702837",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:36:46.704797",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:37:09.188501",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:37:41.109299",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:38:03.895896",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:38:25.401261",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:39:02.514492",
+          "success": true
+        },
+        {
+          "command": "if (-not (Test-Path $backupDir)) {",
+          "timestamp": "2025-11-26T11:39:22.752008",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.752008"
+    },
+    "Get-Content": {
+      "first_seen": "2025-11-26T11:35:22.729770",
+      "usage_count": 8,
+      "success_count": 8,
+      "failure_count": 0,
+      "contexts": [],
+      "parameters": {
+        "-Content": 8
+      },
+      "examples": [
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:35:22.729770",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:36:46.735300",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:37:09.218895",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:37:41.138917",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:38:03.933120",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:38:25.434611",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:39:02.547204",
+          "success": true
+        },
+        {
+          "command": "Get-Content",
+          "timestamp": "2025-11-26T11:39:22.785397",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.785397"
+    },
+    "Write-Host": {
+      "first_seen": "2025-11-26T11:36:46.707216",
+      "usage_count": 21,
+      "success_count": 21,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Host": 21
+      },
+      "examples": [
+        {
+          "command": "Write-Host \"Created backup directory: $backupDir\"",
+          "timestamp": "2025-11-26T11:36:46.707216",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Backed up: $($file.Name)\"",
+          "timestamp": "2025-11-26T11:36:46.712907",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Total files backed up: $count\"",
+          "timestamp": "2025-11-26T11:36:46.714582",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Created backup directory: $backupDir\"",
+          "timestamp": "2025-11-26T11:37:09.191280",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Backed up: $($file.Name)\"",
+          "timestamp": "2025-11-26T11:37:09.197761",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Total files backed up: $count\"",
+          "timestamp": "2025-11-26T11:37:09.199132",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Created backup directory: $backupDir\"",
+          "timestamp": "2025-11-26T11:37:41.112103",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Backed up: $($file.Name)\"",
+          "timestamp": "2025-11-26T11:37:41.118366",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Total files backed up: $count\"",
+          "timestamp": "2025-11-26T11:37:41.120137",
+          "success": true
+        },
+        {
+          "command": "Write-Host \"Created backup directory: $backupDir\"",
+          "timestamp": "2025-11-26T11:38:03.899531",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.764247"
+    },
+    "Where-Object": {
+      "first_seen": "2025-11-26T11:36:46.708597",
+      "usage_count": 7,
+      "success_count": 7,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Date": 7,
+        "-Object": 7,
+        "-eq": 7
+      },
+      "examples": [
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:36:46.708597",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:37:09.192777",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:37:41.113544",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:38:03.901368",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:38:25.406859",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:39:02.519397",
+          "success": true
+        },
+        {
+          "command": "Where-Object {$_.LastWriteTime.Date -eq (Get-Date).Date}",
+          "timestamp": "2025-11-26T11:39:22.757102",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.757102"
+    },
+    "Join-Path": {
+      "first_seen": "2025-11-26T11:36:46.709977",
+      "usage_count": 7,
+      "success_count": 7,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Path": 7
+      },
+      "examples": [
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:36:46.709977",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:37:09.194314",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:37:41.114941",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:38:03.903249",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:38:25.408741",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:39:02.521004",
+          "success": true
+        },
+        {
+          "command": "$destPath = Join-Path $backupDir \"$date-$($file.Name)\"",
+          "timestamp": "2025-11-26T11:39:22.758912",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.758912"
+    },
+    "Copy-Item": {
+      "first_seen": "2025-11-26T11:36:46.711413",
+      "usage_count": 7,
+      "success_count": 7,
+      "failure_count": 0,
+      "contexts": [
+        "script:backup_script.ps1"
+      ],
+      "parameters": {
+        "-Path": 7,
+        "-Item": 7,
+        "-Destination": 7
+      },
+      "examples": [
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:36:46.711413",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:37:09.196206",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:37:41.116337",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:38:03.905379",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:38:25.410604",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:39:02.522998",
+          "success": true
+        },
+        {
+          "command": "Copy-Item -Path $file.FullName -Destination $destPath",
+          "timestamp": "2025-11-26T11:39:22.760804",
+          "success": true
+        }
+      ],
+      "last_used": "2025-11-26T11:39:22.760804"
+    }
+  },
+  "scripts": {
+    "backup_script.ps1": {
+      "name": "backup_script.ps1",
+      "timestamp": "2025-11-26T11:39:22.747200",
+      "metrics": {
+        "total_lines": 29,
+        "code_lines": 16,
+        "comment_lines": 6,
+        "commands": 16,
+        "unique_cmdlets": 7,
+        "unique_parameters": 13,
+        "unique_variables": 8
+      },
+      "cmdlets": {
+        "Write-Host": 3,
+        "Get-Date": 1,
+        "Test-Path": 1,
+        "New-Item": 1,
+        "Where-Object": 1,
+        "Join-Path": 1,
+        "Copy-Item": 1
+      },
+      "parameters": {
+        "-Path": 5,
+        "-Host": 3,
+        "-Date": 2,
+        "-Item": 2,
+        "-Format": 1,
+        "-not": 1,
+        "-ItemType": 1,
+        "-Recurse": 1,
+        "-File": 1,
+        "-ChildItem": 1
+      },
+      "patterns": {
+        "variable": 14,
+        "parameter": 10,
+        "cmdlet": 9,
+        "path": 2,
+        "logical": 1,
+        "pipeline": 1,
+        "where": 1,
+        "script_block": 1,
+        "comparison": 1
+      },
+      "complexity_avg": 1.96875
+    }
+  },
+  "patterns": {
+    "cmdlet:frequency": {
+      "pattern": "cmdlet",
+      "count": 80,
+      "examples": [
+        "Get-Process",
+        "Where-Object",
+        "Select-Object",
+        "Get-Service",
+        "Write-Host"
+      ]
+    },
+    "parameter:frequency": {
+      "pattern": "parameter",
+      "count": 144,
+      "examples": [
+        "-Process",
+        "-Object",
+        "-gt",
+        "-Object",
+        "-ChildItem",
+        "-Path",
+        "-Filter",
+        "-Recurse"
+      ]
+    },
+    "variable:frequency": {
+      "pattern": "variable",
+      "count": 48,
+      "examples": [
+        "$_",
+        "$services",
+        "$services",
+        "$_",
+        "$var",
+        "$null"
+      ]
+    },
+    "pipeline:frequency": {
+      "pattern": "pipeline",
+      "count": 40,
+      "examples": [
+        "|",
+        "|",
+        "|",
+        "|",
+        "|"
+      ]
+    },
+    "where:frequency": {
+      "pattern": "where",
+      "count": 8,
+      "examples": [
+        "Where-Object",
+        "Where-Object",
+        "Where-Object",
+        "Where-Object",
+        "Where-Object"
+      ]
+    },
+    "select:frequency": {
+      "pattern": "select",
+      "count": 8,
+      "examples": [
+        "Select-Object",
+        "Select-Object",
+        "Select-Object",
+        "Select-Object",
+        "Select-Object"
+      ]
+    },
+    "script_block:frequency": {
+      "pattern": "script_block",
+      "count": 32,
+      "examples": [
+        "{$_.CPU -gt 100}",
+        "{Write-Host $_.Name}",
+        "{ Write-Host 'null' }",
+        "{ Write-Host 'not null' }",
+        "{$_.CPU -gt 100}"
+      ]
+    },
+    "comparison:frequency": {
+      "pattern": "comparison",
+      "count": 16,
+      "examples": [
+        "-gt",
+        "-eq",
+        "-gt",
+        "-eq",
+        "-gt"
+      ]
+    },
+    "filter:frequency": {
+      "pattern": "filter",
+      "count": 8,
+      "examples": [
+        "-Filter",
+        "-Filter",
+        "-Filter",
+        "-Filter",
+        "-Filter"
+      ]
+    },
+    "path:frequency": {
+      "pattern": "path",
+      "count": 8,
+      "examples": [
+        "C:\\Users",
+        "C:\\Users",
+        "C:\\Users",
+        "C:\\Users",
+        "C:\\Users"
+      ]
+    },
+    "foreach:frequency": {
+      "pattern": "foreach",
+      "count": 8,
+      "examples": [
+        "ForEach-Object",
+        "ForEach-Object",
+        "ForEach-Object",
+        "ForEach-Object",
+        "ForEach-Object"
+      ]
+    }
+  },
+  "errors": {
+    "CommandNotFoundException:Get-Proccess": {
+      "first_seen": "2025-11-26T11:35:22.718703",
+      "occurrences": 16,
+      "command": "Get-Proccess",
+      "error_type": "CommandNotFoundException",
+      "messages": [
+        {
+          "message": "The term 'Get-Proccess' is not recognized",
+          "timestamp": "2025-11-26T11:35:22.718703"
+        },
+        {
+          "message": "The term 'Get-Proccess' is not recognized",
+          "timestamp": "2025-11-26T11:35:22.723184"
+        },
+        {
+          "message": "The term 'Get-Proccess' is not recognized",
+          "timestamp": "2025-11-26T11:36:46.724696"
+        },
+        {
+          "message": "The term 'Get-Proccess' is not recognized",
+          "timestamp": "2025-11-26T11:36:46.728225"
+        },
+        {
+          "message": "The term 'Get-Proccess' is not recognized",
+          "timestamp": "2025-11-26T11:37:09.208039"
+        }
+      ],
+      "last_seen": "2025-11-26T11:39:22.777580"
+    },
+    "PathNotFoundException:Set-Location Z:\\NoPath": {
+      "first_seen": "2025-11-26T11:35:22.719479",
+      "occurrences": 8,
+      "command": "Set-Location Z:\\NoPath",
+      "error_type": "PathNotFoundException",
+      "messages": [
+        {
+          "message": "Cannot find path 'Z:\\NoPath'",
+          "timestamp": "2025-11-26T11:35:22.719479"
+        },
+        {
+          "message": "Cannot find path 'Z:\\NoPath'",
+          "timestamp": "2025-11-26T11:36:46.725511"
+        },
+        {
+          "message": "Cannot find path 'Z:\\NoPath'",
+          "timestamp": "2025-11-26T11:37:09.208947"
+        },
+        {
+          "message": "Cannot find path 'Z:\\NoPath'",
+          "timestamp": "2025-11-26T11:37:41.129856"
+        },
+        {
+          "message": "Cannot find path 'Z:\\NoPath'",
+          "timestamp": "2025-11-26T11:38:03.921709"
+        }
+      ],
+      "last_seen": "2025-11-26T11:39:22.775293"
+    },
+    "UnauthorizedAccessException:Remove-Item -Path C:\\Windows\\System32": {
+      "first_seen": "2025-11-26T11:35:22.720864",
+      "occurrences": 8,
+      "command": "Remove-Item -Path C:\\Windows\\System32",
+      "error_type": "UnauthorizedAccessException",
+      "messages": [
+        {
+          "message": "Access denied",
+          "timestamp": "2025-11-26T11:35:22.720864"
+        },
+        {
+          "message": "Access denied",
+          "timestamp": "2025-11-26T11:36:46.726371"
+        },
+        {
+          "message": "Access denied",
+          "timestamp": "2025-11-26T11:37:09.209897"
+        },
+        {
+          "message": "Access denied",
+          "timestamp": "2025-11-26T11:37:41.130611"
+        },
+        {
+          "message": "Access denied",
+          "timestamp": "2025-11-26T11:38:03.922672"
+        }
+      ],
+      "last_seen": "2025-11-26T11:39:22.776096"
+    },
+    "FileNotFoundException:Get-Content nofile.txt": {
+      "first_seen": "2025-11-26T11:35:22.721994",
+      "occurrences": 8,
+      "command": "Get-Content nofile.txt",
+      "error_type": "FileNotFoundException",
+      "messages": [
+        {
+          "message": "Cannot find path 'nofile.txt'",
+          "timestamp": "2025-11-26T11:35:22.721994"
+        },
+        {
+          "message": "Cannot find path 'nofile.txt'",
+          "timestamp": "2025-11-26T11:36:46.727298"
+        },
+        {
+          "message": "Cannot find path 'nofile.txt'",
+          "timestamp": "2025-11-26T11:37:09.210739"
+        },
+        {
+          "message": "Cannot find path 'nofile.txt'",
+          "timestamp": "2025-11-26T11:37:41.131305"
+        },
+        {
+          "message": "Cannot find path 'nofile.txt'",
+          "timestamp": "2025-11-26T11:38:03.923588"
+        }
+      ],
+      "last_seen": "2025-11-26T11:39:22.776820"
+    }
+  },
+  "aliases": {},
+  "insights": {
+    "summary": {
+      "total_commands_learned": 13,
+      "total_scripts_analyzed": 1,
+      "total_patterns_tracked": 11,
+      "total_errors_tracked": 4,
+      "total_aliases": 0,
+      "success_rate": 95.6,
+      "session_stats": {
+        "commands_learned": 4,
+        "patterns_detected": 0,
+        "errors_tracked": 0,
+        "scripts_analyzed": 0
+      }
+    },
+    "top_cmdlets": [
+      {
+        "cmdlet": "Get-Process",
+        "usage": 73
+      },
+      {
+        "cmdlet": "Set-Location",
+        "usage": 44
+      },
+      {
+        "cmdlet": "New-Item",
+        "usage": 43
+      },
+      {
+        "cmdlet": "Get-Service",
+        "usage": 25
+      },
+      {
+        "cmdlet": "Write-Host",
+        "usage": 21
+      },
+      {
+        "cmdlet": "Remove-Item",
+        "usage": 20
+      },
+      {
+        "cmdlet": "Get-Date",
+        "usage": 8
+      },
+      {
+        "cmdlet": "Test-Path",
+        "usage": 8
+      },
+      {
+        "cmdlet": "Get-Content",
+        "usage": 8
+      },
+      {
+        "cmdlet": "Where-Object",
+        "usage": 7
+      }
+    ],
+    "top_verbs": [
+      {
+        "verb": "Get",
+        "usage": 114
+      },
+      {
+        "verb": "Set",
+        "usage": 44
+      },
+      {
+        "verb": "New",
+        "usage": 43
+      },
+      {
+        "verb": "Write",
+        "usage": 21
+      },
+      {
+        "verb": "Remove",
+        "usage": 20
+      },
+      {
+        "verb": "Test",
+        "usage": 8
+      },
+      {
+        "verb": "Where",
+        "usage": 7
+      },
+      {
+        "verb": "Join",
+        "usage": 7
+      },
+      {
+        "verb": "Copy",
+        "usage": 7
+      }
+    ],
+    "common_errors": [
+      {
+        "error": "CommandNotFoundException:Get-Proccess",
+        "occurrences": 16
+      },
+      {
+        "error": "PathNotFoundException:Set-Location Z:\\NoPath",
+        "occurrences": 8
+      },
+      {
+        "error": "UnauthorizedAccessException:Remove-Item -Path C:\\Windows\\System32",
+        "occurrences": 8
+      },
+      {
+        "error": "FileNotFoundException:Get-Content nofile.txt",
+        "occurrences": 8
+      }
+    ],
+    "top_patterns": [
+      {
+        "pattern": "parameter:frequency",
+        "count": 144
+      },
+      {
+        "pattern": "cmdlet:frequency",
+        "count": 80
+      },
+      {
+        "pattern": "variable:frequency",
+        "count": 48
+      },
+      {
+        "pattern": "pipeline:frequency",
+        "count": 40
+      },
+      {
+        "pattern": "script_block:frequency",
+        "count": 32
+      },
+      {
+        "pattern": "comparison:frequency",
+        "count": 16
+      },
+      {
+        "pattern": "where:frequency",
+        "count": 8
+      },
+      {
+        "pattern": "select:frequency",
+        "count": 8
+      },
+      {
+        "pattern": "filter:frequency",
+        "count": 8
+      },
+      {
+        "pattern": "path:frequency",
+        "count": 8
+      }
+    ],
+    "recommendations": [
+      "Usi molto Get-* ma poco Set-*. Considera di automatizzare anche modifiche, non solo letture.",
+      "Usa poco le pipeline (|). Le pipeline rendono PowerShell molto potente per combinare comandi.",
+      "Tasso di errori elevato (>30%). Controlla parametri e sintassi prima di eseguire comandi critici.",
+      "Impara alias comuni (ls → Get-ChildItem, cd → Set-Location, % → ForEach-Object) per velocizzare il lavoro."
+    ]
+  }
+}

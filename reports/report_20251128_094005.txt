@@ -1,0 +1,25 @@
+Problema dell'utente:
+Voglio progettare un'app mobile per Android e iOS che permetta ai dipendenti di una azienda di aprire ticket interni, chattare con un assistente AI e vedere lo stato dei ticket.
+
+=== Team Demo ===
+Input utente: Voglio progettare un'app mobile per Android e iOS che permetta ai dipendenti di una azienda di aprire ticket interni, chattare con un assistente AI e vedere lo stato dei ticket.
+
+[Analista Requisiti]
+Ollama connection error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+
+[Architetto/Designer]
+Ollama connection error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)
+
+[Product Owner]
+Grazie per avermi fornito il contesto del problema.
+
+Per comprendere meglio il problema, vorrei fare alcune domande:
+
+1. Qual è l'applicazione che sta cercando di connettersi con l'host 'localhost' e porta 11434?
+2. Cosa si intende per "Ollama"? È un protocollo specifico o un termine tecnico utilizzato all'interno della tua applicazione?
+3. Qual è il comportamento dell'applicazione quando verifica l'Ollama connection? Si blocca, mostra un errore o continua a funzionare con un comportamento imprevedibile?
+
+Con queste informazioni, posso aiutarti a definire una roadmap di prodotto più efficace per risolvere il problema e migliorare la stabilità dell'applicazione.
+
+[QA Reviewer]
+Ollama connection error: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)

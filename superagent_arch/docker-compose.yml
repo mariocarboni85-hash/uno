@@ -1,0 +1,254 @@
+services:
+
+  # ------------------------------------------------------
+  # 1) CORE – Motore principale del Super Agent
+  # ------------------------------------------------------
+  core:
+    build: ./core
+    container_name: superagent_core
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8000:8000"
+    depends_on:
+      - brain
+      - gateway
+    environment:
+      - LOG_LEVEL=INFO
+
+  # ------------------------------------------------------
+  # 2) BRAIN – Nucleo decisionale
+  # ------------------------------------------------------
+  brain:
+    build: ./brain
+    container_name: superagent_brain
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8001:8001"
+    environment:
+      - MEMORY_BACKEND=storage
+      - ANALYTICS_URL=http://analytics:8009
+    volumes:
+      - research_memory_data:/app/research_memory
+
+  # ------------------------------------------------------
+  # 3) TEAM A – Costruzione Software + Agenti
+  # ------------------------------------------------------
+  team_a:
+    build: ./team_a
+    container_name: team_a_builder
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8002:8002"
+    environment:
+      - SANDBOX_URL=http://sandbox:8011
+
+  # ------------------------------------------------------
+  # 4) TEAM B – Analisi Dati & Automazioni
+  # ------------------------------------------------------
+  team_b:
+    build: ./team_b
+    container_name: team_b_analytics
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8003:8003"
+
+  # ------------------------------------------------------
+  # 5) TEAM C – Comunicazioni & Reportistica
+  # ------------------------------------------------------
+  team_c:
+    build: ./team_c
+    container_name: team_c_comm
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8004:8004"
+
+  # ------------------------------------------------------
+  # 6) GATEWAY – API Gateway (punto di accesso unico)
+  # ------------------------------------------------------
+  gateway:
+    build: ./gateway
+    container_name: superagent_gateway
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8005:8005"
+
+  # ------------------------------------------------------
+  # 7) LOGGER – Logger diagnostico
+  # ------------------------------------------------------
+  logger:
+    build: ./logger
+    container_name: superagent_logger
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8006:8006"
+
+  # ------------------------------------------------------
+  # 8) SCHEDULER – Scheduler di esecuzione
+  # ------------------------------------------------------
+  scheduler:
+    build: ./scheduler
+    container_name: superagent_scheduler
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8007:8007"
+
+  # ------------------------------------------------------
+  # 9) SECURITY – Sicurezza e protezione
+  # ------------------------------------------------------
+  security:
+    build: ./security
+    container_name: superagent_security
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8008:8008"
+
+  # ------------------------------------------------------
+  # 10) STORAGE – Archiviazione
+  # ------------------------------------------------------
+  storage:
+    build: ./storage
+    container_name: superagent_storage
+    restart: always
+    networks:
+      - supernet
+
+  # ------------------------------------------------------
+  # 11) ANALYTICS – Analisi e reporting
+  # ------------------------------------------------------
+  analytics:
+    build: ./analytics
+    container_name: superagent_analytics
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8009:8009"
+
+  # ------------------------------------------------------
+  # 12) EVENTS – Eventi e notifiche
+  # ------------------------------------------------------
+  events:
+    build: ./events
+    container_name: superagent_events
+    restart: always
+    networks:
+      - supernet
+
+  # ------------------------------------------------------
+  # 13) MOBILE_API – API per dispositivi mobili
+  # ------------------------------------------------------
+  mobile_api:
+    build: ./mobile_api
+    container_name: superagent_mobile_api
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8010:8010"
+
+
+  # ------------------------------------------------------
+  # 15) OPTIMIZER – Ottimizzazione avanzata
+  # ------------------------------------------------------
+  optimizer:
+    build: ./optimizer
+    container_name: optimizer
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8012:8012"
+
+  # ------------------------------------------------------
+  # 14) SANDBOX – Sandbox per test
+  # ------------------------------------------------------
+  sandbox:
+    build: ./sandbox
+    container_name: superagent_sandbox
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8011:8011"
+
+
+  # ------------------------------------------------------
+  # OPTIMIZER ADVANCED – Ottimizzazione avanzata
+  # ------------------------------------------------------
+  optimizer_advanced:
+    build: ./optimizer_advanced
+    container_name: optimizer_advanced
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8013:8012"
+
+  # ------------------------------------------------------
+  # AGENT HUB – Raccolta dati agenti esterni
+  # ------------------------------------------------------
+  agent_hub:
+    build: ./agent_hub
+    container_name: agent_hub
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8014:8000"
+
+  # ------------------------------------------------------
+  # AGENT EVOLUTION – Apprendimento avanzato agenti esterni
+  # ------------------------------------------------------
+  agent_evolution:
+    build: ./agent_evolution
+    container_name: agent_evolution
+    restart: always
+    networks:
+      - supernet
+    ports:
+      - "8015:8000"
+
+  # ------------------------------------------------------
+  # SELF HEALING – Auto-diagnosi e riparazione container
+  # ------------------------------------------------------
+  self_healing:
+    build: ./self_healing
+    container_name: self_healing
+    restart: always
+    networks:
+      - supernet
+
+  # ------------------------------------------------------
+  # GRAPHICS – Servizio grafica e immagini
+  # ------------------------------------------------------
+  graphics:
+    build: ./graphics
+    container_name: graphics
+    restart: always
+    networks:
+      - supernet
+
+networks:
+  supernet:
+    driver: bridge
+
+volumes:
+  research_memory_data:

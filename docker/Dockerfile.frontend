@@ -1,0 +1,7 @@
+# Dockerfile per frontend React
+FROM node:18-alpine
+WORKDIR /app
+COPY ../dashboard/frontend /app
+RUN npm install && npm run build
+EXPOSE 3000
+CMD ["npx", "serve", "-s", "build"]

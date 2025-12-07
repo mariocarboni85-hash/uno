@@ -1,0 +1,22 @@
+services:
+  super_agent_core:
+    build:
+      context: .
+      dockerfile: Dockerfile.super_agent_core
+    container_name: super_agent_core
+    ports:
+      - "5001:5000"
+    networks:
+      - superagentnet
+  super_agent_dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.super_agent_dashboard
+    container_name: super_agent_dashboard
+    ports:
+      - "5000:5000"
+    networks:
+      - superagentnet
+networks:
+  superagentnet:
+    driver: bridge

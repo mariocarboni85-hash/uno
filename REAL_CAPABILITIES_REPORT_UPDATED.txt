@@ -1,0 +1,44 @@
+================================================================================
+SUPER AGENT - RAPPORTO CAPACITÀ REALI AGGIORNATO
+================================================================================
+
+Data: 2025-12-01 23:41:24
+Python: 3.13.9
+
+RISULTATI:
+  Test Passati: 7/7
+  Success Rate: 100.0%
+  Voto: A+ (ECCELLENTE)
+
+CAPACITÀ TESTATE:
+  ✓ Code Generation
+  ✓ Virtual Environment
+  ✓ Library Updater
+  ✓ VS Code Learning
+  ✓ VS Code Advanced Integration
+  ✓ Stress Test
+  ✓ Interfaccia Diretta con SuperAgent
+
+METRICHE:
+  code_gen_speed: 0.000s
+  code_gen_lines: 42
+  venv_count: 3
+  venv_packages: 462
+  venv_ops_time: 7.990s
+  outdated_packages: 35
+  update_check_time: 45.98s
+  patterns_learned: 22
+  learning_time: 0.018s
+  code_intelligence_time: 0.637s
+  quality_analysis_time: 0.163s
+  refactoring_time: 0.020s
+  workspace_time: 414.336s
+  documentation_time: 0.018s
+  comprehensive_time: 0.118s
+  quality_score: 100.0
+  ast_classes: 1
+  ast_functions: 1
+  stress_gen_time: 0.000s
+  stress_ast_time: 0.808s
+
+STATUS: 🌟 SUPER AGENT: FULLY OPERATIONAL

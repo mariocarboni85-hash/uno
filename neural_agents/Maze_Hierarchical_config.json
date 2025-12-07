@@ -1,0 +1,46 @@
+{
+  "name": "Maze_Hierarchical",
+  "architecture": {
+    "name": "Maze_Hierarchical",
+    "agent_type": "hierarchical",
+    "state_dim": 20,
+    "action_dim": 8,
+    "hidden_layers": [
+      512,
+      256,
+      128
+    ],
+    "activation": "leaky_relu",
+    "use_attention": false,
+    "use_memory": false,
+    "memory_size": 1000,
+    "learning_rate": 0.0005,
+    "discount_factor": 0.99,
+    "exploration_strategy": "epsilon_greedy"
+  },
+  "config": {
+    "epochs": 1000,
+    "batch_size": 32,
+    "buffer_size": 10000,
+    "target_update_freq": 10,
+    "evaluation_freq": 100,
+    "save_freq": 500,
+    "early_stopping_patience": 50,
+    "use_cuda": true,
+    "multi_gpu": false,
+    "distributed": false
+  },
+  "created_at": "2025-12-05T14:43:39.258179",
+  "training_stats": {
+    "episodes": 0,
+    "total_steps": 0,
+    "average_reward": 0.0,
+    "best_reward": -Infinity
+  },
+  "networks": [
+    "hierarchical"
+  ],
+  "optimizers": [
+    "h_optimizer"
+  ]
+}

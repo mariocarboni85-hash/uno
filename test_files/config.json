@@ -1,0 +1,14 @@
+{
+  "nome": "SuperAgent",
+  "versione": "1.0",
+  "features": [
+    "browser",
+    "files",
+    "shell",
+    "arduino"
+  ],
+  "config": {
+    "timeout": 30,
+    "debug": true
+  }
+}

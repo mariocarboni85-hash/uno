@@ -1,0 +1,3 @@
+# requirements_ai.txt
+scikit-learn
+numpy

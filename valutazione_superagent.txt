@@ -1,0 +1,29 @@
+# Valutazione sistema Super Agent Workspace
+
+**Descrizione:**
+Super Agent Workspace è un ambiente di lavoro grafico sviluppato in Python (PyQt5) che integra:
+- Editor di testo per file Python
+- Chat AI avanzata (consigli, codice, esecuzione comandi Python)
+- Salvataggio storico conversazione
+- Possibilità di impartire ordini (es. generazione agenti, esecuzione script)
+- Interfaccia semplice e moderna
+
+**Funzionalità principali:**
+- Apri/salva file Python
+- Chat AI con risposte programmative
+- Invio comandi Python dalla chat e visualizzazione output
+- Evidenziazione del codice nelle risposte
+- Generazione automatica di agenti base tramite chat
+- Salvataggio storico chat
+
+**Istruzioni per la valutazione:**
+1. Analizza la struttura e le funzionalità offerte.
+2. Valuta la facilità d’uso, la chiarezza dell’interfaccia e la flessibilità.
+3. Suggerisci miglioramenti o nuove funzioni utili per sviluppatori.
+4. Indica punti di forza e possibili limiti.
+
+**Domanda per ChatGPT:**
+> Valuta il sistema Super Agent Workspace descritto sopra dal punto di vista di uno sviluppatore Python. Quali sono i suoi punti di forza, quali miglioramenti suggeriresti e come si posiziona rispetto ad altri ambienti di lavoro?
+
+---
+Copia questo testo nella chat di ChatGPT per ottenere una valutazione dettagliata.

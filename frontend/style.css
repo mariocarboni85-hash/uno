@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1b2a3a 0%, #050810 55%, #020308 100%);
+    color: #e6f4ff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#app {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background: linear-gradient(90deg, #020308, #07111f);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.15);
+    z-index: 3;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    font-size: 14px;
+    color: #6ef9ff;
+}
+
+.status-indicator {
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(110, 249, 255, 0.8);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: #94f7ff;
+    background: rgba(0, 255, 255, 0.1);
+}
+
+.layout {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1.8fr) 340px;
+    gap: 16px;
+    padding: 16px 20px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.left-panel,
+.center-panel,
+.right-panel {
+    position: relative;
+    background: linear-gradient(145deg, rgba(5, 12, 22, 0.95), rgba(3, 28, 46, 0.95));
+    border-radius: 14px;
+    border: 1px solid rgba(0, 255, 255, 0.18);
+    box-shadow: 0 0 24px rgba(0, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.panel-title {
+    padding: 10px 14px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.12), transparent);
+}
+
+.panel-body {
+    padding: 12px 14px 14px;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #9fdcff;
+}
+
+input[type="text"],
+textarea,
+select {
+    background: rgba(2, 10, 18, 0.9);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 255, 0.35);
+    padding: 7px 9px;
+    font-size: 13px;
+    color: #e6f4ff;
+    outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #6ef9ff;
+    box-shadow: 0 0 0 1px rgba(110, 249, 255, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    margin-top: 4px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    background: radial-gradient(circle at top, #041b2a, #030b14);
+    color: #e6f4ff;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.btn.primary {
+    border-color: #6ef9ff;
+}
+
+.btn.accent {
+    border-color: #ff9a6e;
+    color: #ffe6d6;
+}
+
+.btn.small {
+    padding: 6px 10px;
+    font-size: 11px;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 4px rgba(0, 255, 255, 0.3);
+}
+
+.console {
+    font-family: "Fira Code", Consolas, monospace;
+    font-size: 12px;
+    background: radial-gradient(circle at top left, rgba(0, 255, 255, 0.08), rgba(1, 5, 12, 0.95));
+    border-radius: 10px;
+    padding: 10px 12px;
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+
+.console-line.system {
+    color: #6ef9ff;
+}
+
+.console-line.user {
+    color: #ffd78a;
+}
+
+.console-line.agent {
+    color: #a4ffb5;
+}
+
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.chat-message {
+    padding: 7px 9px;
+    border-radius: 9px;
+    font-size: 13px;
+    max-width: 100%;
+}
+
+.chat-message.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #2a3a7c, #2a8aff);
+}
+
+.chat-message.agent {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #0b4134, #099c6d);
+}
+
+.chat-input-row {
+    display: flex;
+    gap: 6px;
+}
+
+.chat-input-row input {
+    flex: 1;
+}
+
+.core-visual {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.core-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 255, 255, 0.16);
+    box-shadow: 0 0 24px rgba(0, 255, 255, 0.25);
+    animation: pulse 6s ease-in-out infinite;
+}
+
+.core-ring.outer {
+    width: 420px;
+    height: 420px;
+    opacity: 0.12;
+}
+
+.core-ring.middle {
+    width: 280px;
+    height: 280px;
+    opacity: 0.2;
+    animation-delay: 1.5s;
+}
+
+.core-ring.inner {
+    width: 140px;
+    height: 140px;
+    opacity: 0.3;
+    animation-delay: 3s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 18px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 34px rgba(0, 255, 255, 0.55);
+    }
+}
+
+@media (max-width: 1100px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        height: calc(100vh - 52px);
+    }
+
+    .panel-body {
+        height: auto;
+    }
+
+    .console,
+    .chat-messages {
+        max-height: 260px;
+    }
+}

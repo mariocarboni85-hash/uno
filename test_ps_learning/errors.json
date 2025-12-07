@@ -1,0 +1,118 @@
+{
+  "CommandNotFoundException:Get-Proccess": {
+    "first_seen": "2025-11-26T11:35:22.718703",
+    "occurrences": 16,
+    "command": "Get-Proccess",
+    "error_type": "CommandNotFoundException",
+    "messages": [
+      {
+        "message": "The term 'Get-Proccess' is not recognized",
+        "timestamp": "2025-11-26T11:35:22.718703"
+      },
+      {
+        "message": "The term 'Get-Proccess' is not recognized",
+        "timestamp": "2025-11-26T11:35:22.723184"
+      },
+      {
+        "message": "The term 'Get-Proccess' is not recognized",
+        "timestamp": "2025-11-26T11:36:46.724696"
+      },
+      {
+        "message": "The term 'Get-Proccess' is not recognized",
+        "timestamp": "2025-11-26T11:36:46.728225"
+      },
+      {
+        "message": "The term 'Get-Proccess' is not recognized",
+        "timestamp": "2025-11-26T11:37:09.208039"
+      }
+    ],
+    "last_seen": "2025-11-26T11:39:22.777580"
+  },
+  "PathNotFoundException:Set-Location Z:\\NoPath": {
+    "first_seen": "2025-11-26T11:35:22.719479",
+    "occurrences": 8,
+    "command": "Set-Location Z:\\NoPath",
+    "error_type": "PathNotFoundException",
+    "messages": [
+      {
+        "message": "Cannot find path 'Z:\\NoPath'",
+        "timestamp": "2025-11-26T11:35:22.719479"
+      },
+      {
+        "message": "Cannot find path 'Z:\\NoPath'",
+        "timestamp": "2025-11-26T11:36:46.725511"
+      },
+      {
+        "message": "Cannot find path 'Z:\\NoPath'",
+        "timestamp": "2025-11-26T11:37:09.208947"
+      },
+      {
+        "message": "Cannot find path 'Z:\\NoPath'",
+        "timestamp": "2025-11-26T11:37:41.129856"
+      },
+      {
+        "message": "Cannot find path 'Z:\\NoPath'",
+        "timestamp": "2025-11-26T11:38:03.921709"
+      }
+    ],
+    "last_seen": "2025-11-26T11:39:22.775293"
+  },
+  "UnauthorizedAccessException:Remove-Item -Path C:\\Windows\\System32": {
+    "first_seen": "2025-11-26T11:35:22.720864",
+    "occurrences": 8,
+    "command": "Remove-Item -Path C:\\Windows\\System32",
+    "error_type": "UnauthorizedAccessException",
+    "messages": [
+      {
+        "message": "Access denied",
+        "timestamp": "2025-11-26T11:35:22.720864"
+      },
+      {
+        "message": "Access denied",
+        "timestamp": "2025-11-26T11:36:46.726371"
+      },
+      {
+        "message": "Access denied",
+        "timestamp": "2025-11-26T11:37:09.209897"
+      },
+      {
+        "message": "Access denied",
+        "timestamp": "2025-11-26T11:37:41.130611"
+      },
+      {
+        "message": "Access denied",
+        "timestamp": "2025-11-26T11:38:03.922672"
+      }
+    ],
+    "last_seen": "2025-11-26T11:39:22.776096"
+  },
+  "FileNotFoundException:Get-Content nofile.txt": {
+    "first_seen": "2025-11-26T11:35:22.721994",
+    "occurrences": 8,
+    "command": "Get-Content nofile.txt",
+    "error_type": "FileNotFoundException",
+    "messages": [
+      {
+        "message": "Cannot find path 'nofile.txt'",
+        "timestamp": "2025-11-26T11:35:22.721994"
+      },
+      {
+        "message": "Cannot find path 'nofile.txt'",
+        "timestamp": "2025-11-26T11:36:46.727298"
+      },
+      {
+        "message": "Cannot find path 'nofile.txt'",
+        "timestamp": "2025-11-26T11:37:09.210739"
+      },
+      {
+        "message": "Cannot find path 'nofile.txt'",
+        "timestamp": "2025-11-26T11:37:41.131305"
+      },
+      {
+        "message": "Cannot find path 'nofile.txt'",
+        "timestamp": "2025-11-26T11:38:03.923588"
+      }
+    ],
+    "last_seen": "2025-11-26T11:39:22.776820"
+  }
+}

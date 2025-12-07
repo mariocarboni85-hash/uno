@@ -1,0 +1,48 @@
+{
+  "backup_script.ps1": {
+    "name": "backup_script.ps1",
+    "timestamp": "2025-11-26T11:39:22.747200",
+    "metrics": {
+      "total_lines": 29,
+      "code_lines": 16,
+      "comment_lines": 6,
+      "commands": 16,
+      "unique_cmdlets": 7,
+      "unique_parameters": 13,
+      "unique_variables": 8
+    },
+    "cmdlets": {
+      "Write-Host": 3,
+      "Get-Date": 1,
+      "Test-Path": 1,
+      "New-Item": 1,
+      "Where-Object": 1,
+      "Join-Path": 1,
+      "Copy-Item": 1
+    },
+    "parameters": {
+      "-Path": 5,
+      "-Host": 3,
+      "-Date": 2,
+      "-Item": 2,
+      "-Format": 1,
+      "-not": 1,
+      "-ItemType": 1,
+      "-Recurse": 1,
+      "-File": 1,
+      "-ChildItem": 1
+    },
+    "patterns": {
+      "variable": 14,
+      "parameter": 10,
+      "cmdlet": 9,
+      "path": 2,
+      "logical": 1,
+      "pipeline": 1,
+      "where": 1,
+      "script_block": 1,
+      "comparison": 1
+    },
+    "complexity_avg": 1.96875
+  }
+}

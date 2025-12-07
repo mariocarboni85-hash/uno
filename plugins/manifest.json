@@ -1,0 +1,7 @@
+{
+  "name": "EsempioPlugin",
+  "version": "1.0.0",
+  "description": "Plugin di esempio per SuperAgent.",
+  "entry": "main.py",
+  "author": "SuperAgent"
+}

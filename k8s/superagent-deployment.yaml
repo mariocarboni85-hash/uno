@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superagent-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: superagent-backend
+  template:
+    metadata:
+      labels:
+        app: superagent-backend
+    spec:
+      containers:
+      - name: backend
+        image: superagent-backend:latest
+        ports:
+        - containerPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superagent-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: superagent-frontend
+  template:
+    metadata:
+      labels:
+        app: superagent-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: superagent-frontend:latest
+        ports:
+        - containerPort: 3000

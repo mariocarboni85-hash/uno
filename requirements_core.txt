@@ -1,0 +1,4 @@
+# requirements_core.txt
+flask
+matplotlib
+scikit-learn

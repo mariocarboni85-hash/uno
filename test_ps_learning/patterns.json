@@ -1,0 +1,127 @@
+{
+  "cmdlet:frequency": {
+    "pattern": "cmdlet",
+    "count": 80,
+    "examples": [
+      "Get-Process",
+      "Where-Object",
+      "Select-Object",
+      "Get-Service",
+      "Write-Host"
+    ]
+  },
+  "parameter:frequency": {
+    "pattern": "parameter",
+    "count": 144,
+    "examples": [
+      "-Process",
+      "-Object",
+      "-gt",
+      "-Object",
+      "-ChildItem",
+      "-Path",
+      "-Filter",
+      "-Recurse"
+    ]
+  },
+  "variable:frequency": {
+    "pattern": "variable",
+    "count": 48,
+    "examples": [
+      "$_",
+      "$services",
+      "$services",
+      "$_",
+      "$var",
+      "$null"
+    ]
+  },
+  "pipeline:frequency": {
+    "pattern": "pipeline",
+    "count": 40,
+    "examples": [
+      "|",
+      "|",
+      "|",
+      "|",
+      "|"
+    ]
+  },
+  "where:frequency": {
+    "pattern": "where",
+    "count": 8,
+    "examples": [
+      "Where-Object",
+      "Where-Object",
+      "Where-Object",
+      "Where-Object",
+      "Where-Object"
+    ]
+  },
+  "select:frequency": {
+    "pattern": "select",
+    "count": 8,
+    "examples": [
+      "Select-Object",
+      "Select-Object",
+      "Select-Object",
+      "Select-Object",
+      "Select-Object"
+    ]
+  },
+  "script_block:frequency": {
+    "pattern": "script_block",
+    "count": 32,
+    "examples": [
+      "{$_.CPU -gt 100}",
+      "{Write-Host $_.Name}",
+      "{ Write-Host 'null' }",
+      "{ Write-Host 'not null' }",
+      "{$_.CPU -gt 100}"
+    ]
+  },
+  "comparison:frequency": {
+    "pattern": "comparison",
+    "count": 16,
+    "examples": [
+      "-gt",
+      "-eq",
+      "-gt",
+      "-eq",
+      "-gt"
+    ]
+  },
+  "filter:frequency": {
+    "pattern": "filter",
+    "count": 8,
+    "examples": [
+      "-Filter",
+      "-Filter",
+      "-Filter",
+      "-Filter",
+      "-Filter"
+    ]
+  },
+  "path:frequency": {
+    "pattern": "path",
+    "count": 8,
+    "examples": [
+      "C:\\Users",
+      "C:\\Users",
+      "C:\\Users",
+      "C:\\Users",
+      "C:\\Users"
+    ]
+  },
+  "foreach:frequency": {
+    "pattern": "foreach",
+    "count": 8,
+    "examples": [
+      "ForEach-Object",
+      "ForEach-Object",
+      "ForEach-Object",
+      "ForEach-Object",
+      "ForEach-Object"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+wikipedia
+feedparser
+requests
+flask
+schedule
+sqlite-utils
+requests
+sqlite3

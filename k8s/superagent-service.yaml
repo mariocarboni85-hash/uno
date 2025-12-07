@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: superagent-backend-service
+spec:
+  selector:
+    app: superagent-backend
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: superagent-frontend-service
+spec:
+  selector:
+    app: superagent-frontend
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000

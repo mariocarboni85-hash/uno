@@ -1,0 +1,46 @@
+{
+  "name": "CartPole_DQN",
+  "architecture": {
+    "name": "CartPole_DQN",
+    "agent_type": "dqn",
+    "state_dim": 4,
+    "action_dim": 2,
+    "hidden_layers": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "use_attention": false,
+    "use_memory": false,
+    "memory_size": 1000,
+    "learning_rate": 0.001,
+    "discount_factor": 0.99,
+    "exploration_strategy": "epsilon_greedy"
+  },
+  "config": {
+    "epochs": 1000,
+    "batch_size": 32,
+    "buffer_size": 10000,
+    "target_update_freq": 10,
+    "evaluation_freq": 100,
+    "save_freq": 500,
+    "early_stopping_patience": 50,
+    "use_cuda": true,
+    "multi_gpu": false,
+    "distributed": false
+  },
+  "created_at": "2025-12-05T14:43:39.210761",
+  "training_stats": {
+    "episodes": 0,
+    "total_steps": 0,
+    "average_reward": 0.0,
+    "best_reward": -Infinity
+  },
+  "networks": [
+    "q_network",
+    "target_network"
+  ],
+  "optimizers": [
+    "q_optimizer"
+  ]
+}

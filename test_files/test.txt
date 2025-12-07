@@ -1,0 +1,5 @@
+Questo è un file di test.
+Contiene multiple righe.
+Con vari contenuti.
+
+Riga aggiunta con append!
