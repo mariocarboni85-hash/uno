@@ -1,6 +1,18 @@
 import sqlite3
 import threading
 import time
+import logging
+
+# Password hashing: prefer passlib bcrypt; fall back to bcrypt binding if needed.
+try:
+    from passlib.hash import bcrypt as _pwd_hasher
+except Exception:
+    _pwd_hasher = None
+    try:
+        import bcrypt as _bcrypt_binding
+    except Exception:
+        _bcrypt_binding = None
+        logging.warn("passlib and bcrypt not available — register/login will raise until installed")
 
 
 # Database setup
@@ -80,10 +92,23 @@ conn.commit()
 conn.close()
 
 def register_user(username, password, role='user'):
+    """Register a new user storing a hashed password.
+    Requires `passlib` or `bcrypt` available in the environment.
+    """
+    if _pwd_hasher is None and _bcrypt_binding is None:
+        raise RuntimeError("passlib[bcrypt] or bcrypt is required for password hashing. Install with: pip install 'passlib[bcrypt]' bcrypt")
+
+    if _pwd_hasher is not None:
+        hashed = _pwd_hasher.hash(password)
+    else:
+        # fallback: use bcrypt binding
+        salt = _bcrypt_binding.gensalt()
+        hashed = _bcrypt_binding.hashpw(password.encode('utf-8'), salt).decode('utf-8')
+
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     try:
-        c.execute('INSERT INTO users (username, password, role) VALUES (?, ?, ?)', (username, password, role))
+        c.execute('INSERT INTO users (username, password, role) VALUES (?, ?, ?)', (username, hashed, role))
         conn.commit()
         return True
     except sqlite3.IntegrityError:
@@ -92,13 +117,33 @@ def register_user(username, password, role='user'):
         conn.close()
 
 def login_user(username, password):
+    """Verify user credentials using hashed password verification."""
+    if _pwd_hasher is None and _bcrypt_binding is None:
+        raise RuntimeError("passlib[bcrypt] or bcrypt is required for password verification. Install with: pip install 'passlib[bcrypt]' bcrypt")
+
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute('SELECT id, role FROM users WHERE username=? AND password=?', (username, password))
-    user = c.fetchone()
+    c.execute('SELECT id, password, role FROM users WHERE username=?', (username,))
+    row = c.fetchone()
     conn.close()
-    if user:
-        return {'id': user[0], 'role': user[1]}
+    if not row:
+        return None
+    user_id, stored_hash, role = row
+
+    verified = False
+    if _pwd_hasher is not None:
+        try:
+            verified = _pwd_hasher.verify(password, stored_hash)
+        except Exception:
+            verified = False
+    else:
+        try:
+            verified = _bcrypt_binding.checkpw(password.encode('utf-8'), stored_hash.encode('utf-8'))
+        except Exception:
+            verified = False
+
+    if verified:
+        return {'id': user_id, 'role': role}
     return None
 
 class Agent:

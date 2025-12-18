@@ -1,4 +1,4 @@
-# Requirements per ambiente core SuperAgent
+# Requirements per ambiente core uno
 # Usare con .venv
 # Esempio: python -m venv .venv
 #           .\.venv\Scripts\Activate.ps1
@@ -41,6 +41,10 @@ dnspython==2.8.0
 docker==7.1.0
 durationpy==0.10
 fabric==3.2.2
-fastapi==0.122.0
+fastapi==0.124.4
 filelock==3.20.0
 flatbuffers==25.9.23
+httpx==0.28.1
+PyJWT==2.10.1
+requests==2.32.5
+uvicorn==0.38.0

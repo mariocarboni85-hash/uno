@@ -1,6 +1,0 @@
-{
-  "name": "EsempioPlugin",
-  "version": "1.0.0",
-  "entry": "example_plugin.py",
-  "description": "Un plugin di esempio per Super Agent Workspace."
-}

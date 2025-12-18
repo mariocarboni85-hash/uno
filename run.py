@@ -1,8 +1,8 @@
-"""Demo runner for the SuperAgent project."""
+"""Demo runner for the uno project."""
 import sys
 import os
 from datetime import datetime
-from agent import SuperAgent
+from agent import uno
 from tools import shell, files, browser
 from core.team import TeamCoordinator, AgentProfile
 from core.factory import create_agent_package
@@ -29,17 +29,17 @@ if ARDUINO_AVAILABLE:
 
 def demo_planner():
     """Demo della modalità planner automatico."""
-    print("=== SuperAgent Demo: Modalità Planner ===")
-    agent = SuperAgent(TOOLS, name="PlannerAgent")
+    print("=== uno Demo: Modalità Planner ===")
+    agent = uno(TOOLS, name="PlannerAgent")
     agent.run('create a file, then run a command')
 
 
 def interactive_mode():
     """Demo della modalità interattiva con LLM."""
-    print("=== SuperAgent Demo: Modalità Interattiva ===")
+    print("=== uno Demo: Modalità Interattiva ===")
     print("Digita 'exit' o 'quit' per uscire.\n")
     
-    agent = SuperAgent(TOOLS, name="InteractiveAgent")
+    agent = uno(TOOLS, name="InteractiveAgent")
     
     while True:
         try:

@@ -17,7 +17,7 @@ def main():
     print("=" * 70)
     
     updater = LibraryUpdater()
-    venv_name = "super_agent_advanced"
+    venv_name = "uno_advanced"
     
     # Pacchetti da escludere (opzionale - rimuovi commento se necessario)
     exclude = [

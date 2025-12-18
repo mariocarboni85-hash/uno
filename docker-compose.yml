@@ -20,3 +20,28 @@ services:
 networks:
   superagentnet:
     driver: bridge
+  
+uno_agent:
+  build:
+    context: ..
+    dockerfile: Dockerfile
+  container_name: uno_agent
+  ports:
+    - "8000:8000"
+  environment:
+    - AGENT_ROLE=main
+  networks:
+    - superagentnet
+  restart: always
+uno_agent_avversario:
+  build:
+    context: ..
+    dockerfile: Dockerfile
+  container_name: uno_agent_avversario
+  ports:
+    - "8001:8000"
+  environment:
+    - AGENT_ROLE=adversary
+  networks:
+    - superagentnet
+  restart: always

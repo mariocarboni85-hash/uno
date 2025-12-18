@@ -1,3 +1,250 @@
+import os
+import sys
+from datetime import datetime
+import threading
+from typing import Any, Dict, List, Optional
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+import jwt
+import logging
+import gzip
+import shutil
+import glob
+from logging.handlers import TimedRotatingFileHandler
+import uuid
+import time
+from pathlib import Path
+from fastapi import FastAPI, HTTPException, Request, Depends
+from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+
+from agent import uno
+from core.brain import (
+    assign_task_to_team,
+    get_team_status,
+    shared_knowledge,
+    team,
+)
+from core.meta_engineer import MetaEngineerOrchestrator
+from core.planner import create_plan
+from core.team import AgentProfile, TeamCoordinator
+from tools import browser, files, shell
+from tools.files import extract_zip, perform_file_action
+from tools.llm import call_llm
+from tools.shell import install_program
+
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPORTS_DIR = os.path.join(ROOT_DIR, "reports")
+os.makedirs(REPORTS_DIR, exist_ok=True)
+
+TOOLS = {
+    "shell": shell.run,
+    "files_write": files.write_file,
+    "files_read": files.read_file,
+    "list_dir": files.list_dir,
+    "browser": browser.fetch,
+}
+
+app = FastAPI()
+
+# Logger
+logger = logging.getLogger("uno.api")
+if not logger.handlers:
+    h = logging.StreamHandler()
+    fmt = logging.Formatter("%(asctime)s %(levelname)s [%(name)s] %(message)s")
+    h.setFormatter(fmt)
+    logger.addHandler(h)
+logger.setLevel(logging.INFO)
+
+# Audit logger (file)
+logs_dir = Path(ROOT_DIR) / 'logs'
+logs_dir.mkdir(parents=True, exist_ok=True)
+audit_logger = logging.getLogger('uno.audit')
+if not audit_logger.handlers:
+    class CompressingTimedRotatingFileHandler(TimedRotatingFileHandler):
+        """TimedRotatingFileHandler that gzips rotated logs."""
+        def doRollover(self):
+            try:
+                super().doRollover()
+            except Exception:
+                # If base rollover fails, don't crash the app
+                return
+
+            # Compress the most recent rotated file (exclude already .gz files)
+            try:
+                candidates = [f for f in glob.glob(self.baseFilename + ".*") if not f.endswith('.gz') and f != self.baseFilename]
+                if not candidates:
+                    return
+                latest = max(candidates, key=lambda p: os.path.getmtime(p))
+                gz_path = latest + '.gz'
+                with open(latest, 'rb') as f_in, gzip.open(gz_path, 'wb') as f_out:
+                    shutil.copyfileobj(f_in, f_out)
+                try:
+                    os.remove(latest)
+                except Exception:
+                    pass
+            except Exception:
+                # best-effort compression; swallow errors
+                pass
+
+    ah = CompressingTimedRotatingFileHandler(str(logs_dir / 'audit.log'), when='midnight', interval=1, backupCount=30, encoding='utf-8')
+    afmt = logging.Formatter('%(asctime)s %(message)s')
+    ah.setFormatter(afmt)
+    audit_logger.addHandler(ah)
+audit_logger.setLevel(logging.INFO)
+
+
+# Middleware per X-Request-ID
+# Simple in-memory rate limiter per IP (requests per minute)
+RATE_LIMIT_PER_MIN = int(os.environ.get('RATE_LIMIT_PER_MIN', '60'))
+_rate_store: dict = {}
+
+
+@app.middleware("http")
+async def add_request_id_and_rate_limit(request: Request, call_next):
+    req_id = request.headers.get("X-Request-ID") or str(uuid.uuid4())
+    request.state.request_id = req_id
+
+    # Rate limiting by client IP (X-Forwarded-For or client.host)
+    client_ip = request.client.host if request.client else 'unknown'
+    now = int(time.time())
+    window = now // 60
+    key = f"{client_ip}:{window}"
+    count = _rate_store.get(key, 0)
+    if count >= RATE_LIMIT_PER_MIN:
+        audit_logger.info(f"{req_id} RATE_LIMIT_EXCEEDED ip={client_ip} path={request.url.path}")
+        return JSONResponse(status_code=429, content={"detail": "Rate limit exceeded"})
+    _rate_store[key] = count + 1
+
+    response = await call_next(request)
+    response.headers["X-Request-ID"] = req_id
+
+    # Audit log: method, path, status, user (if any)
+    try:
+        user = getattr(request.state, 'user', None)
+        user_id = None
+        if user:
+            user_id = user.get('sub') or user.get('username') or user.get('id')
+        audit_logger.info(f"{req_id} {request.method} {request.url.path} status={response.status_code} ip={client_ip} user={user_id}")
+    except Exception:
+        audit_logger.info(f"{req_id} {request.method} {request.url.path} status={response.status_code} ip={client_ip}")
+
+    return response
+
+# CORS: permetti richieste locali per sviluppo (restringere in produzione)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Monta la build frontend (se presente) per servire SPA static
+STATIC_DIR = os.path.join(ROOT_DIR, "frontend_build")
+if os.path.isdir(STATIC_DIR):
+    app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
+
+vit_orchestrator = MetaEngineerOrchestrator()
+
+# JWT / role-based auth
+security = HTTPBearer()
+
+def decode_jwt_token(token: str) -> Dict[str, Any]:
+    try:
+        payload = jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGORITHM])
+        return payload
+    except Exception:
+        raise HTTPException(status_code=401, detail="Invalid or expired token")
+
+def get_current_user(creds: HTTPAuthorizationCredentials = Depends(security)) -> Dict[str, Any]:
+    token = creds.credentials
+    return decode_jwt_token(token)
+
+def require_role(role: str):
+    def _require(user: Dict[str, Any] = Depends(get_current_user)) -> Dict[str, Any]:
+        roles = user.get("roles") or user.get("role") or []
+        if isinstance(roles, str):
+            roles = [roles]
+        if role not in roles:
+            raise HTTPException(status_code=403, detail="Forbidden: insufficient role")
+        return user
+    return _require
+
+
+class AgentReviewRequest(BaseModel):
+    description: str
+
+
+class VitCommandRequest(BaseModel):
+    directive: str
+    goal: str
+    priority: str = "standard"
+    context: Optional[Dict[str, Any]] = None
+
+
+class VitCommandResponse(BaseModel):
+    command_id: str
+    directive: str
+    goal: str
+    status: str
+    priority: str
+    artifacts: List[Dict[str, Any]]
+    shared_memory: List[Dict[str, Any]]
+    started_at: str
+    finished_at: Optional[str]
+
+
+class RunRequest(BaseModel):
+    goal: str
+    max_steps: int = 5
+
+# Endpoint mock per /api/run
+@app.post("/api/run")
+async def api_run(request: Request, payload: RunRequest, _user: Dict[str, Any] = Depends(require_role('vit'))):
+    """Avvia un run dell'agente in background (non blocca la request).
+
+    In produzione si dovrebbe gestire la coda dei job e persistere lo stato.
+    """
+    req_id = getattr(request.state, 'request_id', 'unknown')
+    user_id = _user.get('sub') or _user.get('username') or _user.get('id')
+    logger.info(f"[{req_id}] POST /api/run by {user_id} payload={payload.dict()}")
+
+    def _run_agent(goal: str, max_steps: int):
+        try:
+            a = uno()
+            a.run(goal, max_steps)
+            logger.info(f"[{req_id}] background run completed for goal={goal}")
+        except Exception as e:
+            logger.error(f"[{req_id}] background run error: {e}")
+
+    try:
+        threading.Thread(target=_run_agent, args=(payload.goal, payload.max_steps), daemon=True).start()
+        logger.info(f"[{req_id}] accepted run request")
+        return {"status": "accepted", "goal": payload.goal, "max_steps": payload.max_steps}
+    except Exception as e:
+        logger.error(f"[{req_id}] failed to start background run: {e}")
+        raise HTTPException(status_code=500, detail="Failed to start run")
+
+# Endpoint mock per /api/scan_apps
+@app.get("/api/scan_apps")
+async def api_scan_apps():
+    # Risposta mock: lista di app trovate
+    return {"apps": [
+        {"name": "App1", "status": "running"},
+        {"name": "App2", "status": "stopped"}
+    ]}
+
+# Endpoint mock per /api/me
+@app.get("/api/me")
+async def api_me():
+    # Risposta mock: dati utente demo
+    return {"username": "demo", "roles": ["user", "admin"]}
 @app.get("/team/graph")
 async def team_graph():
     # Restituisce dati per network graph agenti-task
@@ -10,9 +257,6 @@ async def team_graph():
             nodes.append({'id': tid, 'type': 'task', 'priority': t['priority']})
             edges.append({'from': agent.name, 'to': tid})
     return {'nodes': nodes, 'edges': edges}
-from core.planner import create_plan
-from tools.llm import call_llm
-from core.brain import shared_knowledge
 @app.post("/team/goal")
 async def team_goal(request: Request):
     data = await request.json()
@@ -24,18 +268,27 @@ async def team_goal(request: Request):
     response = call_llm(llm, f"Pianifica: {goal}")
     return {"plan": plan, "llm_response": response}
 @app.post("/team/knowledge")
-async def team_knowledge(request: Request):
-    data = await request.json()
-    info = data.get('info')
-    agent = data.get('agent')
-    if not info or not agent:
-        return {"error": "Info o agente mancante"}
-    # Trova agente e aggiorna memoria
-    for a in team:
-        if a.name == agent:
-            a.add_knowledge(info)
-            return {"result": "Memoria aggiornata"}
-    return {"error": "Agente non trovato"}
+async def team_knowledge(request: Request, _user: Dict[str, Any] = Depends(require_role('vit'))):
+    req_id = getattr(request.state, 'request_id', 'unknown')
+    user_id = _user.get('sub') or _user.get('username') or _user.get('id')
+    try:
+        data = await request.json()
+        info = data.get('info')
+        agent = data.get('agent')
+        logger.info(f"[{req_id}] POST /team/knowledge by {user_id} -> agent={agent} info={info}")
+        if not info or not agent:
+            return {"error": "Info o agente mancante"}
+        # Trova agente e aggiorna memoria
+        for a in team:
+            if a.name == agent:
+                a.add_knowledge(info)
+                logger.info(f"[{req_id}] memory updated for agent={agent}")
+                return {"result": "Memoria aggiornata"}
+        logger.error(f"[{req_id}] agent not found: {agent}")
+        return {"error": "Agente non trovato"}
+    except Exception as e:
+        logger.error(f"[{req_id}] /team/knowledge error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 @app.get("/team/knowledge")
 async def get_knowledge():
     return shared_knowledge[-20:]
@@ -47,31 +300,31 @@ async def get_plans(goal: str = None):
 @app.get("/ui/dashboard")
 async def agent_dashboard_ui():
     return HTMLResponse(
-        content=f"""
+        content="""
         <html>
         <head>
-            <title>Super Agent Dashboard</title>
+            <title>uno Dashboard</title>
             <link rel='icon' href='/favicon.ico'>
             <style>
-                body {{ font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }}
-                .container {{ max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }}
-                h1 {{ text-align: center; }}
-                .agent-block {{ border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 24px; padding: 16px; background: #f5f5f5; }}
-                .agent-title {{ font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }}
-                .log, .conflicts, .tasks {{ margin-bottom: 8px; }}
-                .conflict {{ color: #d32f2f; }}
-                .task {{ color: #1976d2; }}
-                #newTaskForm, #newGoalForm {{ margin: 24px 0; text-align: center; }}
-                #newTaskInput, #newGoalInput {{ width: 60%; font-size: 1em; padding: 6px; border-radius: 4px; border: 1px solid #ccc; }}
-                #assignBtn, #goalBtn {{ background: #388e3c; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 1em; margin-left: 8px; }}
-                #llmSelect {{ font-size: 1em; padding: 6px 12px; border-radius: 4px; border: 1px solid #ccc; margin-left: 8px; }}
-                .knowledge-block {{ background: #e3f2fd; border-radius: 6px; padding: 12px; margin-bottom: 16px; }}
-                .plan-block {{ background: #f1f8e9; border-radius: 6px; padding: 12px; margin-bottom: 16px; }}
+                body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+                .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+                h1 { text-align: center; }
+                .agent-block { border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 24px; padding: 16px; background: #f5f5f5; }
+                .agent-title { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }
+                .log, .conflicts, .tasks { margin-bottom: 8px; }
+                .conflict { color: #d32f2f; }
+                .task { color: #1976d2; }
+                #newTaskForm, #newGoalForm { margin: 24px 0; text-align: center; }
+                #newTaskInput, #newGoalInput { width: 60%; font-size: 1em; padding: 6px; border-radius: 4px; border: 1px solid #ccc; }
+                #assignBtn, #goalBtn { background: #388e3c; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 1em; margin-left: 8px; }
+                #llmSelect { font-size: 1em; padding: 6px 12px; border-radius: 4px; border: 1px solid #ccc; margin-left: 8px; }
+                .knowledge-block { background: #e3f2fd; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
+                .plan-block { background: #f1f8e9; border-radius: 6px; padding: 12px; margin-bottom: 16px; }
             </style>
         </head>
         <body>
             <div class="container">
-                <h1>Super Agent Dashboard</h1>
+                <h1>uno Dashboard</h1>
                 <form id="newTaskForm">
                     <input id="newTaskInput" type="text" placeholder="Nuovo task da assegnare...">
                     <button id="assignBtn" type="submit">Assegna task</button>
@@ -188,89 +441,26 @@ async def agent_dashboard_ui():
         """,
         status_code=200,
     )
-from fastapi import Request
-from core.brain import get_team_status, assign_task_to_team
-@app.get("/ui/dashboard")
-async def agent_dashboard_ui():
-    return HTMLResponse(
-        content=f"""
-        <html>
-        <head>
-            <title>Super Agent Dashboard</title>
-            <link rel='icon' href='/favicon.ico'>
-            <style>
-                body {{ font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }}
-                .container {{ max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }}
-                h1 {{ text-align: center; }}
-                .agent-block {{ border: 1px solid #e0e0e0; border-radius: 6px; margin-bottom: 24px; padding: 16px; background: #f5f5f5; }}
-                .agent-title {{ font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }}
-                .log, .conflicts, .tasks {{ margin-bottom: 8px; }}
-                .conflict {{ color: #d32f2f; }}
-                .task {{ color: #1976d2; }}
-                #newTaskForm {{ margin: 24px 0; text-align: center; }}
-                #newTaskInput {{ width: 60%; font-size: 1em; padding: 6px; border-radius: 4px; border: 1px solid #ccc; }}
-                #assignBtn {{ background: #388e3c; color: #fff; border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 1em; margin-left: 8px; }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>Super Agent Dashboard</h1>
-                <form id="newTaskForm">
-                    <input id="newTaskInput" type="text" placeholder="Nuovo task da assegnare...">
-                    <button id="assignBtn" type="submit">Assegna task</button>
-                </form>
-                <div id="agents"></div>
-            </div>
-            <script>
-                async function fetchStatus() {
-                    const resp = await fetch('/team/status');
-                    const data = await resp.json();
-                    renderAgents(data);
-                }
-                function renderAgents(data) {
-                    const agentsDiv = document.getElementById('agents');
-                    agentsDiv.innerHTML = data.map(agent => `
-                        <div class="agent-block">
-                            <div class="agent-title">${agent.name}</div>
-                            <div class="tasks"><b>Task:</b> ${agent.tasks.map(t => `<span class='task'>${t}</span>`).join(', ') || 'Nessuno'}</div>
-                            <div class="log"><b>Log:</b><br>${agent.log.map(l => `<div>${l}</div>`).join('')}</div>
-                            <div class="conflicts"><b>Conflitti:</b> ${agent.conflicts.map(c => `<span class='conflict'>${c}</span>`).join(', ') || 'Nessuno'}</div>
-                        </div>
-                    `).join('');
-                }
-                document.getElementById('newTaskForm').addEventListener('submit', async (e) => {
-                    e.preventDefault();
-                    const val = document.getElementById('newTaskInput').value;
-                    if (!val || val.trim().length === 0) return;
-                    await fetch('/team/assign', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ task: val })
-                    });
-                    document.getElementById('newTaskInput').value = '';
-                    setTimeout(fetchStatus, 500);
-                });
-                setInterval(fetchStatus, 2000);
-                fetchStatus();
-            </script>
-        </body>
-        </html>
-        """,
-        status_code=200,
-    )
-# Endpoint API per dashboard
 @app.get("/team/status")
 async def team_status():
     return get_team_status()
 
 @app.post("/team/assign")
-async def team_assign(request: Request):
-    data = await request.json()
-    task = data.get('task')
-    if not task:
-        return {"error": "Task mancante"}
-    agent_name = assign_task_to_team(task)
-    return {"assigned_to": agent_name}
+async def team_assign(request: Request, _user: Dict[str, Any] = Depends(require_role('vit'))):
+    req_id = getattr(request.state, 'request_id', 'unknown')
+    user_id = _user.get('sub') or _user.get('username') or _user.get('id')
+    try:
+        data = await request.json()
+        task = data.get('task')
+        logger.info(f"[{req_id}] POST /team/assign by {user_id} task={task}")
+        if not task:
+            return {"error": "Task mancante"}
+        agent_name = assign_task_to_team(task)
+        logger.info(f"[{req_id}] task assigned to {agent_name}")
+        return {"assigned_to": agent_name}
+    except Exception as e:
+        logger.error(f"[{req_id}] /team/assign error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 def llm_review_agent(prompt: str) -> str:
     """Usa Ollama per generare una revisione, oppure restituisce una risposta mock se non disponibile."""
     if ollama:
@@ -284,11 +474,6 @@ def llm_review_agent(prompt: str) -> str:
     else:
         return f"[MOCK] Revisione fittizia. Prompt:\n{prompt}"
 
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
-
-app = FastAPI()
-
 @app.get("/ui/agent-review")
 async def agent_review_ui():
     """Serve una pagina HTML locale per revisionare agenti con il team."""
@@ -297,7 +482,7 @@ async def agent_review_ui():
     <html lang="it">
     <head>
         <meta charset="UTF-8">
-        <title>SuperAgent - Revisione Agente</title>
+        <title>uno - Revisione Agente</title>
         <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVQYV2NkYGD4z0AEYBxVSFQAAAwAAf4A3XwAAAAASUVORK5CYII=" />
         <style>
             body { font-family: Arial, sans-serif; margin: 2em; background: #f7f7f7; }
@@ -308,7 +493,7 @@ async def agent_review_ui():
         </style>
     </head>
     <body>
-        <h1>SuperAgent - Revisione Agente Locale</h1>
+        <h1>uno - Revisione Agente Locale</h1>
         <p>Incolla la descrizione dell'agente (scopo, prompt, tools, problemi):</p>
         <textarea id="desc" placeholder="Incolla qui la descrizione..."></textarea><br>
         <button onclick="reviewAgent()">Fai lavorare il team</button>
@@ -344,7 +529,44 @@ async def agent_review_ui():
     '''
     return HTMLResponse(content=html)
 
-"""HTTP API per il team di SuperAgent, basata su FastAPI.
+
+@app.post("/vit/commands", response_model=VitCommandResponse)
+async def vit_command(request: Request, payload: VitCommandRequest, _user: Dict[str, Any] = Depends(require_role('vit'))):
+    """Permette a vit di lanciare un workflow completo del meta ingegnere."""
+    req_id = getattr(request.state, 'request_id', 'unknown')
+    user_id = _user.get('sub') or _user.get('username') or _user.get('id')
+    logger.info(f"[{req_id}] POST /vit/commands by {user_id} directive={payload.directive} goal={payload.goal}")
+    try:
+        result = vit_orchestrator.run_command(
+            directive=payload.directive,
+            goal=payload.goal,
+            priority=payload.priority,
+            vit_context=payload.context,
+        )
+        logger.info(f"[{req_id}] vit command executed: {result.get('command_id')}")
+        return result
+    except Exception as e:
+        logger.error(f"[{req_id}] /vit/commands error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/vit/commands", response_model=List[VitCommandResponse])
+async def list_vit_commands(limit: int = 5):
+    """Restituisce gli ultimi workflow eseguiti per vit."""
+
+    return vit_orchestrator.list_runs(limit)
+
+
+@app.get("/vit/commands/{command_id}", response_model=VitCommandResponse)
+async def vit_command_status(command_id: str):
+    """Restituisce i dettagli di un comando vit specifico."""
+
+    result = vit_orchestrator.get_run(command_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="Comando vit non trovato")
+    return result
+
+"""HTTP API per il team di uno, basata su FastAPI.
 
 Endpoint principali:
 - POST /team/analyze: il team analizza un problema e salva il report.
@@ -352,163 +574,54 @@ Endpoint principali:
 - GET  /reports/{name}: contenuto di un report.
 """
 
-import os
-from datetime import datetime
-from typing import List, Dict
+# Legge la chiave segreta JWT da variabile d'ambiente (obbligatoria in produzione)
+try:
+    JWT_SECRET = os.environ["JWT_SECRET"]
+except KeyError:
+    raise RuntimeError("Environment variable JWT_SECRET not set. Set JWT_SECRET in the environment before starting the app.")
 
-from fastapi import FastAPI, HTTPException
+JWT_ALGORITHM = "HS256"
+
+
+
+# Endpoint di login mock per compatibilità test
+@app.post("/api/login")
+async def api_login(request: Request):
+    data = await request.json()
+    username = data.get("username")
+    password = data.get("password")
+    # Logica mock: accetta qualsiasi username/password non vuoti
+    if not username or not password:
+        return JSONResponse(status_code=400, content={"detail": "Username e password richiesti"})
+    # Genera un token JWT mock
+    token = jwt.encode({"sub": username}, JWT_SECRET, algorithm=JWT_ALGORITHM)
+    return {"access_token": token, "token_type": "bearer"}
 try:
     import ollama
 except ImportError:
     ollama = None
-from pydantic import BaseModel
-from fastapi.responses import PlainTextResponse
 
-from agent import SuperAgent
-from tools import shell, files, browser
-from core.team import TeamCoordinator, AgentProfile
 
-try:
-    return HTMLResponse(
-        content=f"""
-        <html>
-        <head>
-            <title>Agent Review Team</title>
-            <link rel='icon' href='/favicon.ico'>
-            <style>
-                body {{ font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; transition: background 0.2s, color 0.2s; }}
-                .container {{ max-width: 600px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 32px; }}
-                h1 {{ text-align: center; }}
-                textarea {{ width: 100%; min-height: 80px; margin-bottom: 12px; font-size: 1em; }}
-                button {{ background: #0078d4; color: #fff; border: none; padding: 10px 24px; border-radius: 4px; cursor: pointer; font-size: 1em; }}
-                button:disabled {{ background: #aaa; }}
-                .spinner {{ display: none; text-align: center; margin: 16px 0; }}
-                .error {{ color: #d32f2f; margin-bottom: 12px; text-align: center; }}
-                .result {{ background: #e3f2fd; border-radius: 4px; padding: 12px; margin-top: 16px; white-space: pre-wrap; }}
-                #downloadBtn {{ display: none; margin-top: 12px; background: #388e3c; }}
-                #themeToggle {{ position: absolute; top: 16px; right: 32px; background: #222; color: #fff; border: none; padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 0.95em; }}
-                #llmSelect {{ margin-bottom: 16px; font-size: 1em; padding: 6px 12px; border-radius: 4px; border: 1px solid #ccc; }}
-                .history {{ margin-top: 32px; background: #f1f8e9; border-radius: 6px; padding: 16px; }}
-                .history h2 {{ margin-top: 0; font-size: 1.1em; }}
-                .history-item {{ margin-bottom: 12px; border-bottom: 1px solid #e0e0e0; padding-bottom: 8px; }}
-                body.dark {{ background: #181818; color: #eee; }}
-                body.dark .container {{ background: #232323; box-shadow: 0 2px 8px #0006; }}
-                body.dark .result {{ background: #263238; color: #cfd8dc; }}
-                body.dark button {{ background: #333; color: #fff; }}
-                body.dark #downloadBtn {{ background: #388e3c; color: #fff; }}
-                body.dark #themeToggle {{ background: #eee; color: #222; }}
-                body.dark .history {{ background: #263238; color: #cfd8dc; }}
-            </style>
-        </head>
-        <body>
-            <button id="themeToggle">Tema scuro</button>
-            <div class="container">
-                <h1>Team di Revisione Agenti</h1>
-                <label for="llmSelect">Modello LLM:</label>
-                <select id="llmSelect">
-                    <option value="default">default</option>
-                    <option value="mock">mock</option>
-                    <option value="ollama">ollama</option>
-                </select>
-                <form id="reviewForm">
-                    <div class="error" id="errorMsg"></div>
-                    <textarea id="agentText" name="agentText" placeholder="Descrivi l'agente da revisionare..."></textarea>
-                    <button type="submit" id="submitBtn">Invia</button>
-                </form>
-                <div class="spinner" id="spinner">Team al lavoro…</div>
-                <div class="result" id="result"></div>
-                <button id="downloadBtn">Scarica report</button>
-                <div class="history" id="history">
-                    <h2>Storico revisioni</h2>
-                    <div id="historyList"></div>
-                </div>
-            </div>
-            <script>
-                const form = document.getElementById('reviewForm');
-                const spinner = document.getElementById('spinner');
-                const result = document.getElementById('result');
-                const errorMsg = document.getElementById('errorMsg');
-                const submitBtn = document.getElementById('submitBtn');
-                const downloadBtn = document.getElementById('downloadBtn');
-                const themeToggle = document.getElementById('themeToggle');
-                const llmSelect = document.getElementById('llmSelect');
-                const historyList = document.getElementById('historyList');
-                let lastReport = '';
-                let history = [];
-                form.addEventListener('submit', async (e) => {
-                    e.preventDefault();
-                    errorMsg.textContent = '';
-                    result.textContent = '';
-                    downloadBtn.style.display = 'none';
-                    const agentText = document.getElementById('agentText').value;
-                    const llmModel = llmSelect.value;
-                    // Validazione input: non inviare se vuoto o solo spazi
-                    if (!agentText || agentText.trim().length === 0) {
-                        errorMsg.textContent = 'Inserisci una descrizione valida dell\'agente.';
-                        return;
-                    }
-                    spinner.style.display = 'block';
-                    submitBtn.disabled = true;
-                    try {
-                        const resp = await fetch('/agent/review', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ agent: agentText, llm: llmModel })
-                        });
-                        const data = await resp.json();
-                        if (resp.ok) {
-                            const report = data.result || JSON.stringify(data);
-                            result.textContent = report;
-                            lastReport = report;
-                            downloadBtn.style.display = 'inline-block';
-                            // Aggiorna storico
-                            history.unshift({ agent: agentText, llm: llmModel, result: report, ts: new Date().toLocaleString() });
-                            if (history.length > 10) history.pop();
-                            renderHistory();
-                        } else {
-                            errorMsg.textContent = data.detail || 'Errore nella revisione.';
-                        }
-                    } catch (err) {
-                        errorMsg.textContent = 'Errore di rete o server.';
-                    } finally {
-                        spinner.style.display = 'none';
-                        submitBtn.disabled = false;
-                    }
-                });
-                downloadBtn.addEventListener('click', function() {
-                    if (!lastReport) return;
-                    const blob = new Blob([lastReport], { type: 'text/plain' });
-                    const url = URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'report_revisione.txt';
-                    document.body.appendChild(a);
-                    a.click();
-                    setTimeout(() => {
-                        document.body.removeChild(a);
-                        URL.revokeObjectURL(url);
-                    }, 100);
-                });
-                themeToggle.addEventListener('click', function() {
-                    const body = document.body;
-                    const dark = body.classList.toggle('dark');
-                    themeToggle.textContent = dark ? 'Tema chiaro' : 'Tema scuro';
-                });
-                function renderHistory() {
-                    historyList.innerHTML = history.map(item => `
-                        <div class="history-item">
-                            <b>${item.ts}</b> | <span style="color:#0078d4">${item.llm}</span><br>
-                            <i>${item.agent}</i><br>
-                            <div style="margin-top:4px;">${item.result.replace(/\n/g, '<br>')}</div>
-                        </div>
-                    `).join('');
-                }
-            </script>
-        </body>
-        </html>
-        """,
-        status_code=200,
-    )
+def _build_team() -> TeamCoordinator:
+    coordinator = TeamCoordinator(TOOLS)
+    coordinator.add_profile(AgentProfile(
+        name="RequirementsAgent", role="requirements",
+        system_prompt="Analista requisiti per problemi software complessi",
+    ))
+    coordinator.add_profile(AgentProfile(
+        name="DesignAgent", role="design",
+        system_prompt="Architetto software che produce soluzioni modulari",
+    ))
+    coordinator.add_profile(AgentProfile(
+        name="ProductOwner", role="product_owner",
+        system_prompt="PO che crea roadmap sintetiche e priorità",
+    ))
+    coordinator.add_profile(AgentProfile(
+        name="QAAgent", role="qa",
+        system_prompt="QA senior che identifica rischi e test",
+    ))
+    coordinator.build_agents()
+    return coordinator
 
 
 def _save_report(user_issue: str, demo_output: str) -> str:
@@ -576,9 +689,6 @@ async def team_analyze_structured(issue: str) -> Dict[str, str]:
         "full_report": full_report,
         "report_file": os.path.basename(report_path),
     }
-
-class AgentReviewRequest(BaseModel):
-    description: str
 
 @app.post("/agent/review")
 async def agent_review(request: AgentReviewRequest) -> Dict[str, str]:

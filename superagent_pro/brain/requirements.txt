@@ -1,7 +1,0 @@
-openai
-speechrecognition
-pyttsx3
-opencv-python
-pynput
-numpy
-flask

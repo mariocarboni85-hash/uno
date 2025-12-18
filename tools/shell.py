@@ -25,6 +25,22 @@ def run_tests(params):
     import subprocess
     t = params.get('type')
     path = params.get('path')
+
+    # Policy check
+    try:
+        if VitPolicy:
+            cmd_preview = f"pytest {path}" if t == 'python' else (f"npm test --prefix {path}" if t == 'node' else '')
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd_preview)
+            if not allowed:
+                try:
+                    if policy_audit:
+                        policy_audit(VitPolicy.policy, 'shell', 'uno', False, reason)
+                except Exception:
+                    pass
+                return {'error': f'Policy blocked execution: {reason}'}
+    except Exception:
+        pass
+
     try:
         if t == 'python':
             out = subprocess.check_output(f'pytest {path}', shell=True, encoding='utf-8', timeout=60)
@@ -42,6 +58,22 @@ def update_dependencies(params):
     """
     import subprocess
     t = params.get('type')
+
+    # Policy check
+    try:
+        if VitPolicy:
+            cmd_preview = 'pip install --upgrade pip' if t == 'pip' else ('npm update' if t == 'npm' else '')
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd_preview)
+            if not allowed:
+                try:
+                    if policy_audit:
+                        policy_audit(VitPolicy.policy, 'shell', 'uno', False, reason)
+                except Exception:
+                    pass
+                return {'error': f'Policy blocked execution: {reason}'}
+    except Exception:
+        pass
+
     try:
         if t == 'pip':
             out = subprocess.check_output('pip install --upgrade pip', shell=True, encoding='utf-8', timeout=60)
@@ -61,6 +93,22 @@ def install_program(params):
     t = params.get('type')
     name = params.get('name')
     args = params.get('args', '')
+
+    # Policy check
+    try:
+        if VitPolicy:
+            cmd_preview = f"{t} {name} {args}".strip()
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd_preview)
+            if not allowed:
+                try:
+                    if policy_audit:
+                        policy_audit(VitPolicy.policy, 'shell', 'uno', False, reason)
+                except Exception:
+                    pass
+                return {'error': f'Policy blocked execution: {reason}'}
+    except Exception:
+        pass
+
     try:
         if t == 'pip':
             out = subprocess.check_output(f'pip install {name} {args}', shell=True, encoding='utf-8', timeout=60)
@@ -82,12 +130,27 @@ def perform_shell_action(params):
     op = params.get('op')
     cmd = params.get('cmd')
     if op == 'run' and cmd:
+        # Policy check
+        try:
+            if VitPolicy:
+                allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd)
+                if not allowed:
+                    try:
+                        if policy_audit:
+                            policy_audit(VitPolicy.policy, 'shell', 'uno', False, reason)
+                    except Exception:
+                        pass
+                    return {'error': f'Policy blocked execution: {reason}'}
+        except Exception:
+            pass
+
         try:
             out = subprocess.check_output(cmd, shell=True, encoding='utf-8', timeout=10)
             return {'output': out}
         except Exception as e:
             return {'error': str(e)}
     return {'error': 'Operazione non valida'}
+    
 """
 Advanced Shell Tool - Enhanced command execution with monitoring and safety
 """
@@ -284,6 +347,15 @@ class ShellExecutor:
 """Simple shell tool to run commands (backwards compatible API)."""
 import subprocess
 from typing import Optional as _Optional
+# Policy enforcement (optional) - use `VitPolicy` if available
+try:
+    from ..policy import VitPolicy
+except Exception:
+    VitPolicy = None
+try:
+    from ..policy import audit as policy_audit
+except Exception:
+    policy_audit = None
 
 
 def run(cmd: str, timeout: _Optional[int] = 30):
@@ -406,6 +478,18 @@ def run(cmd: str, timeout: Optional[int] = 30) -> str:
     Raises:
         RuntimeError: If command fails
     """
+    # Policy check: block if policy disallows this shell action
+    if VitPolicy:
+        try:
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd)
+            if not allowed:
+                raise RuntimeError(f"Policy blocked execution: {reason}")
+        except RuntimeError:
+            raise
+        except Exception:
+            # If policy subsystem fails unexpectedly, fallthrough to execution
+            pass
+
     result = _executor.run(cmd, timeout=timeout)
     if not result['success']:
         raise RuntimeError(f"Command failed: {result.get('stderr', result.get('error'))}")
@@ -422,8 +506,17 @@ def run_shell(cmd: str, timeout: Optional[int] = 30) -> str:
     Returns:
         Command output or error message
     """
+    # Policy check
+    if VitPolicy:
+        try:
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd)
+            if not allowed:
+                return f"Errore:\nPolicy blocked execution: {reason}"
+        except Exception:
+            pass
+
     result = _executor.run(cmd, timeout=timeout)
-    
+
     if not result['success']:
         error_msg = result.get('stderr') or result.get('error', 'Unknown error')
         return f"Errore:\n{error_msg}"
@@ -445,6 +538,22 @@ def run_advanced(cmd: str, timeout: int = 30, cwd: str = None,
     Returns:
         Dict with detailed execution results
     """
+    # Policy check
+    if VitPolicy:
+        try:
+            allowed, reason = VitPolicy.check('shell', 'uno', mode=None, command=cmd)
+            if not allowed:
+                return {
+                    'success': False,
+                    'error': f'Policy blocked execution: {reason}',
+                    'stdout': '',
+                    'stderr': reason,
+                    'returncode': -1,
+                    'command': cmd,
+                }
+        except Exception:
+            pass
+
     return _executor.run(cmd, timeout=timeout, cwd=cwd, env=env, check_safety=check_safety)
 
 def get_system_info() -> Dict[str, Any]:

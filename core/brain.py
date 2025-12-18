@@ -544,7 +544,8 @@ def agent_action(action_type, params):
 """
 Advanced Brain: Multi-model reasoning, memory, learning, and decision making
 """
-from typing import Optional, List, Dict, Any, Tuple
+from typing import Optional, List, Dict, Any, Tuple, Deque
+from collections import deque
 import json
 import re
 from datetime import datetime
@@ -649,6 +650,9 @@ class Brain:
             'ollama': self._think_ollama,
             'local': self._think_local
         }
+        self._ollama_available = True
+        self._structured_focus_history: Deque[str] = deque(maxlen=8)
+        self._last_structured_signature: Optional[Tuple[Tuple[str, ...], Tuple[str, ...], Tuple[str, ...]]] = None
 
     def select_action(self, plan: list, context: Optional[dict] = None):
         """
@@ -798,8 +802,10 @@ Analyze each option and select the best one. Respond with just the number."""
         if model == 'auto':
             if _openai_client:
                 model = 'openai'
-            else:
+            elif self._ollama_available:
                 model = 'ollama'
+            else:
+                model = 'local'
         
         # Get response from selected model
         think_func = self.available_models.get(model, self._think_local)
@@ -829,7 +835,7 @@ Analyze each option and select the best one. Respond with just the number."""
             )
             return response.choices[0].message.content or ""
         except Exception as e:
-            return f"OpenAI error: {str(e)}"
+            return self._structured_response(prompt, f"OpenAI fallback: {e}")
     
     def _think_ollama(self, prompt: str) -> str:
         """Think using Ollama local model."""
@@ -844,10 +850,16 @@ Analyze each option and select the best one. Respond with just the number."""
                 timeout=30
             )
             if response.status_code == 200:
-                return response.json().get('response', 'No response')
-            return f"Ollama error: {response.status_code}"
+                data = response.json().get('response', '').strip()
+                self._ollama_available = True
+                if data:
+                    return data
+                return self._structured_response(prompt, "Ollama returned empty payload")
+            self._ollama_available = False
+            return self._structured_response(prompt, f"Ollama HTTP {response.status_code}")
         except Exception as e:
-            return f"Ollama connection error: {str(e)}"
+            self._ollama_available = False
+            return self._structured_response(prompt, f"Ollama fallback: {e}")
     
     def _think_local(self, prompt: str) -> str:
         """Simple local reasoning without external API."""
@@ -856,12 +868,97 @@ Analyze each option and select the best one. Respond with just the number."""
         
         if 'file' in prompt_lower and 'create' in prompt_lower:
             return "ACTION:files:create"
-        elif 'search' in prompt_lower or 'find' in prompt_lower:
+        if 'search' in prompt_lower or 'find' in prompt_lower:
             return "ACTION:browser:search"
-        elif 'run' in prompt_lower or 'execute' in prompt_lower:
+        if 'run' in prompt_lower or 'execute' in prompt_lower:
             return "ACTION:shell:execute"
-        
-        return "I understand your request. Please provide more specific instructions."
+
+        return self._structured_response(prompt, "Local reasoning fallback")
+
+    def _structured_response(self, prompt: str, note: Optional[str] = None) -> str:
+        """Generate a deterministic, structured answer when external models are unavailable."""
+        prompt_clean = prompt.strip()
+        prompt_lower = prompt_clean.lower()
+        recent_lines = [line.strip(" -*\t") for line in prompt_clean.splitlines() if line.strip()]
+        focus = " ".join(recent_lines[:3]) if recent_lines else prompt_clean
+        focus = focus[-320:] if len(focus) > 320 else focus
+
+        emphasis: List[str] = []
+        mapping = {
+            'risk': "Evidenziare le aree di rischio e pianificare mitigazioni pratiche.",
+            'qa': "Definire criteri di validazione e test osservabili.",
+            'deploy': "Coordinare rollout, rollback e telemetria.",
+            'tool': "Mappare strumenti essenziali, credenziali e automatismi.",
+            'plan': "Scomporre il lavoro in step indipendenti e assegnabili.",
+        }
+        for key, sentence in mapping.items():
+            if key in prompt_lower:
+                emphasis.append(sentence)
+        if not emphasis:
+            emphasis = [
+                "Stabilire contesto, vincoli e stakeholder coinvolti.",
+                "Definire outcome misurabili e segnali di successo.",
+            ]
+
+        actions = [
+            "Raccogliere i segnali più recenti e aggiornarli in memoria condivisa.",
+            "Proporre 2-3 task concreti con ownership esplicita.",
+            "Identificare tool o dati mancanti e prepararne l'approvvigionamento.",
+        ]
+
+        risks = [
+            "Dipendenze esterne non disponibili o non configurate.",
+            "Ambiguità sullo scope potrebbe generare rework.",
+            "Mancanza di metriche può bloccare l'approvazione finale.",
+        ]
+
+        header = "[LOCAL_SYNTHESIS]"
+        if note:
+            header = f"{header} {note}"
+        signature = (tuple(emphasis), tuple(actions), tuple(risks))
+        normalized_focus = focus.lower()
+        repeated_focus = normalized_focus in self._structured_focus_history
+        repeated_signature = signature == self._last_structured_signature
+        compact_mode = repeated_focus or repeated_signature
+
+        self._structured_focus_history.append(normalized_focus)
+        self._last_structured_signature = signature
+
+        if compact_mode:
+            compact_lines = [
+                header.replace("[LOCAL_SYNTHESIS]", "[LOCAL_SYNTHESIS|COMPACT]"),
+                "## Sintesi rapida",
+                f"- {focus or 'Obiettivo non specificato.'}",
+            ]
+            if emphasis:
+                compact_lines.extend([
+                    "## Punto chiave",
+                    f"- {emphasis[0]}",
+                ])
+            if actions:
+                compact_lines.append("## Azioni successive")
+                compact_lines.extend(f"- {item}" for item in actions[:2])
+            if risks:
+                compact_lines.append("## Rischio da monitorare")
+                compact_lines.append(f"- {risks[0]}")
+            compact_lines.extend([
+                "## Nota",
+                "- Contenuto compresso: consulta i log precedenti per i dettagli completi.",
+            ])
+            return "\n".join(compact_lines)
+
+        lines = [
+            header,
+            "## Sintesi",
+            f"- {focus or 'Obiettivo non specificato.'}",
+            "## Dettagli tecnici",
+            *[f"- {item}" for item in emphasis],
+            "## Azioni successive",
+            *[f"- {item}" for item in actions],
+            "## Rischi e controlli",
+            *[f"- {item}" for item in risks],
+        ]
+        return "\n".join(lines)
     
     def learn_from_outcome(self, action: str, outcome: str, success: bool):
         """

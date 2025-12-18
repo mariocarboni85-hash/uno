@@ -1,2 +1,0 @@
-QMainWindow { background-color: #232629; color: #fff; }
-QLabel, QPlainTextEdit, QTextEdit { color: #fff; }

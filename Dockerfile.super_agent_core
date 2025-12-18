@@ -1,7 +1,0 @@
-# Dockerfile per super_agent_core
-FROM python:3.14
-WORKDIR /app
-COPY super_agent.py ./
-COPY requirements_core.txt ./
-RUN pip install --no-cache-dir -r requirements_core.txt
-CMD ["python", "super_agent.py"]

@@ -1,4 +1,0 @@
-# Requirements per Super Agent Workspace
-PyQt5
-openai
-jedi
