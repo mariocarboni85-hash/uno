@@ -8,10 +8,28 @@ class PolicyViolation(Exception):
 
 class PolicyEngine:
     def __init__(self, policy_path: str = None):
-        # default to bundled policy file next to this module
-        if policy_path is None:
-            policy_path = Path(__file__).with_name('policy.yaml')
-        self.policy = yaml.safe_load(Path(policy_path).read_text())
+        # Resolve policy path with sensible fallbacks:
+        # 1. explicit existing path
+        # 2. treat provided name as relative to this module
+        # 3. bundled 'policy.yaml' next to this module
+        module_dir = Path(__file__).parent
+        resolved = None
+        if policy_path:
+            p = Path(policy_path)
+            if p.exists():
+                resolved = p
+            else:
+                candidate = module_dir / policy_path
+                if candidate.exists():
+                    resolved = candidate
+        if resolved is None:
+            bundled = module_dir / 'policy.yaml'
+            if bundled.exists():
+                resolved = bundled
+        if resolved is None:
+            raise FileNotFoundError(f"Policy file not found: {policy_path}")
+
+        self.policy = yaml.safe_load(resolved.read_text())
 
     def authorize(self, action):
         perms = self.policy.get('permissions', {}).get(action.type)

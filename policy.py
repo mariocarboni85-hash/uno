@@ -62,20 +62,26 @@ class VitPolicy:
         return True, 'ok'
 
 
-def audit(policy: Dict[str, Any], action_type: str, sender: str, allowed: bool, reason: str) -> None:
-    """Append an audit record to `logs/audit.log` (best-effort).
+def audit(policy: Dict[str, Any], action_type: str, sender: str, allowed: bool, reason: str, **meta) -> None:
+    """Append structured audit record using `AuditLog` (best-effort).
 
-    This is intentionally simple to avoid raising in tests.
+    This centralizes audit persistence and provides tamper-evident chaining.
     """
     try:
         root = Path(__file__).parent
-        logs_dir = root / 'logs'
-        logs_dir.mkdir(parents=True, exist_ok=True)
-        log_file = logs_dir / 'audit.log'
-        ts = datetime.utcnow().isoformat() + 'Z'
-        rec = f"{ts} action={action_type} sender={sender} allowed={allowed} reason={reason}\n"
-        with open(log_file, 'a', encoding='utf-8') as f:
-            f.write(rec)
+        log_path = root / 'logs' / 'audit.log'
+        from uno.audit_log import AuditLog
+
+        record = {
+            'policy_version': policy.get('version') if isinstance(policy, dict) else None,
+            'action': action_type,
+            'sender': sender,
+            'allowed': bool(allowed),
+            'reason': reason,
+            'meta': meta,
+        }
+
+        AuditLog(path=str(log_path)).append(record)
     except Exception:
         # swallow errors to avoid breaking agent execution
         pass

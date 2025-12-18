@@ -34,14 +34,14 @@ class ToolExecutor:
             res = _safe_call(tool, payload)
             if audit_fn:
                 try:
-                    audit_fn(None, action_type, sender or 'unknown', True, 'executed')
+                    audit_fn(None, action_type, sender or 'unknown', True, 'executed', payload=payload)
                 except Exception:
                     pass
             return res
         except Exception as e:
             if audit_fn:
                 try:
-                    audit_fn(None, action_type, sender or 'unknown', False, str(e))
+                    audit_fn(None, action_type, sender or 'unknown', False, str(e), payload=payload)
                 except Exception:
                     pass
             raise

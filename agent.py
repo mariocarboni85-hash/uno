@@ -253,6 +253,145 @@ class uno:
             if normalized_plan:
                 normalized_plan = normalized_plan[1:]
 
+    def run_with_vit(self, goal: str, vit_context: Dict[str, Any]) -> None:
+        """Run using explicit vit_context with AuditLog + PolicyEngine + ActionBudget + ToolExecutor.
+
+        Signature: run_with_vit(goal, vit_context)
+        vit_context: { 'policy': <path_or_none>, 'budget': {'max_actions':..,'max_shell':..,'max_write':..} }
+        """
+        from dataclasses import asdict
+        # prepare policy engine
+        policy_engine = None
+        try:
+            if PolicyEngine and isinstance(vit_context, dict) and vit_context.get('policy'):
+                try:
+                    policy_engine = PolicyEngine(vit_context.get('policy'))
+                except Exception:
+                    policy_engine = PolicyEngine()
+        except Exception:
+            policy_engine = None
+
+        # budget
+        bcfg = vit_context.get('budget', {}) if isinstance(vit_context, dict) else {}
+        try:
+            budget = self.ActionBudget(
+                max_actions=bcfg.get('max_actions', 5),
+                max_shell=bcfg.get('max_shell', 0),
+                max_write=bcfg.get('max_write', 3),
+            )
+        except Exception:
+            budget = self.ActionBudget()
+
+        # audit log
+        try:
+            from uno.audit_log import AuditLog
+            audit = AuditLog()
+        except Exception:
+            audit = None
+
+        plan = self.planner.create_plan(goal)
+
+        while plan:
+            raw_action = self.brain.select_action(plan)
+            if raw_action is None:
+                break
+
+            try:
+                action = self.ActionNormalizer.normalize(raw_action)
+            except Exception:
+                break
+
+            # policy authorize
+            try:
+                if policy_engine:
+                    policy_engine.authorize(action)
+            except Exception as e:
+                # audit denial if possible
+                if audit:
+                    try:
+                        audit.append({
+                            'phase': 'intent',
+                            'agent': self.name,
+                            'action': asdict(action),
+                            'authorized_by': 'vit',
+                            'allowed': False,
+                            'reason': str(e),
+                        })
+                    except Exception:
+                        pass
+                return
+
+            # budget consume
+            try:
+                budget.consume(action.type)
+            except Exception as e:
+                if audit:
+                    try:
+                        audit.append({
+                            'phase': 'intent',
+                            'agent': self.name,
+                            'action': asdict(action),
+                            'authorized_by': 'vit',
+                            'allowed': False,
+                            'reason': str(e),
+                        })
+                    except Exception:
+                        pass
+                return
+
+            # audit intent
+            if audit:
+                try:
+                    audit.append({
+                        'phase': 'intent',
+                        'agent': self.name,
+                        'action': asdict(action),
+                        'authorized_by': 'vit',
+                    })
+                except Exception:
+                    pass
+
+            # execute
+            try:
+                if ToolExecutor:
+                    res = ToolExecutor.execute(action, self.tools, audit_fn=(getattr(self, 'policy', None) and getattr(__import__('uno.policy', fromlist=['audit']), 'audit')))
+                else:
+                    # fallback to existing execute_action
+                    res = self.execute_action(action, sender=action.sender)
+                status = 'success'
+            except Exception as e:
+                res = str(e)
+                status = 'error'
+
+            # audit result
+            if audit:
+                try:
+                    audit.append({
+                        'phase': 'result',
+                        'agent': self.name,
+                        'action': asdict(action),
+                        'status': status,
+                        'result': res,
+                    })
+                except Exception:
+                    pass
+
+            # update plan
+            try:
+                if isinstance(res, dict) and 'plan' in res:
+                    plan = res['plan']
+                elif hasattr(plan, 'update'):
+                    try:
+                        plan.update(res)  # type: ignore
+                    except Exception:
+                        plan = plan[1:]
+                else:
+                    if plan:
+                        plan = plan[1:]
+            except Exception:
+                if plan:
+                    plan = plan[1:]
+
         def run_with_vit_context(self, goal: str, vit_context: Dict[str, Any]) -> None:
             """Run loop driven by explicit vit_context (policy + budget).
 
@@ -387,10 +526,8 @@ class uno:
         args = getattr(action, 'payload', {}) or {}
 
         # Policy check
+        # Policy authorization: prefer attached VitPolicy if present
         try:
-            # Prefer an explicit policy object attached to the agent; avoid
-            # falling back to an external `uno.policy` module to prevent
-            # unpredictable environment imports during tests.
             pol = getattr(self, 'policy', None)
             if pol:
                 mode = self.config.get('mode') or pol.policy.get('modes', {}).get('default')
@@ -400,14 +537,17 @@ class uno:
                     try:
                         from uno import policy as _uno_policy
                         if _uno_policy:
-                            _uno_policy.audit(pol.policy, action_type, sender or 'unknown', False, reason)
+                            _uno_policy.audit(pol.policy if getattr(pol, 'policy', None) else {}, action_type, sender or 'unknown', False, reason)
                     except Exception:
                         pass
                     return f"Policy denied: {reason}"
-        except Exception:
-            return "Policy evaluation error"
+            else:
+                # no attached policy: do not apply bundled PolicyEngine implicitly
+                pass
+        except Exception as e:
+            return f"Policy evaluation error: {e}"
 
-        # Budget
+        # Budget consumption
         try:
             if not self._budget:
                 raise RuntimeError('Budget not initialized')
@@ -415,31 +555,74 @@ class uno:
         except Exception as e:
             return f"Budget exceeded: {e}"
 
-        # Execute via ToolExecutor if available
+        # Audit BEFORE execution (attempt)
         try:
+            try:
+                from uno import policy as _uno_policy
+            except Exception:
+                _uno_policy = None
+            policy_dict = getattr(self, 'policy').policy if getattr(self, 'policy', None) and getattr(self, 'policy', None).policy else {}
+            if _uno_policy:
+                try:
+                    _uno_policy.audit(policy_dict, action_type, sender or 'unknown', True, 'attempt')
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+        # Execute via ToolExecutor if available (pass audit fn for AFTER)
+        try:
+            def _after_audit(policy_obj, a_type, a_sender, allowed, reason, **meta):
+                try:
+                    from uno import policy as _uno_policy
+                    policy_dict_local = getattr(self, 'policy').policy if getattr(self, 'policy', None) and getattr(self, 'policy', None).policy else {}
+                    if _uno_policy:
+                        try:
+                            # include budget snapshot when available
+                            if hasattr(self, '_budget') and getattr(self, '_budget'):
+                                meta.setdefault('budget', getattr(self, '_budget').remaining())
+                            _uno_policy.audit(policy_dict_local, a_type, a_sender or 'unknown', allowed, reason, **meta)
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+
             if ToolExecutor:
                 try:
-                    return ToolExecutor.execute(action, self.tools, audit_fn=(getattr(self, 'policy', None) and getattr(__import__('uno.policy', fromlist=['audit']), 'audit')))
+                    return ToolExecutor.execute(action, self.tools, audit_fn=_after_audit)
                 except Exception as e:
+                    # ensure after-audit records failure
+                    try:
+                        _after_audit(None, action_type, sender or 'unknown', False, str(e))
+                    except Exception:
+                        pass
                     return f"Execution error: {e}"
+
             # Fallback behaviour if ToolExecutor not present
             tool = self.tools.get(action_type)
             if tool is None:
+                # after-audit failure
+                try:
+                    _after_audit(None, action_type, sender or 'unknown', False, 'tool not found')
+                except Exception:
+                    pass
                 return f"Tool {action_type} not found"
             try:
                 if callable(tool):
                     res = tool(**args)
                 else:
                     res = tool
-                # best-effort audit
+                # after-audit success
                 try:
-                    from uno import policy as _uno_policy
-                    if _uno_policy and getattr(self, 'policy', None):
-                        _uno_policy.audit(self.policy.policy, action_type, sender or 'unknown', True, 'executed')
+                    _after_audit(None, action_type, sender or 'unknown', True, 'executed')
                 except Exception:
                     pass
                 return res
             except Exception as e:
+                try:
+                    _after_audit(None, action_type, sender or 'unknown', False, str(e))
+                except Exception:
+                    pass
                 return f"Execution error: {e}"
         except Exception:
             return "Execution pipeline error"
