@@ -1434,3 +1434,2587 @@ SuperAgent: suggerimento miglioramento ecosistema
 2025-12-07 11:25:35,468 INFO 127.0.0.1 - - [07/Dec/2025 11:25:35] "POST /message?agent=3 HTTP/1.1" 200 -
 2025-12-07 11:25:37,507 INFO 127.0.0.1 - - [07/Dec/2025 11:25:37] "POST /message?agent=4 HTTP/1.1" 200 -
 2025-12-07 11:25:39,546 INFO 127.0.0.1 - - [07/Dec/2025 11:25:39] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:25:49,159 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:25:53,212 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:25:53,212 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:25:57,239 INFO 127.0.0.1 - - [07/Dec/2025 11:25:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:25:59,263 INFO 127.0.0.1 - - [07/Dec/2025 11:25:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:01,316 INFO 127.0.0.1 - - [07/Dec/2025 11:26:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:03,350 INFO 127.0.0.1 - - [07/Dec/2025 11:26:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:26:05,385 INFO 127.0.0.1 - - [07/Dec/2025 11:26:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:26:07,406 INFO 127.0.0.1 - - [07/Dec/2025 11:26:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:26:09,434 INFO 127.0.0.1 - - [07/Dec/2025 11:26:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:26:11,465 INFO 127.0.0.1 - - [07/Dec/2025 11:26:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:26:14,106 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:26:18,176 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:26:18,176 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:26:22,202 INFO 127.0.0.1 - - [07/Dec/2025 11:26:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:24,237 INFO 127.0.0.1 - - [07/Dec/2025 11:26:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:26,279 INFO 127.0.0.1 - - [07/Dec/2025 11:26:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:28,312 INFO 127.0.0.1 - - [07/Dec/2025 11:26:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:26:30,343 INFO 127.0.0.1 - - [07/Dec/2025 11:26:30] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:26:32,369 INFO 127.0.0.1 - - [07/Dec/2025 11:26:32] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:26:34,394 INFO 127.0.0.1 - - [07/Dec/2025 11:26:34] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:26:36,424 INFO 127.0.0.1 - - [07/Dec/2025 11:26:36] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:26:39,356 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:26:43,408 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:26:43,408 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:26:47,422 INFO 127.0.0.1 - - [07/Dec/2025 11:26:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:49,453 INFO 127.0.0.1 - - [07/Dec/2025 11:26:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:51,483 INFO 127.0.0.1 - - [07/Dec/2025 11:26:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:26:53,503 INFO 127.0.0.1 - - [07/Dec/2025 11:26:53] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:26:55,537 INFO 127.0.0.1 - - [07/Dec/2025 11:26:55] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:26:57,587 INFO 127.0.0.1 - - [07/Dec/2025 11:26:57] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:26:59,635 INFO 127.0.0.1 - - [07/Dec/2025 11:26:59] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:27:01,652 INFO 127.0.0.1 - - [07/Dec/2025 11:27:01] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:27:04,760 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:27:08,830 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:27:08,830 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:27:12,847 INFO 127.0.0.1 - - [07/Dec/2025 11:27:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:14,878 INFO 127.0.0.1 - - [07/Dec/2025 11:27:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:16,900 INFO 127.0.0.1 - - [07/Dec/2025 11:27:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:18,921 INFO 127.0.0.1 - - [07/Dec/2025 11:27:18] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:27:20,945 INFO 127.0.0.1 - - [07/Dec/2025 11:27:20] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:27:22,969 INFO 127.0.0.1 - - [07/Dec/2025 11:27:22] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:27:24,994 INFO 127.0.0.1 - - [07/Dec/2025 11:27:24] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:27:27,027 INFO 127.0.0.1 - - [07/Dec/2025 11:27:27] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:27:30,218 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 9 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:27:34,266 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:27:34,266 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:27:38,285 INFO 127.0.0.1 - - [07/Dec/2025 11:27:38] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:40,311 INFO 127.0.0.1 - - [07/Dec/2025 11:27:40] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:42,343 INFO 127.0.0.1 - - [07/Dec/2025 11:27:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:27:44,401 INFO 127.0.0.1 - - [07/Dec/2025 11:27:44] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:27:46,436 INFO 127.0.0.1 - - [07/Dec/2025 11:27:46] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:27:48,482 INFO 127.0.0.1 - - [07/Dec/2025 11:27:48] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:27:50,518 INFO 127.0.0.1 - - [07/Dec/2025 11:27:50] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:27:52,545 INFO 127.0.0.1 - - [07/Dec/2025 11:27:52] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:27:55,661 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:27:59,765 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:27:59,765 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:28:03,779 INFO 127.0.0.1 - - [07/Dec/2025 11:28:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:05,813 INFO 127.0.0.1 - - [07/Dec/2025 11:28:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:07,873 INFO 127.0.0.1 - - [07/Dec/2025 11:28:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:09,920 INFO 127.0.0.1 - - [07/Dec/2025 11:28:09] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:28:11,950 INFO 127.0.0.1 - - [07/Dec/2025 11:28:11] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:28:13,962 INFO 127.0.0.1 - - [07/Dec/2025 11:28:13] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:28:15,982 INFO 127.0.0.1 - - [07/Dec/2025 11:28:15] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:28:18,009 INFO 127.0.0.1 - - [07/Dec/2025 11:28:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:28:20,700 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:28:24,758 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:28:24,758 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:28:28,773 INFO 127.0.0.1 - - [07/Dec/2025 11:28:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:30,806 INFO 127.0.0.1 - - [07/Dec/2025 11:28:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:32,839 INFO 127.0.0.1 - - [07/Dec/2025 11:28:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:34,868 INFO 127.0.0.1 - - [07/Dec/2025 11:28:34] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:28:36,914 INFO 127.0.0.1 - - [07/Dec/2025 11:28:36] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:28:38,952 INFO 127.0.0.1 - - [07/Dec/2025 11:28:38] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:28:40,986 INFO 127.0.0.1 - - [07/Dec/2025 11:28:40] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:28:43,019 INFO 127.0.0.1 - - [07/Dec/2025 11:28:43] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:28:45,497 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:28:49,553 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:28:49,554 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:28:53,550 INFO 127.0.0.1 - - [07/Dec/2025 11:28:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:55,570 INFO 127.0.0.1 - - [07/Dec/2025 11:28:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:57,613 INFO 127.0.0.1 - - [07/Dec/2025 11:28:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:28:59,646 INFO 127.0.0.1 - - [07/Dec/2025 11:28:59] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:29:01,679 INFO 127.0.0.1 - - [07/Dec/2025 11:29:01] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:29:03,713 INFO 127.0.0.1 - - [07/Dec/2025 11:29:03] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:29:05,744 INFO 127.0.0.1 - - [07/Dec/2025 11:29:05] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:29:07,777 INFO 127.0.0.1 - - [07/Dec/2025 11:29:07] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:29:10,671 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 5 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=6
+SuperAgent: report performance - 10 analisi, 6 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:29:14,749 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:29:14,749 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:29:18,792 INFO 127.0.0.1 - - [07/Dec/2025 11:29:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:20,823 INFO 127.0.0.1 - - [07/Dec/2025 11:29:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:22,857 INFO 127.0.0.1 - - [07/Dec/2025 11:29:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:24,872 INFO 127.0.0.1 - - [07/Dec/2025 11:29:24] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:29:26,891 INFO 127.0.0.1 - - [07/Dec/2025 11:29:26] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:29:28,925 INFO 127.0.0.1 - - [07/Dec/2025 11:29:28] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:29:30,955 INFO 127.0.0.1 - - [07/Dec/2025 11:29:30] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:29:32,986 INFO 127.0.0.1 - - [07/Dec/2025 11:29:32] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:29:36,345 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:29:40,412 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:29:40,412 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:29:44,434 INFO 127.0.0.1 - - [07/Dec/2025 11:29:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:46,467 INFO 127.0.0.1 - - [07/Dec/2025 11:29:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:48,493 INFO 127.0.0.1 - - [07/Dec/2025 11:29:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:29:50,529 INFO 127.0.0.1 - - [07/Dec/2025 11:29:50] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:29:52,554 INFO 127.0.0.1 - - [07/Dec/2025 11:29:52] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:29:54,581 INFO 127.0.0.1 - - [07/Dec/2025 11:29:54] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:29:56,613 INFO 127.0.0.1 - - [07/Dec/2025 11:29:56] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:29:58,645 INFO 127.0.0.1 - - [07/Dec/2025 11:29:58] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:30:02,006 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:30:06,086 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:30:06,086 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:30:10,124 INFO 127.0.0.1 - - [07/Dec/2025 11:30:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:12,162 INFO 127.0.0.1 - - [07/Dec/2025 11:30:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:14,211 INFO 127.0.0.1 - - [07/Dec/2025 11:30:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:16,247 INFO 127.0.0.1 - - [07/Dec/2025 11:30:16] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:30:18,281 INFO 127.0.0.1 - - [07/Dec/2025 11:30:18] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:30:20,305 INFO 127.0.0.1 - - [07/Dec/2025 11:30:20] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:30:22,342 INFO 127.0.0.1 - - [07/Dec/2025 11:30:22] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:30:24,376 INFO 127.0.0.1 - - [07/Dec/2025 11:30:24] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:30:27,721 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 9 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:30:31,770 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:30:31,770 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:30:35,783 INFO 127.0.0.1 - - [07/Dec/2025 11:30:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:37,806 INFO 127.0.0.1 - - [07/Dec/2025 11:30:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:39,835 INFO 127.0.0.1 - - [07/Dec/2025 11:30:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:30:41,864 INFO 127.0.0.1 - - [07/Dec/2025 11:30:41] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:30:43,888 INFO 127.0.0.1 - - [07/Dec/2025 11:30:43] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:30:45,909 INFO 127.0.0.1 - - [07/Dec/2025 11:30:45] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:30:47,920 INFO 127.0.0.1 - - [07/Dec/2025 11:30:47] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:30:49,930 INFO 127.0.0.1 - - [07/Dec/2025 11:30:49] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:30:53,363 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:30:57,429 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:30:57,429 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:31:01,459 INFO 127.0.0.1 - - [07/Dec/2025 11:31:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:03,490 INFO 127.0.0.1 - - [07/Dec/2025 11:31:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:05,540 INFO 127.0.0.1 - - [07/Dec/2025 11:31:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:07,567 INFO 127.0.0.1 - - [07/Dec/2025 11:31:07] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:31:09,624 INFO 127.0.0.1 - - [07/Dec/2025 11:31:09] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:31:11,670 INFO 127.0.0.1 - - [07/Dec/2025 11:31:11] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:31:13,721 INFO 127.0.0.1 - - [07/Dec/2025 11:31:13] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:31:15,753 INFO 127.0.0.1 - - [07/Dec/2025 11:31:15] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:31:18,256 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:31:22,344 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:31:22,344 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:31:26,353 INFO 127.0.0.1 - - [07/Dec/2025 11:31:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:28,384 INFO 127.0.0.1 - - [07/Dec/2025 11:31:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:30,428 INFO 127.0.0.1 - - [07/Dec/2025 11:31:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:32,466 INFO 127.0.0.1 - - [07/Dec/2025 11:31:32] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:31:34,497 INFO 127.0.0.1 - - [07/Dec/2025 11:31:34] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:31:36,544 INFO 127.0.0.1 - - [07/Dec/2025 11:31:36] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:31:38,592 INFO 127.0.0.1 - - [07/Dec/2025 11:31:38] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:31:40,638 INFO 127.0.0.1 - - [07/Dec/2025 11:31:40] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:31:43,240 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:31:47,339 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:31:47,339 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:31:51,350 INFO 127.0.0.1 - - [07/Dec/2025 11:31:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:53,393 INFO 127.0.0.1 - - [07/Dec/2025 11:31:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:55,435 INFO 127.0.0.1 - - [07/Dec/2025 11:31:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:31:57,489 INFO 127.0.0.1 - - [07/Dec/2025 11:31:57] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:31:59,508 INFO 127.0.0.1 - - [07/Dec/2025 11:31:59] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:32:01,554 INFO 127.0.0.1 - - [07/Dec/2025 11:32:01] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:32:03,587 INFO 127.0.0.1 - - [07/Dec/2025 11:32:03] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:32:05,619 INFO 127.0.0.1 - - [07/Dec/2025 11:32:05] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:32:08,200 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:32:12,307 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:32:12,307 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:32:16,328 INFO 127.0.0.1 - - [07/Dec/2025 11:32:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:18,369 INFO 127.0.0.1 - - [07/Dec/2025 11:32:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:20,417 INFO 127.0.0.1 - - [07/Dec/2025 11:32:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:22,449 INFO 127.0.0.1 - - [07/Dec/2025 11:32:22] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:32:24,483 INFO 127.0.0.1 - - [07/Dec/2025 11:32:24] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:32:26,542 INFO 127.0.0.1 - - [07/Dec/2025 11:32:26] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:32:28,597 INFO 127.0.0.1 - - [07/Dec/2025 11:32:28] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:32:30,624 INFO 127.0.0.1 - - [07/Dec/2025 11:32:30] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:32:33,297 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:32:37,392 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:32:37,393 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:32:41,413 INFO 127.0.0.1 - - [07/Dec/2025 11:32:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:43,467 INFO 127.0.0.1 - - [07/Dec/2025 11:32:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:45,492 INFO 127.0.0.1 - - [07/Dec/2025 11:32:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:32:47,539 INFO 127.0.0.1 - - [07/Dec/2025 11:32:47] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:32:49,591 INFO 127.0.0.1 - - [07/Dec/2025 11:32:49] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:32:51,638 INFO 127.0.0.1 - - [07/Dec/2025 11:32:51] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:32:53,674 INFO 127.0.0.1 - - [07/Dec/2025 11:32:53] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:32:55,695 INFO 127.0.0.1 - - [07/Dec/2025 11:32:55] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:32:58,533 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:33:02,598 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:33:02,598 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:33:06,634 INFO 127.0.0.1 - - [07/Dec/2025 11:33:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:08,654 INFO 127.0.0.1 - - [07/Dec/2025 11:33:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:10,685 INFO 127.0.0.1 - - [07/Dec/2025 11:33:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:12,713 INFO 127.0.0.1 - - [07/Dec/2025 11:33:12] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:33:14,768 INFO 127.0.0.1 - - [07/Dec/2025 11:33:14] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:33:16,816 INFO 127.0.0.1 - - [07/Dec/2025 11:33:16] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:33:18,866 INFO 127.0.0.1 - - [07/Dec/2025 11:33:18] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:33:20,912 INFO 127.0.0.1 - - [07/Dec/2025 11:33:20] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:33:23,954 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:33:28,057 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:33:28,058 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:33:32,089 INFO 127.0.0.1 - - [07/Dec/2025 11:33:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:34,144 INFO 127.0.0.1 - - [07/Dec/2025 11:33:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:36,186 INFO 127.0.0.1 - - [07/Dec/2025 11:33:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:38,213 INFO 127.0.0.1 - - [07/Dec/2025 11:33:38] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:33:40,229 INFO 127.0.0.1 - - [07/Dec/2025 11:33:40] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:33:42,276 INFO 127.0.0.1 - - [07/Dec/2025 11:33:42] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:33:44,307 INFO 127.0.0.1 - - [07/Dec/2025 11:33:44] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:33:46,357 INFO 127.0.0.1 - - [07/Dec/2025 11:33:46] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:33:48,708 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:33:52,798 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:33:52,798 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:33:56,819 INFO 127.0.0.1 - - [07/Dec/2025 11:33:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:33:58,871 INFO 127.0.0.1 - - [07/Dec/2025 11:33:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:00,916 INFO 127.0.0.1 - - [07/Dec/2025 11:34:00] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:02,935 INFO 127.0.0.1 - - [07/Dec/2025 11:34:02] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:34:04,986 INFO 127.0.0.1 - - [07/Dec/2025 11:34:04] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:34:07,013 INFO 127.0.0.1 - - [07/Dec/2025 11:34:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:34:09,045 INFO 127.0.0.1 - - [07/Dec/2025 11:34:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:34:11,084 INFO 127.0.0.1 - - [07/Dec/2025 11:34:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:34:13,395 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:34:17,473 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:34:17,474 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:34:21,515 INFO 127.0.0.1 - - [07/Dec/2025 11:34:21] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:23,531 INFO 127.0.0.1 - - [07/Dec/2025 11:34:23] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:25,562 INFO 127.0.0.1 - - [07/Dec/2025 11:34:25] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:27,624 INFO 127.0.0.1 - - [07/Dec/2025 11:34:27] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:34:29,661 INFO 127.0.0.1 - - [07/Dec/2025 11:34:29] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:34:31,709 INFO 127.0.0.1 - - [07/Dec/2025 11:34:31] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:34:33,745 INFO 127.0.0.1 - - [07/Dec/2025 11:34:33] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:34:35,788 INFO 127.0.0.1 - - [07/Dec/2025 11:34:35] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:34:38,049 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:34:42,114 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:34:42,114 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:34:46,150 INFO 127.0.0.1 - - [07/Dec/2025 11:34:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:48,191 INFO 127.0.0.1 - - [07/Dec/2025 11:34:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:50,224 INFO 127.0.0.1 - - [07/Dec/2025 11:34:50] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:34:52,270 INFO 127.0.0.1 - - [07/Dec/2025 11:34:52] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:34:54,303 INFO 127.0.0.1 - - [07/Dec/2025 11:34:54] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:34:56,342 INFO 127.0.0.1 - - [07/Dec/2025 11:34:56] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:34:58,368 INFO 127.0.0.1 - - [07/Dec/2025 11:34:58] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:35:00,417 INFO 127.0.0.1 - - [07/Dec/2025 11:35:00] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:35:02,850 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 12 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:35:06,944 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:35:06,944 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:35:10,983 INFO 127.0.0.1 - - [07/Dec/2025 11:35:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:13,014 INFO 127.0.0.1 - - [07/Dec/2025 11:35:13] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:15,064 INFO 127.0.0.1 - - [07/Dec/2025 11:35:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:17,105 INFO 127.0.0.1 - - [07/Dec/2025 11:35:17] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:35:19,147 INFO 127.0.0.1 - - [07/Dec/2025 11:35:19] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:35:21,169 INFO 127.0.0.1 - - [07/Dec/2025 11:35:21] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:35:23,212 INFO 127.0.0.1 - - [07/Dec/2025 11:35:23] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:35:25,261 INFO 127.0.0.1 - - [07/Dec/2025 11:35:25] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:35:27,692 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:35:31,762 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:35:31,762 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:35:35,810 INFO 127.0.0.1 - - [07/Dec/2025 11:35:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:37,857 INFO 127.0.0.1 - - [07/Dec/2025 11:35:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:39,921 INFO 127.0.0.1 - - [07/Dec/2025 11:35:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:35:41,967 INFO 127.0.0.1 - - [07/Dec/2025 11:35:41] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:35:43,989 INFO 127.0.0.1 - - [07/Dec/2025 11:35:43] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:35:46,019 INFO 127.0.0.1 - - [07/Dec/2025 11:35:46] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:35:48,070 INFO 127.0.0.1 - - [07/Dec/2025 11:35:48] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:35:50,100 INFO 127.0.0.1 - - [07/Dec/2025 11:35:50] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:35:52,780 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:35:56,848 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:35:56,848 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:36:00,866 INFO 127.0.0.1 - - [07/Dec/2025 11:36:00] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:02,914 INFO 127.0.0.1 - - [07/Dec/2025 11:36:02] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:04,959 INFO 127.0.0.1 - - [07/Dec/2025 11:36:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:06,996 INFO 127.0.0.1 - - [07/Dec/2025 11:36:06] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:36:09,029 INFO 127.0.0.1 - - [07/Dec/2025 11:36:09] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:36:11,059 INFO 127.0.0.1 - - [07/Dec/2025 11:36:11] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:36:13,106 INFO 127.0.0.1 - - [07/Dec/2025 11:36:13] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:36:15,137 INFO 127.0.0.1 - - [07/Dec/2025 11:36:15] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:36:17,648 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:36:21,772 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:36:21,772 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:36:25,795 INFO 127.0.0.1 - - [07/Dec/2025 11:36:25] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:27,858 INFO 127.0.0.1 - - [07/Dec/2025 11:36:27] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:29,907 INFO 127.0.0.1 - - [07/Dec/2025 11:36:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:31,953 INFO 127.0.0.1 - - [07/Dec/2025 11:36:31] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:36:33,982 INFO 127.0.0.1 - - [07/Dec/2025 11:36:33] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:36:36,016 INFO 127.0.0.1 - - [07/Dec/2025 11:36:36] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:36:38,039 INFO 127.0.0.1 - - [07/Dec/2025 11:36:38] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:36:40,085 INFO 127.0.0.1 - - [07/Dec/2025 11:36:40] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:36:42,873 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:36:46,970 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:36:46,970 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:36:51,012 INFO 127.0.0.1 - - [07/Dec/2025 11:36:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:53,049 INFO 127.0.0.1 - - [07/Dec/2025 11:36:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:55,082 INFO 127.0.0.1 - - [07/Dec/2025 11:36:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:36:57,107 INFO 127.0.0.1 - - [07/Dec/2025 11:36:57] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:36:59,155 INFO 127.0.0.1 - - [07/Dec/2025 11:36:59] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:37:01,201 INFO 127.0.0.1 - - [07/Dec/2025 11:37:01] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:37:03,247 INFO 127.0.0.1 - - [07/Dec/2025 11:37:03] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:37:05,279 INFO 127.0.0.1 - - [07/Dec/2025 11:37:05] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:37:07,845 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:37:11,950 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:37:11,951 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:37:15,983 INFO 127.0.0.1 - - [07/Dec/2025 11:37:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:18,028 INFO 127.0.0.1 - - [07/Dec/2025 11:37:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:20,053 INFO 127.0.0.1 - - [07/Dec/2025 11:37:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:22,066 INFO 127.0.0.1 - - [07/Dec/2025 11:37:22] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:37:24,084 INFO 127.0.0.1 - - [07/Dec/2025 11:37:24] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:37:26,112 INFO 127.0.0.1 - - [07/Dec/2025 11:37:26] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:37:28,127 INFO 127.0.0.1 - - [07/Dec/2025 11:37:28] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:37:30,144 INFO 127.0.0.1 - - [07/Dec/2025 11:37:30] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:37:34,048 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:37:38,111 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:37:38,111 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:37:42,140 INFO 127.0.0.1 - - [07/Dec/2025 11:37:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:44,186 INFO 127.0.0.1 - - [07/Dec/2025 11:37:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:46,235 INFO 127.0.0.1 - - [07/Dec/2025 11:37:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:37:48,266 INFO 127.0.0.1 - - [07/Dec/2025 11:37:48] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:37:50,316 INFO 127.0.0.1 - - [07/Dec/2025 11:37:50] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:37:52,351 INFO 127.0.0.1 - - [07/Dec/2025 11:37:52] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:37:54,382 INFO 127.0.0.1 - - [07/Dec/2025 11:37:54] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:37:56,430 INFO 127.0.0.1 - - [07/Dec/2025 11:37:56] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:37:58,934 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:38:03,001 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:38:03,001 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:38:07,026 INFO 127.0.0.1 - - [07/Dec/2025 11:38:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:09,077 INFO 127.0.0.1 - - [07/Dec/2025 11:38:09] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:11,109 INFO 127.0.0.1 - - [07/Dec/2025 11:38:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:13,172 INFO 127.0.0.1 - - [07/Dec/2025 11:38:13] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:38:15,225 INFO 127.0.0.1 - - [07/Dec/2025 11:38:15] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:38:17,273 INFO 127.0.0.1 - - [07/Dec/2025 11:38:17] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:38:19,305 INFO 127.0.0.1 - - [07/Dec/2025 11:38:19] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:38:21,355 INFO 127.0.0.1 - - [07/Dec/2025 11:38:21] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:38:23,841 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:38:27,911 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:38:27,911 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:38:31,934 INFO 127.0.0.1 - - [07/Dec/2025 11:38:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:33,981 INFO 127.0.0.1 - - [07/Dec/2025 11:38:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:36,045 INFO 127.0.0.1 - - [07/Dec/2025 11:38:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:38,094 INFO 127.0.0.1 - - [07/Dec/2025 11:38:38] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:38:40,153 INFO 127.0.0.1 - - [07/Dec/2025 11:38:40] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:38:42,188 INFO 127.0.0.1 - - [07/Dec/2025 11:38:42] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:38:44,222 INFO 127.0.0.1 - - [07/Dec/2025 11:38:44] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:38:46,264 INFO 127.0.0.1 - - [07/Dec/2025 11:38:46] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:38:48,791 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:38:52,889 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:38:52,889 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:38:56,928 INFO 127.0.0.1 - - [07/Dec/2025 11:38:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:38:58,977 INFO 127.0.0.1 - - [07/Dec/2025 11:38:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:01,030 INFO 127.0.0.1 - - [07/Dec/2025 11:39:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:03,067 INFO 127.0.0.1 - - [07/Dec/2025 11:39:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:39:05,104 INFO 127.0.0.1 - - [07/Dec/2025 11:39:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:39:07,140 INFO 127.0.0.1 - - [07/Dec/2025 11:39:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:39:09,187 INFO 127.0.0.1 - - [07/Dec/2025 11:39:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:39:11,239 INFO 127.0.0.1 - - [07/Dec/2025 11:39:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:39:13,771 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:39:17,852 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:39:17,853 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:39:21,885 INFO 127.0.0.1 - - [07/Dec/2025 11:39:21] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:23,930 INFO 127.0.0.1 - - [07/Dec/2025 11:39:23] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:25,954 INFO 127.0.0.1 - - [07/Dec/2025 11:39:25] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:28,001 INFO 127.0.0.1 - - [07/Dec/2025 11:39:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:39:30,034 INFO 127.0.0.1 - - [07/Dec/2025 11:39:30] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:39:32,095 INFO 127.0.0.1 - - [07/Dec/2025 11:39:32] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:39:34,135 INFO 127.0.0.1 - - [07/Dec/2025 11:39:34] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:39:36,173 INFO 127.0.0.1 - - [07/Dec/2025 11:39:36] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:39:38,817 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:39:42,889 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:39:42,889 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:39:46,914 INFO 127.0.0.1 - - [07/Dec/2025 11:39:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:48,961 INFO 127.0.0.1 - - [07/Dec/2025 11:39:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:51,009 INFO 127.0.0.1 - - [07/Dec/2025 11:39:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:39:53,061 INFO 127.0.0.1 - - [07/Dec/2025 11:39:53] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:39:55,107 INFO 127.0.0.1 - - [07/Dec/2025 11:39:55] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:39:57,160 INFO 127.0.0.1 - - [07/Dec/2025 11:39:57] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:39:59,227 INFO 127.0.0.1 - - [07/Dec/2025 11:39:59] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:40:01,259 INFO 127.0.0.1 - - [07/Dec/2025 11:40:01] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:40:04,376 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 13 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:40:08,429 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:40:08,429 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:40:12,454 INFO 127.0.0.1 - - [07/Dec/2025 11:40:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:14,485 INFO 127.0.0.1 - - [07/Dec/2025 11:40:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:16,521 INFO 127.0.0.1 - - [07/Dec/2025 11:40:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:18,538 INFO 127.0.0.1 - - [07/Dec/2025 11:40:18] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:40:20,556 INFO 127.0.0.1 - - [07/Dec/2025 11:40:20] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:40:22,585 INFO 127.0.0.1 - - [07/Dec/2025 11:40:22] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:40:24,603 INFO 127.0.0.1 - - [07/Dec/2025 11:40:24] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:40:26,634 INFO 127.0.0.1 - - [07/Dec/2025 11:40:26] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:40:29,410 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:40:33,490 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:40:33,490 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:40:37,533 INFO 127.0.0.1 - - [07/Dec/2025 11:40:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:39,564 INFO 127.0.0.1 - - [07/Dec/2025 11:40:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:41,591 INFO 127.0.0.1 - - [07/Dec/2025 11:40:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:40:43,639 INFO 127.0.0.1 - - [07/Dec/2025 11:40:43] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:40:45,662 INFO 127.0.0.1 - - [07/Dec/2025 11:40:45] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:40:47,678 INFO 127.0.0.1 - - [07/Dec/2025 11:40:47] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:40:50,106 INFO 127.0.0.1 - - [07/Dec/2025 11:40:50] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:40:52,591 INFO 127.0.0.1 - - [07/Dec/2025 11:40:52] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:41:34,657 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:41:38,985 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:41:38,986 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:41:42,983 INFO 127.0.0.1 - - [07/Dec/2025 11:41:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:41:45,210 INFO 127.0.0.1 - - [07/Dec/2025 11:41:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:41:47,518 INFO 127.0.0.1 - - [07/Dec/2025 11:41:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:41:49,940 INFO 127.0.0.1 - - [07/Dec/2025 11:41:49] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:41:52,050 INFO 127.0.0.1 - - [07/Dec/2025 11:41:52] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:41:54,161 INFO 127.0.0.1 - - [07/Dec/2025 11:41:54] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:41:56,322 INFO 127.0.0.1 - - [07/Dec/2025 11:41:56] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:41:58,379 INFO 127.0.0.1 - - [07/Dec/2025 11:41:58] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:42:07,728 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:42:12,051 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:42:12,051 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:42:15,886 INFO 127.0.0.1 - - [07/Dec/2025 11:42:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:17,936 INFO 127.0.0.1 - - [07/Dec/2025 11:42:17] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:20,117 INFO 127.0.0.1 - - [07/Dec/2025 11:42:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:22,258 INFO 127.0.0.1 - - [07/Dec/2025 11:42:22] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:42:24,298 INFO 127.0.0.1 - - [07/Dec/2025 11:42:24] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:42:26,344 INFO 127.0.0.1 - - [07/Dec/2025 11:42:26] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:42:28,374 INFO 127.0.0.1 - - [07/Dec/2025 11:42:28] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:42:30,420 INFO 127.0.0.1 - - [07/Dec/2025 11:42:30] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:42:34,355 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:42:38,443 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:42:38,443 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:42:42,483 INFO 127.0.0.1 - - [07/Dec/2025 11:42:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:44,516 INFO 127.0.0.1 - - [07/Dec/2025 11:42:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:46,546 INFO 127.0.0.1 - - [07/Dec/2025 11:42:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:42:48,595 INFO 127.0.0.1 - - [07/Dec/2025 11:42:48] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:42:50,640 INFO 127.0.0.1 - - [07/Dec/2025 11:42:50] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:42:52,671 INFO 127.0.0.1 - - [07/Dec/2025 11:42:52] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:42:54,703 INFO 127.0.0.1 - - [07/Dec/2025 11:42:54] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:42:56,731 INFO 127.0.0.1 - - [07/Dec/2025 11:42:56] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:42:59,983 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:43:04,072 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:43:04,072 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:43:08,098 INFO 127.0.0.1 - - [07/Dec/2025 11:43:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:10,133 INFO 127.0.0.1 - - [07/Dec/2025 11:43:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:12,187 INFO 127.0.0.1 - - [07/Dec/2025 11:43:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:14,231 INFO 127.0.0.1 - - [07/Dec/2025 11:43:14] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:43:16,265 INFO 127.0.0.1 - - [07/Dec/2025 11:43:16] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:43:18,297 INFO 127.0.0.1 - - [07/Dec/2025 11:43:18] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:43:20,330 INFO 127.0.0.1 - - [07/Dec/2025 11:43:20] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:43:22,363 INFO 127.0.0.1 - - [07/Dec/2025 11:43:22] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:43:25,020 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:43:29,116 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:43:29,116 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:43:33,155 INFO 127.0.0.1 - - [07/Dec/2025 11:43:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:35,201 INFO 127.0.0.1 - - [07/Dec/2025 11:43:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:37,227 INFO 127.0.0.1 - - [07/Dec/2025 11:43:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:39,279 INFO 127.0.0.1 - - [07/Dec/2025 11:43:39] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:43:41,311 INFO 127.0.0.1 - - [07/Dec/2025 11:43:41] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:43:43,343 INFO 127.0.0.1 - - [07/Dec/2025 11:43:43] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:43:45,390 INFO 127.0.0.1 - - [07/Dec/2025 11:43:45] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:43:47,467 INFO 127.0.0.1 - - [07/Dec/2025 11:43:47] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:43:49,672 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:43:53,749 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:43:53,749 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:43:57,771 INFO 127.0.0.1 - - [07/Dec/2025 11:43:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:43:59,801 INFO 127.0.0.1 - - [07/Dec/2025 11:43:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:01,834 INFO 127.0.0.1 - - [07/Dec/2025 11:44:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:03,887 INFO 127.0.0.1 - - [07/Dec/2025 11:44:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:44:05,950 INFO 127.0.0.1 - - [07/Dec/2025 11:44:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:44:08,000 INFO 127.0.0.1 - - [07/Dec/2025 11:44:08] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:44:10,047 INFO 127.0.0.1 - - [07/Dec/2025 11:44:10] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:44:12,091 INFO 127.0.0.1 - - [07/Dec/2025 11:44:12] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:44:14,343 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:44:18,427 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:44:18,427 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:44:22,447 INFO 127.0.0.1 - - [07/Dec/2025 11:44:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:24,498 INFO 127.0.0.1 - - [07/Dec/2025 11:44:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:26,547 INFO 127.0.0.1 - - [07/Dec/2025 11:44:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:28,593 INFO 127.0.0.1 - - [07/Dec/2025 11:44:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:44:30,708 INFO 127.0.0.1 - - [07/Dec/2025 11:44:30] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:44:32,751 INFO 127.0.0.1 - - [07/Dec/2025 11:44:32] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:44:34,802 INFO 127.0.0.1 - - [07/Dec/2025 11:44:34] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:44:36,849 INFO 127.0.0.1 - - [07/Dec/2025 11:44:36] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:44:39,309 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:44:43,396 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:44:43,396 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:44:47,412 INFO 127.0.0.1 - - [07/Dec/2025 11:44:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:49,484 INFO 127.0.0.1 - - [07/Dec/2025 11:44:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:51,553 INFO 127.0.0.1 - - [07/Dec/2025 11:44:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:44:53,592 INFO 127.0.0.1 - - [07/Dec/2025 11:44:53] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:44:55,639 INFO 127.0.0.1 - - [07/Dec/2025 11:44:55] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:44:57,657 INFO 127.0.0.1 - - [07/Dec/2025 11:44:57] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:44:59,700 INFO 127.0.0.1 - - [07/Dec/2025 11:44:59] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:45:01,746 INFO 127.0.0.1 - - [07/Dec/2025 11:45:01] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:45:04,657 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:45:08,729 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:45:08,729 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:45:12,752 INFO 127.0.0.1 - - [07/Dec/2025 11:45:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:14,781 INFO 127.0.0.1 - - [07/Dec/2025 11:45:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:16,795 INFO 127.0.0.1 - - [07/Dec/2025 11:45:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:18,811 INFO 127.0.0.1 - - [07/Dec/2025 11:45:18] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:45:20,828 INFO 127.0.0.1 - - [07/Dec/2025 11:45:20] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:45:22,859 INFO 127.0.0.1 - - [07/Dec/2025 11:45:22] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:45:24,892 INFO 127.0.0.1 - - [07/Dec/2025 11:45:24] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:45:26,920 INFO 127.0.0.1 - - [07/Dec/2025 11:45:26] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:45:29,397 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:45:33,480 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:45:33,480 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:45:37,505 INFO 127.0.0.1 - - [07/Dec/2025 11:45:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:39,542 INFO 127.0.0.1 - - [07/Dec/2025 11:45:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:41,571 INFO 127.0.0.1 - - [07/Dec/2025 11:45:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:45:43,603 INFO 127.0.0.1 - - [07/Dec/2025 11:45:43] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:45:45,636 INFO 127.0.0.1 - - [07/Dec/2025 11:45:45] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:45:47,663 INFO 127.0.0.1 - - [07/Dec/2025 11:45:47] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:45:49,705 INFO 127.0.0.1 - - [07/Dec/2025 11:45:49] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:45:51,734 INFO 127.0.0.1 - - [07/Dec/2025 11:45:51] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:45:54,217 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:45:58,303 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:45:58,304 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:46:02,311 INFO 127.0.0.1 - - [07/Dec/2025 11:46:02] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:04,357 INFO 127.0.0.1 - - [07/Dec/2025 11:46:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:06,403 INFO 127.0.0.1 - - [07/Dec/2025 11:46:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:08,430 INFO 127.0.0.1 - - [07/Dec/2025 11:46:08] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:46:10,462 INFO 127.0.0.1 - - [07/Dec/2025 11:46:10] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:46:12,505 INFO 127.0.0.1 - - [07/Dec/2025 11:46:12] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:46:14,543 INFO 127.0.0.1 - - [07/Dec/2025 11:46:14] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:46:16,592 INFO 127.0.0.1 - - [07/Dec/2025 11:46:16] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:46:19,077 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:46:23,163 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:46:23,163 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:46:27,222 INFO 127.0.0.1 - - [07/Dec/2025 11:46:27] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:29,260 INFO 127.0.0.1 - - [07/Dec/2025 11:46:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:31,275 INFO 127.0.0.1 - - [07/Dec/2025 11:46:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:33,321 INFO 127.0.0.1 - - [07/Dec/2025 11:46:33] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:46:35,362 INFO 127.0.0.1 - - [07/Dec/2025 11:46:35] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:46:37,410 INFO 127.0.0.1 - - [07/Dec/2025 11:46:37] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:46:39,466 INFO 127.0.0.1 - - [07/Dec/2025 11:46:39] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:46:41,500 INFO 127.0.0.1 - - [07/Dec/2025 11:46:41] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:46:45,075 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:46:49,161 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:46:49,161 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:46:53,182 INFO 127.0.0.1 - - [07/Dec/2025 11:46:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:55,213 INFO 127.0.0.1 - - [07/Dec/2025 11:46:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:57,246 INFO 127.0.0.1 - - [07/Dec/2025 11:46:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:46:59,279 INFO 127.0.0.1 - - [07/Dec/2025 11:46:59] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:47:01,327 INFO 127.0.0.1 - - [07/Dec/2025 11:47:01] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:47:03,359 INFO 127.0.0.1 - - [07/Dec/2025 11:47:03] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:47:05,409 INFO 127.0.0.1 - - [07/Dec/2025 11:47:05] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:47:07,442 INFO 127.0.0.1 - - [07/Dec/2025 11:47:07] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:47:10,227 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:47:14,272 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:47:14,272 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:47:18,290 INFO 127.0.0.1 - - [07/Dec/2025 11:47:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:20,341 INFO 127.0.0.1 - - [07/Dec/2025 11:47:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:22,389 INFO 127.0.0.1 - - [07/Dec/2025 11:47:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:24,452 INFO 127.0.0.1 - - [07/Dec/2025 11:47:24] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:47:26,506 INFO 127.0.0.1 - - [07/Dec/2025 11:47:26] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:47:28,538 INFO 127.0.0.1 - - [07/Dec/2025 11:47:28] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:47:30,585 INFO 127.0.0.1 - - [07/Dec/2025 11:47:30] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:47:32,615 INFO 127.0.0.1 - - [07/Dec/2025 11:47:32] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:47:35,311 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:47:39,408 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:47:39,408 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:47:43,433 INFO 127.0.0.1 - - [07/Dec/2025 11:47:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:45,466 INFO 127.0.0.1 - - [07/Dec/2025 11:47:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:47,499 INFO 127.0.0.1 - - [07/Dec/2025 11:47:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:47:49,547 INFO 127.0.0.1 - - [07/Dec/2025 11:47:49] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:47:51,594 INFO 127.0.0.1 - - [07/Dec/2025 11:47:51] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:47:53,641 INFO 127.0.0.1 - - [07/Dec/2025 11:47:53] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:47:55,696 INFO 127.0.0.1 - - [07/Dec/2025 11:47:55] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:47:57,744 INFO 127.0.0.1 - - [07/Dec/2025 11:47:57] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:48:00,226 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:48:04,338 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:48:04,338 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:48:08,359 INFO 127.0.0.1 - - [07/Dec/2025 11:48:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:10,391 INFO 127.0.0.1 - - [07/Dec/2025 11:48:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:12,439 INFO 127.0.0.1 - - [07/Dec/2025 11:48:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:14,487 INFO 127.0.0.1 - - [07/Dec/2025 11:48:14] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:48:16,518 INFO 127.0.0.1 - - [07/Dec/2025 11:48:16] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:48:18,570 INFO 127.0.0.1 - - [07/Dec/2025 11:48:18] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:48:20,608 INFO 127.0.0.1 - - [07/Dec/2025 11:48:20] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:48:22,641 INFO 127.0.0.1 - - [07/Dec/2025 11:48:22] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:48:25,145 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:48:29,250 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:48:29,250 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:48:33,264 INFO 127.0.0.1 - - [07/Dec/2025 11:48:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:35,311 INFO 127.0.0.1 - - [07/Dec/2025 11:48:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:37,351 INFO 127.0.0.1 - - [07/Dec/2025 11:48:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:48:39,398 INFO 127.0.0.1 - - [07/Dec/2025 11:48:39] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:48:41,430 INFO 127.0.0.1 - - [07/Dec/2025 11:48:41] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:48:43,464 INFO 127.0.0.1 - - [07/Dec/2025 11:48:43] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:48:45,496 INFO 127.0.0.1 - - [07/Dec/2025 11:48:45] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:48:47,527 INFO 127.0.0.1 - - [07/Dec/2025 11:48:47] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:48:50,038 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:48:54,118 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:48:54,118 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:48:58,170 INFO 127.0.0.1 - - [07/Dec/2025 11:48:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:00,222 INFO 127.0.0.1 - - [07/Dec/2025 11:49:00] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:02,258 INFO 127.0.0.1 - - [07/Dec/2025 11:49:02] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:04,303 INFO 127.0.0.1 - - [07/Dec/2025 11:49:04] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:49:06,335 INFO 127.0.0.1 - - [07/Dec/2025 11:49:06] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:49:08,384 INFO 127.0.0.1 - - [07/Dec/2025 11:49:08] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:49:10,439 INFO 127.0.0.1 - - [07/Dec/2025 11:49:10] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:49:12,472 INFO 127.0.0.1 - - [07/Dec/2025 11:49:12] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:49:14,949 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:49:19,032 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:49:19,032 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:49:23,062 INFO 127.0.0.1 - - [07/Dec/2025 11:49:23] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:25,088 INFO 127.0.0.1 - - [07/Dec/2025 11:49:25] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:27,135 INFO 127.0.0.1 - - [07/Dec/2025 11:49:27] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:29,179 INFO 127.0.0.1 - - [07/Dec/2025 11:49:29] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:49:31,226 INFO 127.0.0.1 - - [07/Dec/2025 11:49:31] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:49:33,263 INFO 127.0.0.1 - - [07/Dec/2025 11:49:33] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:49:35,295 INFO 127.0.0.1 - - [07/Dec/2025 11:49:35] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:49:37,343 INFO 127.0.0.1 - - [07/Dec/2025 11:49:37] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:49:39,801 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:49:43,903 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:49:43,903 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:49:47,938 INFO 127.0.0.1 - - [07/Dec/2025 11:49:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:49,999 INFO 127.0.0.1 - - [07/Dec/2025 11:49:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:52,046 INFO 127.0.0.1 - - [07/Dec/2025 11:49:52] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:49:54,079 INFO 127.0.0.1 - - [07/Dec/2025 11:49:54] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:49:56,111 INFO 127.0.0.1 - - [07/Dec/2025 11:49:56] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:49:58,171 INFO 127.0.0.1 - - [07/Dec/2025 11:49:58] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:50:00,201 INFO 127.0.0.1 - - [07/Dec/2025 11:50:00] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:50:02,255 INFO 127.0.0.1 - - [07/Dec/2025 11:50:02] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:50:04,878 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 5 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=6
+SuperAgent: report performance - 10 analisi, 6 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:50:08,962 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:50:08,962 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:50:13,008 INFO 127.0.0.1 - - [07/Dec/2025 11:50:13] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:15,050 INFO 127.0.0.1 - - [07/Dec/2025 11:50:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:17,084 INFO 127.0.0.1 - - [07/Dec/2025 11:50:17] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:19,118 INFO 127.0.0.1 - - [07/Dec/2025 11:50:19] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:50:21,163 INFO 127.0.0.1 - - [07/Dec/2025 11:50:21] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:50:23,198 INFO 127.0.0.1 - - [07/Dec/2025 11:50:23] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:50:25,250 INFO 127.0.0.1 - - [07/Dec/2025 11:50:25] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:50:27,296 INFO 127.0.0.1 - - [07/Dec/2025 11:50:27] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:50:29,789 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:50:33,848 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:50:33,848 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:50:37,891 INFO 127.0.0.1 - - [07/Dec/2025 11:50:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:39,937 INFO 127.0.0.1 - - [07/Dec/2025 11:50:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:41,991 INFO 127.0.0.1 - - [07/Dec/2025 11:50:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:50:44,025 INFO 127.0.0.1 - - [07/Dec/2025 11:50:44] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:50:46,075 INFO 127.0.0.1 - - [07/Dec/2025 11:50:46] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:50:48,124 INFO 127.0.0.1 - - [07/Dec/2025 11:50:48] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:50:50,157 INFO 127.0.0.1 - - [07/Dec/2025 11:50:50] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:50:52,188 INFO 127.0.0.1 - - [07/Dec/2025 11:50:52] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:50:54,661 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:50:58,754 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:50:58,754 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:51:02,811 INFO 127.0.0.1 - - [07/Dec/2025 11:51:02] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:04,844 INFO 127.0.0.1 - - [07/Dec/2025 11:51:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:06,875 INFO 127.0.0.1 - - [07/Dec/2025 11:51:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:08,916 INFO 127.0.0.1 - - [07/Dec/2025 11:51:08] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:51:10,952 INFO 127.0.0.1 - - [07/Dec/2025 11:51:10] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:51:13,000 INFO 127.0.0.1 - - [07/Dec/2025 11:51:13] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:51:15,047 INFO 127.0.0.1 - - [07/Dec/2025 11:51:15] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:51:17,084 INFO 127.0.0.1 - - [07/Dec/2025 11:51:17] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:51:19,573 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:51:23,646 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:51:23,646 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:51:27,677 INFO 127.0.0.1 - - [07/Dec/2025 11:51:27] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:29,713 INFO 127.0.0.1 - - [07/Dec/2025 11:51:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:31,759 INFO 127.0.0.1 - - [07/Dec/2025 11:51:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:33,798 INFO 127.0.0.1 - - [07/Dec/2025 11:51:33] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:51:35,851 INFO 127.0.0.1 - - [07/Dec/2025 11:51:35] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:51:37,889 INFO 127.0.0.1 - - [07/Dec/2025 11:51:37] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:51:39,958 INFO 127.0.0.1 - - [07/Dec/2025 11:51:39] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:51:42,006 INFO 127.0.0.1 - - [07/Dec/2025 11:51:42] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:51:44,596 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:51:48,703 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:51:48,703 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:51:52,715 INFO 127.0.0.1 - - [07/Dec/2025 11:51:52] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:54,757 INFO 127.0.0.1 - - [07/Dec/2025 11:51:54] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:56,804 INFO 127.0.0.1 - - [07/Dec/2025 11:51:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:51:58,824 INFO 127.0.0.1 - - [07/Dec/2025 11:51:58] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:52:00,859 INFO 127.0.0.1 - - [07/Dec/2025 11:52:00] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:52:02,894 INFO 127.0.0.1 - - [07/Dec/2025 11:52:02] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:52:04,921 INFO 127.0.0.1 - - [07/Dec/2025 11:52:04] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:52:06,967 INFO 127.0.0.1 - - [07/Dec/2025 11:52:06] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:52:09,463 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:52:13,586 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:52:13,586 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:52:17,616 INFO 127.0.0.1 - - [07/Dec/2025 11:52:17] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:19,657 INFO 127.0.0.1 - - [07/Dec/2025 11:52:19] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:21,680 INFO 127.0.0.1 - - [07/Dec/2025 11:52:21] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:23,729 INFO 127.0.0.1 - - [07/Dec/2025 11:52:23] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:52:25,764 INFO 127.0.0.1 - - [07/Dec/2025 11:52:25] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:52:27,808 INFO 127.0.0.1 - - [07/Dec/2025 11:52:27] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:52:29,830 INFO 127.0.0.1 - - [07/Dec/2025 11:52:29] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:52:31,876 INFO 127.0.0.1 - - [07/Dec/2025 11:52:31] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:52:34,374 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:52:38,449 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:52:38,450 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:52:42,499 INFO 127.0.0.1 - - [07/Dec/2025 11:52:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:44,537 INFO 127.0.0.1 - - [07/Dec/2025 11:52:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:46,587 INFO 127.0.0.1 - - [07/Dec/2025 11:52:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:52:48,604 INFO 127.0.0.1 - - [07/Dec/2025 11:52:48] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:52:50,637 INFO 127.0.0.1 - - [07/Dec/2025 11:52:50] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:52:52,653 INFO 127.0.0.1 - - [07/Dec/2025 11:52:52] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:52:54,702 INFO 127.0.0.1 - - [07/Dec/2025 11:52:54] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:52:56,749 INFO 127.0.0.1 - - [07/Dec/2025 11:52:56] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:52:59,276 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:53:03,350 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:53:03,351 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:53:07,400 INFO 127.0.0.1 - - [07/Dec/2025 11:53:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:09,434 INFO 127.0.0.1 - - [07/Dec/2025 11:53:09] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:11,499 INFO 127.0.0.1 - - [07/Dec/2025 11:53:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:13,542 INFO 127.0.0.1 - - [07/Dec/2025 11:53:13] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:53:15,581 INFO 127.0.0.1 - - [07/Dec/2025 11:53:15] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:53:17,614 INFO 127.0.0.1 - - [07/Dec/2025 11:53:17] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:53:19,644 INFO 127.0.0.1 - - [07/Dec/2025 11:53:19] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:53:21,691 INFO 127.0.0.1 - - [07/Dec/2025 11:53:21] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:53:24,371 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:53:28,472 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:53:28,473 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:53:32,490 INFO 127.0.0.1 - - [07/Dec/2025 11:53:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:34,523 INFO 127.0.0.1 - - [07/Dec/2025 11:53:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:36,561 INFO 127.0.0.1 - - [07/Dec/2025 11:53:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:38,604 INFO 127.0.0.1 - - [07/Dec/2025 11:53:38] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:53:40,653 INFO 127.0.0.1 - - [07/Dec/2025 11:53:40] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:53:42,717 INFO 127.0.0.1 - - [07/Dec/2025 11:53:42] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:53:44,764 INFO 127.0.0.1 - - [07/Dec/2025 11:53:44] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:53:46,826 INFO 127.0.0.1 - - [07/Dec/2025 11:53:46] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:53:49,015 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:53:53,116 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:53:53,116 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:53:57,152 INFO 127.0.0.1 - - [07/Dec/2025 11:53:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:53:59,200 INFO 127.0.0.1 - - [07/Dec/2025 11:53:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:01,251 INFO 127.0.0.1 - - [07/Dec/2025 11:54:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:03,297 INFO 127.0.0.1 - - [07/Dec/2025 11:54:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:54:05,332 INFO 127.0.0.1 - - [07/Dec/2025 11:54:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:54:07,375 INFO 127.0.0.1 - - [07/Dec/2025 11:54:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:54:09,413 INFO 127.0.0.1 - - [07/Dec/2025 11:54:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:54:11,434 INFO 127.0.0.1 - - [07/Dec/2025 11:54:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:54:14,084 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:54:18,177 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:54:18,178 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:54:22,203 INFO 127.0.0.1 - - [07/Dec/2025 11:54:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:24,232 INFO 127.0.0.1 - - [07/Dec/2025 11:54:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:26,258 INFO 127.0.0.1 - - [07/Dec/2025 11:54:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:28,304 INFO 127.0.0.1 - - [07/Dec/2025 11:54:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:54:30,337 INFO 127.0.0.1 - - [07/Dec/2025 11:54:30] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:54:32,372 INFO 127.0.0.1 - - [07/Dec/2025 11:54:32] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:54:34,421 INFO 127.0.0.1 - - [07/Dec/2025 11:54:34] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:54:36,465 INFO 127.0.0.1 - - [07/Dec/2025 11:54:36] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:54:39,034 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:54:43,108 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:54:43,108 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:54:47,144 INFO 127.0.0.1 - - [07/Dec/2025 11:54:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:49,187 INFO 127.0.0.1 - - [07/Dec/2025 11:54:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:51,213 INFO 127.0.0.1 - - [07/Dec/2025 11:54:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:54:53,265 INFO 127.0.0.1 - - [07/Dec/2025 11:54:53] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:54:55,316 INFO 127.0.0.1 - - [07/Dec/2025 11:54:55] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:54:57,348 INFO 127.0.0.1 - - [07/Dec/2025 11:54:57] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:54:59,397 INFO 127.0.0.1 - - [07/Dec/2025 11:54:59] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:55:01,430 INFO 127.0.0.1 - - [07/Dec/2025 11:55:01] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:55:04,195 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:55:08,242 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:55:08,242 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:55:12,262 INFO 127.0.0.1 - - [07/Dec/2025 11:55:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:14,278 INFO 127.0.0.1 - - [07/Dec/2025 11:55:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:16,325 INFO 127.0.0.1 - - [07/Dec/2025 11:55:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:18,361 INFO 127.0.0.1 - - [07/Dec/2025 11:55:18] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:55:20,390 INFO 127.0.0.1 - - [07/Dec/2025 11:55:20] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:55:22,423 INFO 127.0.0.1 - - [07/Dec/2025 11:55:22] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:55:24,456 INFO 127.0.0.1 - - [07/Dec/2025 11:55:24] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:55:26,488 INFO 127.0.0.1 - - [07/Dec/2025 11:55:26] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:55:31,776 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:55:35,864 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:55:35,864 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:55:39,887 INFO 127.0.0.1 - - [07/Dec/2025 11:55:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:41,933 INFO 127.0.0.1 - - [07/Dec/2025 11:55:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:43,967 INFO 127.0.0.1 - - [07/Dec/2025 11:55:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:55:45,998 INFO 127.0.0.1 - - [07/Dec/2025 11:55:45] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:55:48,032 INFO 127.0.0.1 - - [07/Dec/2025 11:55:48] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:55:50,064 INFO 127.0.0.1 - - [07/Dec/2025 11:55:50] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:55:52,098 INFO 127.0.0.1 - - [07/Dec/2025 11:55:52] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:55:54,131 INFO 127.0.0.1 - - [07/Dec/2025 11:55:54] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:55:56,635 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:56:00,701 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:56:00,702 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:56:04,726 INFO 127.0.0.1 - - [07/Dec/2025 11:56:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:06,762 INFO 127.0.0.1 - - [07/Dec/2025 11:56:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:08,795 INFO 127.0.0.1 - - [07/Dec/2025 11:56:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:10,826 INFO 127.0.0.1 - - [07/Dec/2025 11:56:10] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:56:12,859 INFO 127.0.0.1 - - [07/Dec/2025 11:56:12] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:56:14,892 INFO 127.0.0.1 - - [07/Dec/2025 11:56:14] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:56:16,922 INFO 127.0.0.1 - - [07/Dec/2025 11:56:16] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:56:18,974 INFO 127.0.0.1 - - [07/Dec/2025 11:56:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:56:21,260 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 12 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:56:25,366 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:56:25,366 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:56:29,372 INFO 127.0.0.1 - - [07/Dec/2025 11:56:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:31,404 INFO 127.0.0.1 - - [07/Dec/2025 11:56:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:33,452 INFO 127.0.0.1 - - [07/Dec/2025 11:56:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:35,500 INFO 127.0.0.1 - - [07/Dec/2025 11:56:35] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:56:37,534 INFO 127.0.0.1 - - [07/Dec/2025 11:56:37] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:56:39,603 INFO 127.0.0.1 - - [07/Dec/2025 11:56:39] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:56:41,645 INFO 127.0.0.1 - - [07/Dec/2025 11:56:41] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:56:43,677 INFO 127.0.0.1 - - [07/Dec/2025 11:56:43] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:56:46,327 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:56:50,414 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:56:50,415 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:56:54,441 INFO 127.0.0.1 - - [07/Dec/2025 11:56:54] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:56,461 INFO 127.0.0.1 - - [07/Dec/2025 11:56:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:56:58,501 INFO 127.0.0.1 - - [07/Dec/2025 11:56:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:57:00,529 INFO 127.0.0.1 - - [07/Dec/2025 11:57:00] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:57:02,563 INFO 127.0.0.1 - - [07/Dec/2025 11:57:02] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:57:04,592 INFO 127.0.0.1 - - [07/Dec/2025 11:57:04] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:57:06,614 INFO 127.0.0.1 - - [07/Dec/2025 11:57:06] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:57:08,641 INFO 127.0.0.1 - - [07/Dec/2025 11:57:08] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:57:11,415 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:57:15,529 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:57:15,530 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:57:19,555 INFO 127.0.0.1 - - [07/Dec/2025 11:57:19] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:57:21,619 INFO 127.0.0.1 - - [07/Dec/2025 11:57:21] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:57:23,659 INFO 127.0.0.1 - - [07/Dec/2025 11:57:23] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:57:25,758 INFO 127.0.0.1 - - [07/Dec/2025 11:57:25] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:57:27,786 INFO 127.0.0.1 - - [07/Dec/2025 11:57:27] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:57:30,250 INFO 127.0.0.1 - - [07/Dec/2025 11:57:30] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:57:32,625 INFO 127.0.0.1 - - [07/Dec/2025 11:57:32] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:57:35,146 INFO 127.0.0.1 - - [07/Dec/2025 11:57:35] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:57:55,499 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:57:59,693 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:57:59,694 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:58:03,637 INFO 127.0.0.1 - - [07/Dec/2025 11:58:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:05,728 INFO 127.0.0.1 - - [07/Dec/2025 11:58:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:07,780 INFO 127.0.0.1 - - [07/Dec/2025 11:58:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:09,829 INFO 127.0.0.1 - - [07/Dec/2025 11:58:09] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:58:11,944 INFO 127.0.0.1 - - [07/Dec/2025 11:58:11] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:58:14,003 INFO 127.0.0.1 - - [07/Dec/2025 11:58:14] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:58:16,029 INFO 127.0.0.1 - - [07/Dec/2025 11:58:16] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:58:18,109 INFO 127.0.0.1 - - [07/Dec/2025 11:58:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:58:34,007 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:58:38,090 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:58:38,090 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:58:42,123 INFO 127.0.0.1 - - [07/Dec/2025 11:58:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:44,153 INFO 127.0.0.1 - - [07/Dec/2025 11:58:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:46,183 INFO 127.0.0.1 - - [07/Dec/2025 11:58:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:58:48,214 INFO 127.0.0.1 - - [07/Dec/2025 11:58:48] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:58:50,231 INFO 127.0.0.1 - - [07/Dec/2025 11:58:50] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:58:52,277 INFO 127.0.0.1 - - [07/Dec/2025 11:58:52] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:58:54,308 INFO 127.0.0.1 - - [07/Dec/2025 11:58:54] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:58:56,339 INFO 127.0.0.1 - - [07/Dec/2025 11:58:56] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:58:58,836 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:59:02,910 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:59:02,910 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:59:06,935 INFO 127.0.0.1 - - [07/Dec/2025 11:59:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:08,980 INFO 127.0.0.1 - - [07/Dec/2025 11:59:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:11,012 INFO 127.0.0.1 - - [07/Dec/2025 11:59:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:13,059 INFO 127.0.0.1 - - [07/Dec/2025 11:59:13] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:59:15,087 INFO 127.0.0.1 - - [07/Dec/2025 11:59:15] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:59:17,151 INFO 127.0.0.1 - - [07/Dec/2025 11:59:17] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:59:19,185 INFO 127.0.0.1 - - [07/Dec/2025 11:59:19] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:59:21,229 INFO 127.0.0.1 - - [07/Dec/2025 11:59:21] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:59:23,441 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:59:27,508 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:59:27,508 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:59:31,528 INFO 127.0.0.1 - - [07/Dec/2025 11:59:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:33,558 INFO 127.0.0.1 - - [07/Dec/2025 11:59:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:35,590 INFO 127.0.0.1 - - [07/Dec/2025 11:59:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:37,621 INFO 127.0.0.1 - - [07/Dec/2025 11:59:37] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 11:59:39,652 INFO 127.0.0.1 - - [07/Dec/2025 11:59:39] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 11:59:41,683 INFO 127.0.0.1 - - [07/Dec/2025 11:59:41] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 11:59:43,730 INFO 127.0.0.1 - - [07/Dec/2025 11:59:43] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 11:59:45,763 INFO 127.0.0.1 - - [07/Dec/2025 11:59:45] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 11:59:48,008 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 11:59:52,103 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 11:59:52,103 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 11:59:56,136 INFO 127.0.0.1 - - [07/Dec/2025 11:59:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 11:59:58,197 INFO 127.0.0.1 - - [07/Dec/2025 11:59:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:00,244 INFO 127.0.0.1 - - [07/Dec/2025 12:00:00] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:02,282 INFO 127.0.0.1 - - [07/Dec/2025 12:00:02] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:00:04,325 INFO 127.0.0.1 - - [07/Dec/2025 12:00:04] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:00:06,352 INFO 127.0.0.1 - - [07/Dec/2025 12:00:06] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:00:08,392 INFO 127.0.0.1 - - [07/Dec/2025 12:00:08] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:00:10,421 INFO 127.0.0.1 - - [07/Dec/2025 12:00:10] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:00:12,704 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:00:16,770 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:00:16,770 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:00:20,798 INFO 127.0.0.1 - - [07/Dec/2025 12:00:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:22,859 INFO 127.0.0.1 - - [07/Dec/2025 12:00:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:24,887 INFO 127.0.0.1 - - [07/Dec/2025 12:00:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:26,907 INFO 127.0.0.1 - - [07/Dec/2025 12:00:26] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:00:28,953 INFO 127.0.0.1 - - [07/Dec/2025 12:00:28] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:00:30,980 INFO 127.0.0.1 - - [07/Dec/2025 12:00:30] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:00:33,012 INFO 127.0.0.1 - - [07/Dec/2025 12:00:33] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:00:35,056 INFO 127.0.0.1 - - [07/Dec/2025 12:00:35] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:00:37,379 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:00:41,455 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:00:41,455 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:00:45,490 INFO 127.0.0.1 - - [07/Dec/2025 12:00:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:47,530 INFO 127.0.0.1 - - [07/Dec/2025 12:00:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:49,579 INFO 127.0.0.1 - - [07/Dec/2025 12:00:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:00:51,608 INFO 127.0.0.1 - - [07/Dec/2025 12:00:51] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:00:53,635 INFO 127.0.0.1 - - [07/Dec/2025 12:00:53] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:00:55,671 INFO 127.0.0.1 - - [07/Dec/2025 12:00:55] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:00:57,702 INFO 127.0.0.1 - - [07/Dec/2025 12:00:57] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:00:59,736 INFO 127.0.0.1 - - [07/Dec/2025 12:00:59] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:01:02,013 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:01:06,102 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:01:06,102 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:01:10,143 INFO 127.0.0.1 - - [07/Dec/2025 12:01:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:12,194 INFO 127.0.0.1 - - [07/Dec/2025 12:01:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:14,227 INFO 127.0.0.1 - - [07/Dec/2025 12:01:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:16,268 INFO 127.0.0.1 - - [07/Dec/2025 12:01:16] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:01:18,297 INFO 127.0.0.1 - - [07/Dec/2025 12:01:18] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:01:20,329 INFO 127.0.0.1 - - [07/Dec/2025 12:01:20] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:01:22,362 INFO 127.0.0.1 - - [07/Dec/2025 12:01:22] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:01:24,396 INFO 127.0.0.1 - - [07/Dec/2025 12:01:24] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:01:26,811 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:01:30,905 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:01:30,905 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:01:34,938 INFO 127.0.0.1 - - [07/Dec/2025 12:01:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:36,990 INFO 127.0.0.1 - - [07/Dec/2025 12:01:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:39,030 INFO 127.0.0.1 - - [07/Dec/2025 12:01:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:01:41,063 INFO 127.0.0.1 - - [07/Dec/2025 12:01:41] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:01:43,091 INFO 127.0.0.1 - - [07/Dec/2025 12:01:43] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:01:45,139 INFO 127.0.0.1 - - [07/Dec/2025 12:01:45] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:01:47,190 INFO 127.0.0.1 - - [07/Dec/2025 12:01:47] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:01:49,245 INFO 127.0.0.1 - - [07/Dec/2025 12:01:49] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:01:51,843 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:01:55,884 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:01:55,884 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:01:59,920 INFO 127.0.0.1 - - [07/Dec/2025 12:01:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:01,983 INFO 127.0.0.1 - - [07/Dec/2025 12:02:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:04,030 INFO 127.0.0.1 - - [07/Dec/2025 12:02:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:06,063 INFO 127.0.0.1 - - [07/Dec/2025 12:02:06] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:02:08,107 INFO 127.0.0.1 - - [07/Dec/2025 12:02:08] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:02:10,158 INFO 127.0.0.1 - - [07/Dec/2025 12:02:10] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:02:12,201 INFO 127.0.0.1 - - [07/Dec/2025 12:02:12] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:02:14,240 INFO 127.0.0.1 - - [07/Dec/2025 12:02:14] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:02:16,643 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:02:20,718 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:02:20,718 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:02:24,750 INFO 127.0.0.1 - - [07/Dec/2025 12:02:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:26,795 INFO 127.0.0.1 - - [07/Dec/2025 12:02:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:28,842 INFO 127.0.0.1 - - [07/Dec/2025 12:02:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:30,905 INFO 127.0.0.1 - - [07/Dec/2025 12:02:30] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:02:32,954 INFO 127.0.0.1 - - [07/Dec/2025 12:02:32] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:02:34,998 INFO 127.0.0.1 - - [07/Dec/2025 12:02:34] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:02:37,046 INFO 127.0.0.1 - - [07/Dec/2025 12:02:37] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:02:39,079 INFO 127.0.0.1 - - [07/Dec/2025 12:02:39] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:02:41,313 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:02:45,415 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:02:45,415 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:02:49,435 INFO 127.0.0.1 - - [07/Dec/2025 12:02:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:51,471 INFO 127.0.0.1 - - [07/Dec/2025 12:02:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:53,531 INFO 127.0.0.1 - - [07/Dec/2025 12:02:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:02:55,575 INFO 127.0.0.1 - - [07/Dec/2025 12:02:55] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:02:57,625 INFO 127.0.0.1 - - [07/Dec/2025 12:02:57] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:02:59,662 INFO 127.0.0.1 - - [07/Dec/2025 12:02:59] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:03:01,694 INFO 127.0.0.1 - - [07/Dec/2025 12:03:01] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:03:03,744 INFO 127.0.0.1 - - [07/Dec/2025 12:03:03] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:03:06,130 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:03:10,225 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:03:10,225 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:03:14,251 INFO 127.0.0.1 - - [07/Dec/2025 12:03:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:16,278 INFO 127.0.0.1 - - [07/Dec/2025 12:03:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:18,315 INFO 127.0.0.1 - - [07/Dec/2025 12:03:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:20,343 INFO 127.0.0.1 - - [07/Dec/2025 12:03:20] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:03:22,403 INFO 127.0.0.1 - - [07/Dec/2025 12:03:22] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:03:24,458 INFO 127.0.0.1 - - [07/Dec/2025 12:03:24] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:03:26,489 INFO 127.0.0.1 - - [07/Dec/2025 12:03:26] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:03:28,529 INFO 127.0.0.1 - - [07/Dec/2025 12:03:28] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:03:30,959 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:03:35,056 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:03:35,056 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:03:39,093 INFO 127.0.0.1 - - [07/Dec/2025 12:03:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:41,155 INFO 127.0.0.1 - - [07/Dec/2025 12:03:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:43,216 INFO 127.0.0.1 - - [07/Dec/2025 12:03:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:03:45,248 INFO 127.0.0.1 - - [07/Dec/2025 12:03:45] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:03:47,282 INFO 127.0.0.1 - - [07/Dec/2025 12:03:47] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:03:49,342 INFO 127.0.0.1 - - [07/Dec/2025 12:03:49] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:03:51,380 INFO 127.0.0.1 - - [07/Dec/2025 12:03:51] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:03:53,415 INFO 127.0.0.1 - - [07/Dec/2025 12:03:53] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:03:55,647 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:03:59,726 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:03:59,726 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:04:03,751 INFO 127.0.0.1 - - [07/Dec/2025 12:04:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:05,783 INFO 127.0.0.1 - - [07/Dec/2025 12:04:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:07,817 INFO 127.0.0.1 - - [07/Dec/2025 12:04:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:09,863 INFO 127.0.0.1 - - [07/Dec/2025 12:04:09] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:04:11,915 INFO 127.0.0.1 - - [07/Dec/2025 12:04:11] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:04:13,944 INFO 127.0.0.1 - - [07/Dec/2025 12:04:13] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:04:15,977 INFO 127.0.0.1 - - [07/Dec/2025 12:04:15] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:04:18,021 INFO 127.0.0.1 - - [07/Dec/2025 12:04:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:04:20,298 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 10 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:04:24,409 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:04:24,409 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:04:28,455 INFO 127.0.0.1 - - [07/Dec/2025 12:04:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:30,487 INFO 127.0.0.1 - - [07/Dec/2025 12:04:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:32,550 INFO 127.0.0.1 - - [07/Dec/2025 12:04:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:34,593 INFO 127.0.0.1 - - [07/Dec/2025 12:04:34] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:04:36,640 INFO 127.0.0.1 - - [07/Dec/2025 12:04:36] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:04:38,680 INFO 127.0.0.1 - - [07/Dec/2025 12:04:38] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:04:40,734 INFO 127.0.0.1 - - [07/Dec/2025 12:04:40] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:04:42,779 INFO 127.0.0.1 - - [07/Dec/2025 12:04:42] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:04:45,267 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:04:49,361 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:04:49,362 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:04:53,401 INFO 127.0.0.1 - - [07/Dec/2025 12:04:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:55,457 INFO 127.0.0.1 - - [07/Dec/2025 12:04:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:57,504 INFO 127.0.0.1 - - [07/Dec/2025 12:04:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:04:59,564 INFO 127.0.0.1 - - [07/Dec/2025 12:04:59] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:05:01,614 INFO 127.0.0.1 - - [07/Dec/2025 12:05:01] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:05:03,664 INFO 127.0.0.1 - - [07/Dec/2025 12:05:03] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:05:05,724 INFO 127.0.0.1 - - [07/Dec/2025 12:05:05] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:05:07,779 INFO 127.0.0.1 - - [07/Dec/2025 12:05:07] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:05:10,232 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:05:14,321 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:05:14,321 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:05:18,339 INFO 127.0.0.1 - - [07/Dec/2025 12:05:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:20,373 INFO 127.0.0.1 - - [07/Dec/2025 12:05:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:22,403 INFO 127.0.0.1 - - [07/Dec/2025 12:05:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:24,435 INFO 127.0.0.1 - - [07/Dec/2025 12:05:24] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:05:26,468 INFO 127.0.0.1 - - [07/Dec/2025 12:05:26] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:05:28,516 INFO 127.0.0.1 - - [07/Dec/2025 12:05:28] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:05:30,536 INFO 127.0.0.1 - - [07/Dec/2025 12:05:30] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:05:32,567 INFO 127.0.0.1 - - [07/Dec/2025 12:05:32] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:05:34,810 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 10 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 13 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:05:38,895 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:05:38,895 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:05:42,920 INFO 127.0.0.1 - - [07/Dec/2025 12:05:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:44,980 INFO 127.0.0.1 - - [07/Dec/2025 12:05:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:47,020 INFO 127.0.0.1 - - [07/Dec/2025 12:05:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:05:49,048 INFO 127.0.0.1 - - [07/Dec/2025 12:05:49] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:05:51,094 INFO 127.0.0.1 - - [07/Dec/2025 12:05:51] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:05:53,130 INFO 127.0.0.1 - - [07/Dec/2025 12:05:53] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:05:55,169 INFO 127.0.0.1 - - [07/Dec/2025 12:05:55] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:05:57,217 INFO 127.0.0.1 - - [07/Dec/2025 12:05:57] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:05:59,527 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:06:03,612 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:06:03,612 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:06:07,654 INFO 127.0.0.1 - - [07/Dec/2025 12:06:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:09,704 INFO 127.0.0.1 - - [07/Dec/2025 12:06:09] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:11,755 INFO 127.0.0.1 - - [07/Dec/2025 12:06:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:13,796 INFO 127.0.0.1 - - [07/Dec/2025 12:06:13] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:06:15,841 INFO 127.0.0.1 - - [07/Dec/2025 12:06:15] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:06:17,884 INFO 127.0.0.1 - - [07/Dec/2025 12:06:17] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:06:19,940 INFO 127.0.0.1 - - [07/Dec/2025 12:06:19] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:06:21,968 INFO 127.0.0.1 - - [07/Dec/2025 12:06:21] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:06:24,157 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:06:28,254 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:06:28,254 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:06:32,284 INFO 127.0.0.1 - - [07/Dec/2025 12:06:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:34,331 INFO 127.0.0.1 - - [07/Dec/2025 12:06:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:36,396 INFO 127.0.0.1 - - [07/Dec/2025 12:06:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:38,437 INFO 127.0.0.1 - - [07/Dec/2025 12:06:38] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:06:40,463 INFO 127.0.0.1 - - [07/Dec/2025 12:06:40] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:06:42,510 INFO 127.0.0.1 - - [07/Dec/2025 12:06:42] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:06:44,554 INFO 127.0.0.1 - - [07/Dec/2025 12:06:44] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:06:46,593 INFO 127.0.0.1 - - [07/Dec/2025 12:06:46] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:06:49,113 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:06:53,223 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:06:53,224 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:06:57,227 INFO 127.0.0.1 - - [07/Dec/2025 12:06:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:06:59,266 INFO 127.0.0.1 - - [07/Dec/2025 12:06:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:01,302 INFO 127.0.0.1 - - [07/Dec/2025 12:07:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:03,344 INFO 127.0.0.1 - - [07/Dec/2025 12:07:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:07:05,389 INFO 127.0.0.1 - - [07/Dec/2025 12:07:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:07:07,423 INFO 127.0.0.1 - - [07/Dec/2025 12:07:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:07:09,478 INFO 127.0.0.1 - - [07/Dec/2025 12:07:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:07:11,500 INFO 127.0.0.1 - - [07/Dec/2025 12:07:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:07:13,900 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:07:17,999 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:07:18,000 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:07:22,033 INFO 127.0.0.1 - - [07/Dec/2025 12:07:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:24,077 INFO 127.0.0.1 - - [07/Dec/2025 12:07:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:26,125 INFO 127.0.0.1 - - [07/Dec/2025 12:07:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:28,167 INFO 127.0.0.1 - - [07/Dec/2025 12:07:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:07:30,216 INFO 127.0.0.1 - - [07/Dec/2025 12:07:30] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:07:32,247 INFO 127.0.0.1 - - [07/Dec/2025 12:07:32] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:07:34,293 INFO 127.0.0.1 - - [07/Dec/2025 12:07:34] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:07:36,357 INFO 127.0.0.1 - - [07/Dec/2025 12:07:36] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:07:38,692 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:07:42,786 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:07:42,787 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:07:46,827 INFO 127.0.0.1 - - [07/Dec/2025 12:07:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:48,859 INFO 127.0.0.1 - - [07/Dec/2025 12:07:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:50,874 INFO 127.0.0.1 - - [07/Dec/2025 12:07:50] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:07:52,907 INFO 127.0.0.1 - - [07/Dec/2025 12:07:52] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:07:54,951 INFO 127.0.0.1 - - [07/Dec/2025 12:07:54] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:07:56,989 INFO 127.0.0.1 - - [07/Dec/2025 12:07:56] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:07:59,031 INFO 127.0.0.1 - - [07/Dec/2025 12:07:59] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:08:01,053 INFO 127.0.0.1 - - [07/Dec/2025 12:08:01] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:08:03,395 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 12 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:08:07,466 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:08:07,466 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:08:11,475 INFO 127.0.0.1 - - [07/Dec/2025 12:08:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:13,497 INFO 127.0.0.1 - - [07/Dec/2025 12:08:13] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:15,530 INFO 127.0.0.1 - - [07/Dec/2025 12:08:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:17,552 INFO 127.0.0.1 - - [07/Dec/2025 12:08:17] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:08:19,608 INFO 127.0.0.1 - - [07/Dec/2025 12:08:19] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:08:21,670 INFO 127.0.0.1 - - [07/Dec/2025 12:08:21] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:08:23,710 INFO 127.0.0.1 - - [07/Dec/2025 12:08:23] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:08:25,766 INFO 127.0.0.1 - - [07/Dec/2025 12:08:25] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:08:28,253 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:08:32,368 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:08:32,369 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:08:36,396 INFO 127.0.0.1 - - [07/Dec/2025 12:08:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:38,438 INFO 127.0.0.1 - - [07/Dec/2025 12:08:38] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:40,478 INFO 127.0.0.1 - - [07/Dec/2025 12:08:40] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:08:42,525 INFO 127.0.0.1 - - [07/Dec/2025 12:08:42] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:08:44,556 INFO 127.0.0.1 - - [07/Dec/2025 12:08:44] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:08:46,591 INFO 127.0.0.1 - - [07/Dec/2025 12:08:46] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:08:48,632 INFO 127.0.0.1 - - [07/Dec/2025 12:08:48] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:08:50,684 INFO 127.0.0.1 - - [07/Dec/2025 12:08:50] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:08:52,966 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:08:57,081 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:08:57,081 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:09:01,115 INFO 127.0.0.1 - - [07/Dec/2025 12:09:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:03,156 INFO 127.0.0.1 - - [07/Dec/2025 12:09:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:05,205 INFO 127.0.0.1 - - [07/Dec/2025 12:09:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:07,249 INFO 127.0.0.1 - - [07/Dec/2025 12:09:07] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:09:09,278 INFO 127.0.0.1 - - [07/Dec/2025 12:09:09] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:09:11,313 INFO 127.0.0.1 - - [07/Dec/2025 12:09:11] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:09:13,346 INFO 127.0.0.1 - - [07/Dec/2025 12:09:13] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:09:15,377 INFO 127.0.0.1 - - [07/Dec/2025 12:09:15] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:09:18,115 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:09:22,208 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:09:22,208 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:09:26,230 INFO 127.0.0.1 - - [07/Dec/2025 12:09:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:28,264 INFO 127.0.0.1 - - [07/Dec/2025 12:09:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:30,296 INFO 127.0.0.1 - - [07/Dec/2025 12:09:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:32,330 INFO 127.0.0.1 - - [07/Dec/2025 12:09:32] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:09:34,365 INFO 127.0.0.1 - - [07/Dec/2025 12:09:34] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:09:36,424 INFO 127.0.0.1 - - [07/Dec/2025 12:09:36] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:09:38,469 INFO 127.0.0.1 - - [07/Dec/2025 12:09:38] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:09:40,507 INFO 127.0.0.1 - - [07/Dec/2025 12:09:40] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:09:43,295 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:09:47,395 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:09:47,395 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:09:51,427 INFO 127.0.0.1 - - [07/Dec/2025 12:09:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:53,440 INFO 127.0.0.1 - - [07/Dec/2025 12:09:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:55,481 INFO 127.0.0.1 - - [07/Dec/2025 12:09:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:09:57,535 INFO 127.0.0.1 - - [07/Dec/2025 12:09:57] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:09:59,584 INFO 127.0.0.1 - - [07/Dec/2025 12:09:59] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:10:01,623 INFO 127.0.0.1 - - [07/Dec/2025 12:10:01] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:10:03,677 INFO 127.0.0.1 - - [07/Dec/2025 12:10:03] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:10:05,697 INFO 127.0.0.1 - - [07/Dec/2025 12:10:05] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:10:08,232 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:10:12,329 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:10:12,329 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:10:16,359 INFO 127.0.0.1 - - [07/Dec/2025 12:10:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:18,413 INFO 127.0.0.1 - - [07/Dec/2025 12:10:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:20,444 INFO 127.0.0.1 - - [07/Dec/2025 12:10:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:22,496 INFO 127.0.0.1 - - [07/Dec/2025 12:10:22] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:10:24,525 INFO 127.0.0.1 - - [07/Dec/2025 12:10:24] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:10:26,572 INFO 127.0.0.1 - - [07/Dec/2025 12:10:26] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:10:28,610 INFO 127.0.0.1 - - [07/Dec/2025 12:10:28] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:10:30,644 INFO 127.0.0.1 - - [07/Dec/2025 12:10:30] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:10:33,357 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:10:37,414 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:10:37,414 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:10:41,457 INFO 127.0.0.1 - - [07/Dec/2025 12:10:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:43,489 INFO 127.0.0.1 - - [07/Dec/2025 12:10:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:45,525 INFO 127.0.0.1 - - [07/Dec/2025 12:10:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:10:47,555 INFO 127.0.0.1 - - [07/Dec/2025 12:10:47] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:10:49,586 INFO 127.0.0.1 - - [07/Dec/2025 12:10:49] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:10:51,619 INFO 127.0.0.1 - - [07/Dec/2025 12:10:51] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:10:53,681 INFO 127.0.0.1 - - [07/Dec/2025 12:10:53] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:10:55,713 INFO 127.0.0.1 - - [07/Dec/2025 12:10:55] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:10:58,014 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:11:02,127 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:11:02,128 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:11:06,147 INFO 127.0.0.1 - - [07/Dec/2025 12:11:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:08,205 INFO 127.0.0.1 - - [07/Dec/2025 12:11:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:10,250 INFO 127.0.0.1 - - [07/Dec/2025 12:11:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:12,304 INFO 127.0.0.1 - - [07/Dec/2025 12:11:12] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:11:14,335 INFO 127.0.0.1 - - [07/Dec/2025 12:11:14] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:11:16,370 INFO 127.0.0.1 - - [07/Dec/2025 12:11:16] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:11:18,407 INFO 127.0.0.1 - - [07/Dec/2025 12:11:18] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:11:20,450 INFO 127.0.0.1 - - [07/Dec/2025 12:11:20] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:11:22,712 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:11:26,833 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:11:26,833 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:11:30,867 INFO 127.0.0.1 - - [07/Dec/2025 12:11:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:32,909 INFO 127.0.0.1 - - [07/Dec/2025 12:11:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:34,949 INFO 127.0.0.1 - - [07/Dec/2025 12:11:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:11:37,004 INFO 127.0.0.1 - - [07/Dec/2025 12:11:37] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:11:39,045 INFO 127.0.0.1 - - [07/Dec/2025 12:11:39] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:11:41,073 INFO 127.0.0.1 - - [07/Dec/2025 12:11:41] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:11:43,100 INFO 127.0.0.1 - - [07/Dec/2025 12:11:43] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:11:45,138 INFO 127.0.0.1 - - [07/Dec/2025 12:11:45] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:11:52,949 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 5 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=6
+SuperAgent: report performance - 9 analisi, 6 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:11:57,045 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:11:57,045 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:12:01,071 INFO 127.0.0.1 - - [07/Dec/2025 12:12:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:03,119 INFO 127.0.0.1 - - [07/Dec/2025 12:12:03] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:05,154 INFO 127.0.0.1 - - [07/Dec/2025 12:12:05] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:07,209 INFO 127.0.0.1 - - [07/Dec/2025 12:12:07] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:12:09,255 INFO 127.0.0.1 - - [07/Dec/2025 12:12:09] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:12:11,305 INFO 127.0.0.1 - - [07/Dec/2025 12:12:11] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:12:13,345 INFO 127.0.0.1 - - [07/Dec/2025 12:12:13] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:12:15,376 INFO 127.0.0.1 - - [07/Dec/2025 12:12:15] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:12:17,850 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:12:21,957 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:12:21,958 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:12:25,984 INFO 127.0.0.1 - - [07/Dec/2025 12:12:25] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:28,026 INFO 127.0.0.1 - - [07/Dec/2025 12:12:28] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:30,054 INFO 127.0.0.1 - - [07/Dec/2025 12:12:30] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:32,087 INFO 127.0.0.1 - - [07/Dec/2025 12:12:32] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:12:34,123 INFO 127.0.0.1 - - [07/Dec/2025 12:12:34] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:12:36,187 INFO 127.0.0.1 - - [07/Dec/2025 12:12:36] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:12:38,221 INFO 127.0.0.1 - - [07/Dec/2025 12:12:38] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:12:40,267 INFO 127.0.0.1 - - [07/Dec/2025 12:12:40] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:12:42,510 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:12:46,606 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:12:46,606 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:12:50,642 INFO 127.0.0.1 - - [07/Dec/2025 12:12:50] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:52,686 INFO 127.0.0.1 - - [07/Dec/2025 12:12:52] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:54,734 INFO 127.0.0.1 - - [07/Dec/2025 12:12:54] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:12:56,780 INFO 127.0.0.1 - - [07/Dec/2025 12:12:56] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:12:58,842 INFO 127.0.0.1 - - [07/Dec/2025 12:12:58] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:13:00,895 INFO 127.0.0.1 - - [07/Dec/2025 12:13:00] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:13:02,945 INFO 127.0.0.1 - - [07/Dec/2025 12:13:02] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:13:04,983 INFO 127.0.0.1 - - [07/Dec/2025 12:13:04] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:13:07,202 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:13:11,286 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:13:11,286 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:13:15,313 INFO 127.0.0.1 - - [07/Dec/2025 12:13:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:17,357 INFO 127.0.0.1 - - [07/Dec/2025 12:13:17] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:19,405 INFO 127.0.0.1 - - [07/Dec/2025 12:13:19] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:21,436 INFO 127.0.0.1 - - [07/Dec/2025 12:13:21] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:13:23,484 INFO 127.0.0.1 - - [07/Dec/2025 12:13:23] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:13:25,532 INFO 127.0.0.1 - - [07/Dec/2025 12:13:25] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:13:27,578 INFO 127.0.0.1 - - [07/Dec/2025 12:13:27] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:13:29,623 INFO 127.0.0.1 - - [07/Dec/2025 12:13:29] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:13:31,837 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:13:35,925 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:13:35,926 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:13:39,969 INFO 127.0.0.1 - - [07/Dec/2025 12:13:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:42,016 INFO 127.0.0.1 - - [07/Dec/2025 12:13:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:44,075 INFO 127.0.0.1 - - [07/Dec/2025 12:13:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:13:46,138 INFO 127.0.0.1 - - [07/Dec/2025 12:13:46] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:13:48,181 INFO 127.0.0.1 - - [07/Dec/2025 12:13:48] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:13:50,228 INFO 127.0.0.1 - - [07/Dec/2025 12:13:50] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:13:52,261 INFO 127.0.0.1 - - [07/Dec/2025 12:13:52] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:13:54,297 INFO 127.0.0.1 - - [07/Dec/2025 12:13:54] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:13:56,498 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:14:00,592 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:14:00,592 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:14:04,608 INFO 127.0.0.1 - - [07/Dec/2025 12:14:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:06,638 INFO 127.0.0.1 - - [07/Dec/2025 12:14:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:08,689 INFO 127.0.0.1 - - [07/Dec/2025 12:14:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:10,709 INFO 127.0.0.1 - - [07/Dec/2025 12:14:10] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:14:12,739 INFO 127.0.0.1 - - [07/Dec/2025 12:14:12] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:14:14,774 INFO 127.0.0.1 - - [07/Dec/2025 12:14:14] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:14:16,819 INFO 127.0.0.1 - - [07/Dec/2025 12:14:16] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:14:18,871 INFO 127.0.0.1 - - [07/Dec/2025 12:14:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:14:21,198 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:14:25,253 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:14:25,253 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:14:29,295 INFO 127.0.0.1 - - [07/Dec/2025 12:14:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:31,314 INFO 127.0.0.1 - - [07/Dec/2025 12:14:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:33,350 INFO 127.0.0.1 - - [07/Dec/2025 12:14:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:35,393 INFO 127.0.0.1 - - [07/Dec/2025 12:14:35] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:14:37,422 INFO 127.0.0.1 - - [07/Dec/2025 12:14:37] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:14:39,467 INFO 127.0.0.1 - - [07/Dec/2025 12:14:39] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:14:41,497 INFO 127.0.0.1 - - [07/Dec/2025 12:14:41] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:14:43,565 INFO 127.0.0.1 - - [07/Dec/2025 12:14:43] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:14:46,385 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 12 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:14:50,458 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:14:50,458 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:14:54,481 INFO 127.0.0.1 - - [07/Dec/2025 12:14:54] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:56,511 INFO 127.0.0.1 - - [07/Dec/2025 12:14:56] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:14:58,533 INFO 127.0.0.1 - - [07/Dec/2025 12:14:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:00,578 INFO 127.0.0.1 - - [07/Dec/2025 12:15:00] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:15:02,608 INFO 127.0.0.1 - - [07/Dec/2025 12:15:02] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:15:04,625 INFO 127.0.0.1 - - [07/Dec/2025 12:15:04] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:15:06,686 INFO 127.0.0.1 - - [07/Dec/2025 12:15:06] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:15:08,736 INFO 127.0.0.1 - - [07/Dec/2025 12:15:08] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:15:11,070 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:15:15,132 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:15:15,132 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:15:19,185 INFO 127.0.0.1 - - [07/Dec/2025 12:15:19] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:21,247 INFO 127.0.0.1 - - [07/Dec/2025 12:15:21] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:23,290 INFO 127.0.0.1 - - [07/Dec/2025 12:15:23] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:25,323 INFO 127.0.0.1 - - [07/Dec/2025 12:15:25] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:15:27,374 INFO 127.0.0.1 - - [07/Dec/2025 12:15:27] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:15:29,409 INFO 127.0.0.1 - - [07/Dec/2025 12:15:29] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:15:31,470 INFO 127.0.0.1 - - [07/Dec/2025 12:15:31] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:15:33,504 INFO 127.0.0.1 - - [07/Dec/2025 12:15:33] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:15:35,771 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:15:39,858 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:15:39,858 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:15:43,882 INFO 127.0.0.1 - - [07/Dec/2025 12:15:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:45,944 INFO 127.0.0.1 - - [07/Dec/2025 12:15:45] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:47,970 INFO 127.0.0.1 - - [07/Dec/2025 12:15:47] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:15:50,008 INFO 127.0.0.1 - - [07/Dec/2025 12:15:50] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:15:52,041 INFO 127.0.0.1 - - [07/Dec/2025 12:15:52] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:15:54,081 INFO 127.0.0.1 - - [07/Dec/2025 12:15:54] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:15:56,102 INFO 127.0.0.1 - - [07/Dec/2025 12:15:56] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:15:58,142 INFO 127.0.0.1 - - [07/Dec/2025 12:15:58] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:16:00,515 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:16:04,597 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:16:04,597 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:16:08,606 INFO 127.0.0.1 - - [07/Dec/2025 12:16:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:10,639 INFO 127.0.0.1 - - [07/Dec/2025 12:16:10] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:12,689 INFO 127.0.0.1 - - [07/Dec/2025 12:16:12] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:14,742 INFO 127.0.0.1 - - [07/Dec/2025 12:16:14] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:16:16,791 INFO 127.0.0.1 - - [07/Dec/2025 12:16:16] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:16:18,828 INFO 127.0.0.1 - - [07/Dec/2025 12:16:18] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:16:20,882 INFO 127.0.0.1 - - [07/Dec/2025 12:16:20] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:16:22,939 INFO 127.0.0.1 - - [07/Dec/2025 12:16:22] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:16:25,217 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:16:29,317 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:16:29,317 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:16:33,360 INFO 127.0.0.1 - - [07/Dec/2025 12:16:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:35,405 INFO 127.0.0.1 - - [07/Dec/2025 12:16:35] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:37,457 INFO 127.0.0.1 - - [07/Dec/2025 12:16:37] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:16:39,512 INFO 127.0.0.1 - - [07/Dec/2025 12:16:39] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:16:41,563 INFO 127.0.0.1 - - [07/Dec/2025 12:16:41] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:16:43,608 INFO 127.0.0.1 - - [07/Dec/2025 12:16:43] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:16:45,644 INFO 127.0.0.1 - - [07/Dec/2025 12:16:45] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:16:47,688 INFO 127.0.0.1 - - [07/Dec/2025 12:16:47] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:16:49,903 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:16:54,014 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:16:54,014 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:16:58,042 INFO 127.0.0.1 - - [07/Dec/2025 12:16:58] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:00,087 INFO 127.0.0.1 - - [07/Dec/2025 12:17:00] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:02,144 INFO 127.0.0.1 - - [07/Dec/2025 12:17:02] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:04,189 INFO 127.0.0.1 - - [07/Dec/2025 12:17:04] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:17:06,244 INFO 127.0.0.1 - - [07/Dec/2025 12:17:06] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:17:08,288 INFO 127.0.0.1 - - [07/Dec/2025 12:17:08] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:17:10,339 INFO 127.0.0.1 - - [07/Dec/2025 12:17:10] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:17:12,400 INFO 127.0.0.1 - - [07/Dec/2025 12:17:12] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:17:14,755 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:17:18,841 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:17:18,841 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:17:22,869 INFO 127.0.0.1 - - [07/Dec/2025 12:17:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:24,905 INFO 127.0.0.1 - - [07/Dec/2025 12:17:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:26,938 INFO 127.0.0.1 - - [07/Dec/2025 12:17:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:28,973 INFO 127.0.0.1 - - [07/Dec/2025 12:17:28] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:17:31,008 INFO 127.0.0.1 - - [07/Dec/2025 12:17:31] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:17:33,042 INFO 127.0.0.1 - - [07/Dec/2025 12:17:33] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:17:35,081 INFO 127.0.0.1 - - [07/Dec/2025 12:17:35] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:17:37,115 INFO 127.0.0.1 - - [07/Dec/2025 12:17:37] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:17:41,810 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 11 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:17:45,895 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:17:45,895 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:17:49,911 INFO 127.0.0.1 - - [07/Dec/2025 12:17:49] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:51,951 INFO 127.0.0.1 - - [07/Dec/2025 12:17:51] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:53,971 INFO 127.0.0.1 - - [07/Dec/2025 12:17:53] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:17:56,001 INFO 127.0.0.1 - - [07/Dec/2025 12:17:56] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:17:58,035 INFO 127.0.0.1 - - [07/Dec/2025 12:17:58] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:18:00,082 INFO 127.0.0.1 - - [07/Dec/2025 12:18:00] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:18:02,101 INFO 127.0.0.1 - - [07/Dec/2025 12:18:02] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:18:04,134 INFO 127.0.0.1 - - [07/Dec/2025 12:18:04] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:18:06,955 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:18:11,021 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:18:11,021 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:18:15,041 INFO 127.0.0.1 - - [07/Dec/2025 12:18:15] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:17,065 INFO 127.0.0.1 - - [07/Dec/2025 12:18:17] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:19,095 INFO 127.0.0.1 - - [07/Dec/2025 12:18:19] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:21,124 INFO 127.0.0.1 - - [07/Dec/2025 12:18:21] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:18:23,162 INFO 127.0.0.1 - - [07/Dec/2025 12:18:23] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:18:25,210 INFO 127.0.0.1 - - [07/Dec/2025 12:18:25] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:18:27,256 INFO 127.0.0.1 - - [07/Dec/2025 12:18:27] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:18:29,278 INFO 127.0.0.1 - - [07/Dec/2025 12:18:29] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:18:32,139 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:18:36,231 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:18:36,231 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:18:40,267 INFO 127.0.0.1 - - [07/Dec/2025 12:18:40] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:42,305 INFO 127.0.0.1 - - [07/Dec/2025 12:18:42] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:44,353 INFO 127.0.0.1 - - [07/Dec/2025 12:18:44] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:18:46,383 INFO 127.0.0.1 - - [07/Dec/2025 12:18:46] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:18:48,421 INFO 127.0.0.1 - - [07/Dec/2025 12:18:48] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:18:50,455 INFO 127.0.0.1 - - [07/Dec/2025 12:18:50] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:18:52,504 INFO 127.0.0.1 - - [07/Dec/2025 12:18:52] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:18:54,522 INFO 127.0.0.1 - - [07/Dec/2025 12:18:54] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:18:59,144 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:19:03,252 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:19:03,252 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:19:07,266 INFO 127.0.0.1 - - [07/Dec/2025 12:19:07] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:09,303 INFO 127.0.0.1 - - [07/Dec/2025 12:19:09] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:11,347 INFO 127.0.0.1 - - [07/Dec/2025 12:19:11] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:13,378 INFO 127.0.0.1 - - [07/Dec/2025 12:19:13] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:19:15,426 INFO 127.0.0.1 - - [07/Dec/2025 12:19:15] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:19:17,461 INFO 127.0.0.1 - - [07/Dec/2025 12:19:17] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:19:19,496 INFO 127.0.0.1 - - [07/Dec/2025 12:19:19] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:19:21,543 INFO 127.0.0.1 - - [07/Dec/2025 12:19:21] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:19:24,393 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:19:28,466 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:19:28,466 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:19:32,497 INFO 127.0.0.1 - - [07/Dec/2025 12:19:32] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:34,531 INFO 127.0.0.1 - - [07/Dec/2025 12:19:34] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:36,570 INFO 127.0.0.1 - - [07/Dec/2025 12:19:36] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:38,622 INFO 127.0.0.1 - - [07/Dec/2025 12:19:38] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:19:40,643 INFO 127.0.0.1 - - [07/Dec/2025 12:19:40] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:19:42,692 INFO 127.0.0.1 - - [07/Dec/2025 12:19:42] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:19:44,731 INFO 127.0.0.1 - - [07/Dec/2025 12:19:44] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:19:46,750 INFO 127.0.0.1 - - [07/Dec/2025 12:19:46] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:19:49,559 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 9 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 12 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:19:53,621 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:19:53,621 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:19:57,628 INFO 127.0.0.1 - - [07/Dec/2025 12:19:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:19:59,649 INFO 127.0.0.1 - - [07/Dec/2025 12:19:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:01,665 INFO 127.0.0.1 - - [07/Dec/2025 12:20:01] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:03,706 INFO 127.0.0.1 - - [07/Dec/2025 12:20:03] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:20:05,734 INFO 127.0.0.1 - - [07/Dec/2025 12:20:05] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:20:07,778 INFO 127.0.0.1 - - [07/Dec/2025 12:20:07] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:20:09,827 INFO 127.0.0.1 - - [07/Dec/2025 12:20:09] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:20:11,877 INFO 127.0.0.1 - - [07/Dec/2025 12:20:11] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:20:14,845 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 9 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:20:18,905 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:20:18,905 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:20:22,910 INFO 127.0.0.1 - - [07/Dec/2025 12:20:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:24,956 INFO 127.0.0.1 - - [07/Dec/2025 12:20:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:26,969 INFO 127.0.0.1 - - [07/Dec/2025 12:20:26] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:29,006 INFO 127.0.0.1 - - [07/Dec/2025 12:20:29] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:20:31,043 INFO 127.0.0.1 - - [07/Dec/2025 12:20:31] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:20:33,085 INFO 127.0.0.1 - - [07/Dec/2025 12:20:33] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:20:35,126 INFO 127.0.0.1 - - [07/Dec/2025 12:20:35] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:20:37,154 INFO 127.0.0.1 - - [07/Dec/2025 12:20:37] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:20:39,972 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 10 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:20:44,058 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:20:44,058 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:20:48,090 INFO 127.0.0.1 - - [07/Dec/2025 12:20:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:50,132 INFO 127.0.0.1 - - [07/Dec/2025 12:20:50] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:52,165 INFO 127.0.0.1 - - [07/Dec/2025 12:20:52] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:20:54,194 INFO 127.0.0.1 - - [07/Dec/2025 12:20:54] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:20:56,230 INFO 127.0.0.1 - - [07/Dec/2025 12:20:56] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:20:58,267 INFO 127.0.0.1 - - [07/Dec/2025 12:20:58] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:21:00,305 INFO 127.0.0.1 - - [07/Dec/2025 12:21:00] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:21:02,343 INFO 127.0.0.1 - - [07/Dec/2025 12:21:02] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:21:06,053 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 9 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:21:10,126 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:21:10,127 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:21:14,142 INFO 127.0.0.1 - - [07/Dec/2025 12:21:14] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:16,159 INFO 127.0.0.1 - - [07/Dec/2025 12:21:16] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:18,175 INFO 127.0.0.1 - - [07/Dec/2025 12:21:18] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:20,211 INFO 127.0.0.1 - - [07/Dec/2025 12:21:20] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:21:22,257 INFO 127.0.0.1 - - [07/Dec/2025 12:21:22] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:21:24,293 INFO 127.0.0.1 - - [07/Dec/2025 12:21:24] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:21:26,336 INFO 127.0.0.1 - - [07/Dec/2025 12:21:26] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:21:28,371 INFO 127.0.0.1 - - [07/Dec/2025 12:21:28] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:21:31,182 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 7 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 10 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:21:35,243 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:21:35,243 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:21:39,264 INFO 127.0.0.1 - - [07/Dec/2025 12:21:39] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:41,301 INFO 127.0.0.1 - - [07/Dec/2025 12:21:41] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:43,343 INFO 127.0.0.1 - - [07/Dec/2025 12:21:43] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:21:45,368 INFO 127.0.0.1 - - [07/Dec/2025 12:21:45] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:21:47,400 INFO 127.0.0.1 - - [07/Dec/2025 12:21:47] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:21:49,417 INFO 127.0.0.1 - - [07/Dec/2025 12:21:49] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:21:51,464 INFO 127.0.0.1 - - [07/Dec/2025 12:21:51] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:21:53,513 INFO 127.0.0.1 - - [07/Dec/2025 12:21:53] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:21:56,506 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:22:00,590 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:22:00,590 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:22:04,607 INFO 127.0.0.1 - - [07/Dec/2025 12:22:04] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:06,658 INFO 127.0.0.1 - - [07/Dec/2025 12:22:06] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:08,707 INFO 127.0.0.1 - - [07/Dec/2025 12:22:08] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:10,744 INFO 127.0.0.1 - - [07/Dec/2025 12:22:10] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:22:12,779 INFO 127.0.0.1 - - [07/Dec/2025 12:22:12] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:22:14,807 INFO 127.0.0.1 - - [07/Dec/2025 12:22:14] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:22:16,840 INFO 127.0.0.1 - - [07/Dec/2025 12:22:16] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:22:18,872 INFO 127.0.0.1 - - [07/Dec/2025 12:22:18] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:22:21,691 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:22:25,765 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:22:25,765 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:22:29,792 INFO 127.0.0.1 - - [07/Dec/2025 12:22:29] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:31,826 INFO 127.0.0.1 - - [07/Dec/2025 12:22:31] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:33,858 INFO 127.0.0.1 - - [07/Dec/2025 12:22:33] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:35,907 INFO 127.0.0.1 - - [07/Dec/2025 12:22:35] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:22:37,944 INFO 127.0.0.1 - - [07/Dec/2025 12:22:37] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:22:39,981 INFO 127.0.0.1 - - [07/Dec/2025 12:22:39] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:22:42,013 INFO 127.0.0.1 - - [07/Dec/2025 12:22:42] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:22:44,048 INFO 127.0.0.1 - - [07/Dec/2025 12:22:44] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:22:47,089 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 6 analisi, 4 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=5
+SuperAgent: report performance - 9 analisi, 5 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:22:51,152 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:22:51,153 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:22:55,178 INFO 127.0.0.1 - - [07/Dec/2025 12:22:55] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:57,197 INFO 127.0.0.1 - - [07/Dec/2025 12:22:57] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:22:59,226 INFO 127.0.0.1 - - [07/Dec/2025 12:22:59] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:01,257 INFO 127.0.0.1 - - [07/Dec/2025 12:23:01] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:23:03,303 INFO 127.0.0.1 - - [07/Dec/2025 12:23:03] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:23:05,352 INFO 127.0.0.1 - - [07/Dec/2025 12:23:05] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:23:07,401 INFO 127.0.0.1 - - [07/Dec/2025 12:23:07] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:23:09,435 INFO 127.0.0.1 - - [07/Dec/2025 12:23:09] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:23:12,071 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 3 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=4
+SuperAgent: report performance - 11 analisi, 4 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:23:16,138 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:23:16,138 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:23:20,164 INFO 127.0.0.1 - - [07/Dec/2025 12:23:20] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:22,195 INFO 127.0.0.1 - - [07/Dec/2025 12:23:22] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:24,225 INFO 127.0.0.1 - - [07/Dec/2025 12:23:24] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:26,259 INFO 127.0.0.1 - - [07/Dec/2025 12:23:26] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:23:28,299 INFO 127.0.0.1 - - [07/Dec/2025 12:23:28] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:23:30,332 INFO 127.0.0.1 - - [07/Dec/2025 12:23:30] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:23:32,382 INFO 127.0.0.1 - - [07/Dec/2025 12:23:32] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:23:34,432 INFO 127.0.0.1 - - [07/Dec/2025 12:23:34] "POST /message?agent=5 HTTP/1.1" 200 -
+2025-12-07 12:23:38,520 INFO 
+[REPORT PERIODICO]
+SuperAgent: report performance - 8 analisi, 2 strategie
+SuperAgent: auto-miglioramento del 2025-12-07
+SuperAgent: analisi ambiente, agenti=0, strategie=3
+SuperAgent: report performance - 11 analisi, 3 strategie
+SuperAgent: suggerimento miglioramento ecosistema
+
+2025-12-07 12:23:42,586 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-07 12:23:42,586 INFO [33mPress CTRL+C to quit[0m
+2025-12-07 12:23:46,623 INFO 127.0.0.1 - - [07/Dec/2025 12:23:46] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:48,678 INFO 127.0.0.1 - - [07/Dec/2025 12:23:48] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:50,695 INFO 127.0.0.1 - - [07/Dec/2025 12:23:50] "POST /message HTTP/1.1" 200 -
+2025-12-07 12:23:52,716 INFO 127.0.0.1 - - [07/Dec/2025 12:23:52] "POST /message?agent=1 HTTP/1.1" 200 -
+2025-12-07 12:23:54,744 INFO 127.0.0.1 - - [07/Dec/2025 12:23:54] "POST /message?agent=2 HTTP/1.1" 200 -
+2025-12-07 12:23:56,771 INFO 127.0.0.1 - - [07/Dec/2025 12:23:56] "POST /message?agent=3 HTTP/1.1" 200 -
+2025-12-07 12:23:58,809 INFO 127.0.0.1 - - [07/Dec/2025 12:23:58] "POST /message?agent=4 HTTP/1.1" 200 -
+2025-12-07 12:24:00,826 INFO 127.0.0.1 - - [07/Dec/2025 12:24:00] "POST /message?agent=5 HTTP/1.1" 200 -

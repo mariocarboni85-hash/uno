@@ -84,7 +84,12 @@ def home():
 
 
 
+
+# Funzione per avviare il dashboard da altri moduli
+def run_dashboard(host="0.0.0.0", port=5000, debug=True):
+    app.run(host=host, port=port, debug=debug)
+
 # Permetti esecuzione standalone
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    run_dashboard()
 
