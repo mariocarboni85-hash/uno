@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  uno:
+    build: .
+    container_name: uno-dev
+    volumes:
+      - .:/app
+    command: python -m uno
