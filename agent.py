@@ -164,8 +164,8 @@ class uno:
                 max_write_val = pol.policy.get('budget', {}).get('max_write', 3)
             else:
                 max_actions_val = max_steps or 5
-                # Allow shell by default when no policy is present
-                max_shell_val = 1
+                # Conservative default: disallow shell when no policy is present
+                max_shell_val = 0
                 max_write_val = 3
         except Exception:
             max_actions_val = max_steps or 5

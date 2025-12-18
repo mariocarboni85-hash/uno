@@ -1,6 +1,6 @@
 import json
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 class AuditLog:
@@ -22,7 +22,8 @@ class AuditLog:
         return hashlib.sha256(payload.encode()).hexdigest()
 
     def append(self, record: dict):
-        record["timestamp"] = datetime.utcnow().isoformat()
+        # Use timezone-aware UTC timestamps
+        record["timestamp"] = datetime.now(timezone.utc).isoformat()
         record["prev_hash"] = self.last_hash
 
         raw = json.dumps(record, sort_keys=True)
