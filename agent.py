@@ -5,6 +5,8 @@ con comportamenti di fallback e docstring.
 """
 from typing import Any, Dict, List, Optional
 from pathlib import Path
+import json
+import ast
 from uno.action import Action
 
 try:
@@ -53,6 +55,16 @@ try:
 except Exception:
     ExternalActionNormalizer = None
 
+try:
+    from uno.tool_executor import ToolExecutor
+except Exception:
+    ToolExecutor = None
+try:
+    from uno.policy_engine import PolicyEngine, PolicyViolation
+except Exception:
+    PolicyEngine = None
+    PolicyViolation = Exception
+
 
 class uno:
     """Agente `uno` con metodi principali richiesti.
@@ -100,23 +112,23 @@ class uno:
 
         Uses a max_actions cap (default 20) which can be overridden via policy.
         """
-        def __init__(self, max_actions: int = 5, max_shell: int = 0, max_write: int = 3):
-            self.remaining_actions = int(max_actions)
-            self.remaining_shell = int(max_shell)
-            self.remaining_write = int(max_write)
+        def __init__(self, max_actions=5, max_shell=0, max_write=3):
+            self.remaining_actions = max_actions
+            self.remaining_shell = max_shell
+            self.remaining_write = max_write
 
-        def consume(self, action_type: str) -> None:
+        def consume(self, action_type: str):
             if self.remaining_actions <= 0:
                 raise RuntimeError("Budget azioni esaurito")
 
             if action_type == "shell":
                 if self.remaining_shell <= 0:
-                    raise RuntimeError("Budget shell esaurito")
+                    raise RuntimeError("Shell non consentita")
                 self.remaining_shell -= 1
 
             if action_type == "file_write":
                 if self.remaining_write <= 0:
-                    raise RuntimeError("Budget write esaurito")
+                    raise RuntimeError("Scrittura non consentita")
                 self.remaining_write -= 1
 
             self.remaining_actions -= 1
@@ -131,14 +143,9 @@ class uno:
     def run(self, goal: str, max_steps: int = 5) -> None:
         """Esegue un semplice ciclo: crea piano, seleziona e lancia azioni."""
         raw_plan = self.planner.create_plan(goal)
-        # Normalize plan: only Action objects from here on
-        plan: List[Action] = []
-        for item in raw_plan:
-            try:
-                plan.append(self.ActionNormalizer.normalize(item))
-            except Exception:
-                # skip invalid entries
-                continue
+        # Keep raw_plan as produced by the planner; brain.select_action
+        # expects to receive planner items (strings or dicts).
+        plan = raw_plan
         steps = 0
         # budget: prefer policy rate_limit if present
         pol = getattr(self, 'policy', None)
@@ -157,7 +164,8 @@ class uno:
                 max_write_val = pol.policy.get('budget', {}).get('max_write', 3)
             else:
                 max_actions_val = max_steps or 5
-                max_shell_val = 0
+                # Allow shell by default when no policy is present
+                max_shell_val = 1
                 max_write_val = 3
         except Exception:
             max_actions_val = max_steps or 5
@@ -165,13 +173,12 @@ class uno:
             max_write_val = 3
         self._budget = self.ActionBudget(max_actions_val, max_shell_val, max_write_val)
         while plan and steps < max_steps:
-            action = self.brain.select_action(plan)
-            if not action:
+            raw_action = self.brain.select_action(plan)
+            if not raw_action:
                 break
-            # Delegate full processing to execute_action
+            # Normalize the raw action (handles dicts and Action instances)
             try:
-                if isinstance(action, dict):
-                    action = self.ActionNormalizer.normalize(action)
+                action = self.ActionNormalizer.normalize(raw_action)
                 if not isinstance(action, Action):
                     break
             except Exception:
@@ -187,11 +194,176 @@ class uno:
             plan = plan[1:]
             steps += 1
 
+    def run_with_context(self, goal: str, vit_context: Dict[str, Any]) -> None:
+        """Run loop that consumes an explicit `vit_context` budget.
+
+        vit_context: {
+            'budget': {'max_actions': int, 'max_shell': int, 'max_write': int}
+        }
+        This method mirrors the proposed pseudocode: it normalizes selected
+        actions, consumes the budget, executes via `execute_action` and
+        allows the plan to be updated with results when applicable.
+        """
+        bcfg = vit_context.get('budget', {}) if isinstance(vit_context, dict) else {}
+        max_actions = bcfg.get('max_actions', 5)
+        max_shell = bcfg.get('max_shell', 0)
+        max_write = bcfg.get('max_write', 3)
+
+        budget = self.ActionBudget(max_actions=max_actions, max_shell=max_shell, max_write=max_write)
+
+        plan = self.planner.create_plan(goal)
+        # normalize initial plan items to Actions where possible
+        normalized_plan: List[Action] = []
+        for item in plan:
+            try:
+                normalized_plan.append(self.ActionNormalizer.normalize(item))
+            except Exception:
+                continue
+
+        while True:
+            raw_action = self.brain.select_action(normalized_plan)
+
+            if raw_action is None:
+                break
+
+            try:
+                action = self.ActionNormalizer.normalize(raw_action)
+            except Exception:
+                break
+
+            # consume budget based on action.type
+            try:
+                budget.consume(getattr(action, 'type', None))
+            except Exception as e:
+                # budget exhausted or disallowed
+                return
+
+            # execute action using existing pipeline
+            result = self.execute_action(action, sender=getattr(action, 'sender', 'vit'))
+
+            # allow plan to be updated if result provides updates (best-effort)
+            try:
+                if isinstance(result, dict) and hasattr(normalized_plan, 'update'):
+                    # if plan supports update (unlikely for list), try it
+                    normalized_plan.update(result)  # type: ignore
+            except Exception:
+                pass
+
+            # remove first element of plan if present
+            if normalized_plan:
+                normalized_plan = normalized_plan[1:]
+
+        def run_with_vit_context(self, goal: str, vit_context: Dict[str, Any]) -> None:
+            """Run loop driven by explicit vit_context (policy + budget).
+
+            vit_context expected shape:
+            {
+                'policy': '<path-to-policy-yaml>' or None,
+                'budget': {'max_actions': int, 'max_shell': int, 'max_write': int}
+            }
+            """
+            # Prepare policy engine
+            policy_path = None
+            try:
+                policy_path = vit_context.get('policy') if isinstance(vit_context, dict) else None
+            except Exception:
+                policy_path = None
+
+            policy_engine = None
+            if PolicyEngine:
+                try:
+                    policy_engine = PolicyEngine(policy_path)
+                except Exception:
+                    policy_engine = None
+
+            # Budget
+            bcfg = vit_context.get('budget', {}) if isinstance(vit_context, dict) else {}
+            budget = self.ActionBudget(
+                max_actions=bcfg.get('max_actions', 5),
+                max_shell=bcfg.get('max_shell', 0),
+                max_write=bcfg.get('max_write', 3),
+            )
+
+            plan = self.planner.create_plan(goal)
+
+            while plan:
+                raw_action = self.brain.select_action(plan)
+                if raw_action is None:
+                    break
+
+                try:
+                    action = self.ActionNormalizer.normalize(raw_action)
+                except Exception:
+                    # Can't normalize -> skip
+                    break
+
+                # Policy authorize (vit is final authority)
+                if policy_engine:
+                    try:
+                        policy_engine.authorize(action)
+                    except PolicyViolation as pv:
+                        # audit denial if possible
+                        try:
+                            from uno import policy as _uno_policy
+                            if _uno_policy:
+                                _uno_policy.audit(policy_engine.policy, action.type, action.sender, False, str(pv))
+                        except Exception:
+                            pass
+                        return
+
+                # Budget consume
+                try:
+                    budget.consume(action.type)
+                except Exception:
+                    return
+
+                # Execute via tool executor
+                try:
+                    if ToolExecutor:
+                        res = ToolExecutor.execute(action, self.tools, audit_fn=(getattr(__import__('uno.policy', fromlist=['audit']), 'audit') if hasattr(__import__('uno.policy', fromlist=['audit']), 'audit') else None))
+                    else:
+                        # fallback to execute_action (which applies policy/budget again)
+                        res = self.execute_action(action, sender=action.sender)
+                except Exception:
+                    # execution failure -> stop
+                    return
+
+                # Allow plan to be updated from result if applicable
+                try:
+                    if isinstance(res, dict) and hasattr(plan, 'update'):
+                        plan.update(res)  # type: ignore
+                    elif isinstance(res, dict) and 'plan' in res:
+                        plan = res['plan']
+                    else:
+                        # advance plan
+                        if plan:
+                            plan = plan[1:]
+                except Exception:
+                    if plan:
+                        plan = plan[1:]
+
     def ask(self, prompt: str) -> Any:
         """Interroga il processo di pensiero interno e gestisce eventuali azioni."""
         resp = think(prompt)
         if isinstance(resp, str) and resp.startswith("ACTION:"):
-            return self.handle_action(resp)
+            # Expect the thinker to return a JSON or Python-literal after the prefix
+            raw = resp[len("ACTION:"):].strip()
+            raw_action = None
+            if not raw:
+                return "Malformed ACTION: empty payload"
+            # Try JSON first
+            try:
+                raw_action = json.loads(raw)
+            except Exception:
+                try:
+                    raw_action = ast.literal_eval(raw)
+                except Exception:
+                    return "Malformed ACTION: payload not JSON or Python literal"
+
+            try:
+                return self.execute_action(raw_action, sender='vit')
+            except Exception as e:
+                return f"Action execution error: {e}"
         return resp
 
     def handle_action(self, action: str, sender: Optional[str] = None) -> Any:
@@ -216,7 +388,10 @@ class uno:
 
         # Policy check
         try:
-            pol = getattr(self, 'policy', None) or getattr(_uno_policy, 'VitPolicy', None)
+            # Prefer an explicit policy object attached to the agent; avoid
+            # falling back to an external `uno.policy` module to prevent
+            # unpredictable environment imports during tests.
+            pol = getattr(self, 'policy', None)
             if pol:
                 mode = self.config.get('mode') or pol.policy.get('modes', {}).get('default')
                 cmd = args.get('cmd') if isinstance(args, dict) else None
@@ -240,27 +415,34 @@ class uno:
         except Exception as e:
             return f"Budget exceeded: {e}"
 
-        # Execute
-        tool = self.tools.get(action_type)
-        if tool is None:
-            return f"Tool {action_type} not found"
+        # Execute via ToolExecutor if available
         try:
-            if callable(tool):
-                res = tool(**args)
-            else:
-                res = tool
-            # Audit success
+            if ToolExecutor:
+                try:
+                    return ToolExecutor.execute(action, self.tools, audit_fn=(getattr(self, 'policy', None) and getattr(__import__('uno.policy', fromlist=['audit']), 'audit')))
+                except Exception as e:
+                    return f"Execution error: {e}"
+            # Fallback behaviour if ToolExecutor not present
+            tool = self.tools.get(action_type)
+            if tool is None:
+                return f"Tool {action_type} not found"
             try:
-                pol = getattr(self, 'policy', None) or getattr(_uno_policy, 'VitPolicy', None)
-                if pol:
+                if callable(tool):
+                    res = tool(**args)
+                else:
+                    res = tool
+                # best-effort audit
+                try:
                     from uno import policy as _uno_policy
-                    if _uno_policy:
-                        _uno_policy.audit(pol.policy, action_type, sender or 'unknown', True, 'executed')
-            except Exception:
-                pass
-            return res
-        except Exception as e:
-            return f"Execution error: {e}"
+                    if _uno_policy and getattr(self, 'policy', None):
+                        _uno_policy.audit(self.policy.policy, action_type, sender or 'unknown', True, 'executed')
+                except Exception:
+                    pass
+                return res
+            except Exception as e:
+                return f"Execution error: {e}"
+        except Exception:
+            return "Execution pipeline error"
 
     def _verifica_veridicita_per_vit(self, recipient: Any, message: str) -> bool:
         """Controllo semplificato della veridicità per messaggi destinati a `vit`."""

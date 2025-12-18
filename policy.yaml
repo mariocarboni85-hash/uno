@@ -1,0 +1,45 @@
+version: 1.1
+owner: vit
+scope: internal-only
+
+principles:
+  - uno_is_subordinate: true
+  - vit_is_final_authority: true
+  - no_self_modification: true
+  - no_goal_override: true
+
+permissions:
+  shell:
+    allowed: false
+
+  file_read:
+    allowed: true
+    paths:
+      - "./uno/**"
+      - "./config/**"
+      - "./docs/**"
+
+  file_write:
+    allowed: true
+    paths:
+      - "./uno/output/**"
+      - "./logs/**"
+    max_bytes: 50000
+
+  network:
+    allowed: false
+
+  api_call:
+    allowed: true
+    targets:
+      - "localhost"
+      - "127.0.0.1"
+
+limits:
+  max_actions_per_run: 5
+  max_write_actions: 3
+
+governance:
+  can_update_policy: vit
+  can_override_temporarily: vit
+  audit_required: true
