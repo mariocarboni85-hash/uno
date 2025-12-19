@@ -2,10 +2,10 @@
 import sys
 import os
 from datetime import datetime
-from agent import uno
-from tools import shell, files, browser
-from core.team import TeamCoordinator, AgentProfile
-from core.factory import create_agent_package
+from uno.agent import uno
+from uno.tools import shell, files, browser
+from uno.core.team import TeamCoordinator, AgentProfile
+from uno.core.factory import create_agent_package
 
 try:
     from tools import arduino
@@ -21,6 +21,28 @@ TOOLS = {
     'browser': browser.fetch,
 }
 
+
+class _SimpleVit:
+    """Minimal `vit` replacement for local/dev use.
+
+    Exposes: `name`, optional `policy_path`, and a simple `inbox` with `put`.
+    """
+    def __init__(self, policy_path: str | None = None):
+        self.name = 'vit'
+        self.policy_path = policy_path
+        class Inbox:
+            def __init__(self):
+                self._items = []
+            def put(self, item):
+                self._items.append(item)
+            def get_all(self):
+                return list(self._items)
+        self.inbox = Inbox()
+
+
+def create_default_vit(policy_path: str | None = None):
+    return _SimpleVit(policy_path=policy_path)
+
 if ARDUINO_AVAILABLE:
     TOOLS['arduino_compile'] = arduino.compile_sketch
     TOOLS['arduino_upload'] = arduino.upload_sketch
@@ -30,7 +52,12 @@ if ARDUINO_AVAILABLE:
 def demo_planner():
     """Demo della modalità planner automatico."""
     print("=== uno Demo: Modalità Planner ===")
-    agent = uno(TOOLS, name="PlannerAgent")
+    agent = uno(TOOLS, name="PlannerAgent", require_vit=False)
+    try:
+        vit = create_default_vit()
+        agent.bind_vit(vit)
+    except Exception:
+        pass
     agent.run('create a file, then run a command')
 
 
@@ -39,7 +66,12 @@ def interactive_mode():
     print("=== uno Demo: Modalità Interattiva ===")
     print("Digita 'exit' o 'quit' per uscire.\n")
     
-    agent = uno(TOOLS, name="InteractiveAgent")
+    agent = uno(TOOLS, name="InteractiveAgent", require_vit=False)
+    try:
+        vit = create_default_vit()
+        agent.bind_vit(vit)
+    except Exception:
+        pass
     
     while True:
         try:
